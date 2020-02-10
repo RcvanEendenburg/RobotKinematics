@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 2.8.3)
 project(world)
  add_compile_options(-std=c++17)
 
-add_subdirectory(utilities)
-
 find_package(Boost REQUIRED COMPONENTS system)
 
 find_package(catkin REQUIRED COMPONENTS
@@ -37,7 +35,7 @@ find_package( OpenCV 3 REQUIRED)
  )
 
 catkin_package(
-  INCLUDE_DIRS include utilities/include
+  INCLUDE_DIRS include 
   CATKIN_DEPENDS message_runtime ${MESSAGE_DEPENDENCIES}
 #  DEPENDS system_lib
 )
@@ -51,7 +49,6 @@ catkin_package(
 include_directories(
         INCLUDE_DIRS include
  ${catkin_INCLUDE_DIRS}
- utilities/include
  ${OpenCV_INCLUDE_DIRS}
 )
 
@@ -86,7 +83,6 @@ add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catk
 
 ## Specify libraries to link a library or executable target against
  target_link_libraries(${PROJECT_NAME}_node
- Utilities
  ${catkin_LIBRARIES}
  ${OpenCV_LIBRARIES}
  )
