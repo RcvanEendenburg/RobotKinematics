@@ -5,8 +5,8 @@
 #include <memory>
 #include <functional>
 #include <string>
-#include <Utilities/IniParser.h>
-#include <Utilities/Logger.h>
+#include <utilities/IniParser.h>
+#include <utilities/Logger.h>
 #include <robothli/GradientDescent.h>
 #include <robothli/RobotModel.h>
 

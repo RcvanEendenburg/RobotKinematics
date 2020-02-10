@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: al5d_stub
+Description: Description of al5d_stub
+Version: 0.0.1
+Cflags: 
+Libs:  
+Requires: 

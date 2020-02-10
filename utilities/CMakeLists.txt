@@ -1,14 +1,19 @@
 cmake_minimum_required(VERSION 3.10)
-project(Utilities)
+project(utilities)
 
 set(CMAKE_CXX_STANDARD 17)
 find_package(Threads)
 include_directories(include)
 
-add_library(Utilities src/Logger.cpp src/LogToCout.cpp src/LogToFile.cpp src/IniParser.cpp)
-target_link_libraries(Utilities ${CMAKE_THREAD_LIBS_INIT})
+add_library(${PROJECT_NAME} src/Logger.cpp src/LogToCout.cpp src/LogToFile.cpp src/IniParser.cpp)
+target_link_libraries(${PROJECT_NAME} ${CMAKE_THREAD_LIBS_INIT} ${catkin_LIBRARIES})
+
+catkin_package(INCLUDE_DIRS include)
+
+install(TARGETS ${PROJECT_NAME}
+        ARCHIVE DESTINATION lib ${CMAKE_INSTALL_LIBDIR}
+        LIBRARY DESTINATION lib ${CMAKE_INSTALL_LIBDIR}
+        RUNTIME DESTINATION bin ${CMAKE_INSTALL_BINDIR})
 
 install(DIRECTORY include/${PROJECT_NAME}/
-  DESTINATION include/${PROJECT_NAME}/
-  FILES_MATCHING PATTERN "*.h"
-  PATTERN ".svn" EXCLUDE)
+        DESTINATION include ${CMAKE_INSTALL_INCLUDEDIR})

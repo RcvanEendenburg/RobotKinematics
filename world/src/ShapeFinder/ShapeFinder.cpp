@@ -111,7 +111,7 @@ std::vector<std::shared_ptr<T>> ShapeFinder::FindShapes(cv::Mat &input, cv::Mat 
 
         double mincos = cos.front();
         double maxcos = cos.back();
-        
+
         auto shape = find<T>(approx, contours[i],mincos,maxcos);
         if(shape != nullptr)
          {
