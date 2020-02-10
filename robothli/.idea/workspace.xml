@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Current File" />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCATKIN_DEVEL_PREFIX:PATH=/home/derk/workspace/devel" GENERATION_DIR="$PROJECT_DIR$/../../build" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e49a2bff-040b-4dcc-95b6-43dff4231cfa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/.idea/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/.idea/al5d.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/.idea/al5d.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/action/MoveRobot.action" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/action/MoveRobot.action" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/config/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/include/al5d/Application.h" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/include/al5d/Application.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/include/al5d/Communicator.h" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/include/al5d/Communicator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/include/al5d/Controller.h" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/include/al5d/Controller.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/include/al5d/Joint.h" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/include/al5d/Joint.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/include/al5d/SSC32UCommandBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/include/al5d/SSC32UCommandBuilder.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/include/al5d/SSC32UCommandBuilder.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/include/al5d/SSC32UCommandBuilder.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/include/al5d/SerialCommunicator.h" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/include/al5d/SerialCommunicator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/src/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/src/Application.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/src/Communicator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/src/Communicator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/src/Controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/src/Controller.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/src/Joint.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/src/Joint.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/src/SerialCommunicator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/src/SerialCommunicator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d_stub/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d_stub/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/al5d_stub/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d_stub/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/.idea/robothli.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/robothli.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/action/MoveRobot.action" beforeDir="false" afterPath="$PROJECT_DIR$/action/MoveRobot.action" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/action/PickUpObject.action" beforeDir="false" afterPath="$PROJECT_DIR$/action/PickUpObject.action" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/include/robothli/Al5D.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/robothli/Al5D.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/include/robothli/Application.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/robothli/Application.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/include/robothli/Communicator.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/robothli/Communicator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/include/robothli/GradientDescent.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/robothli/GradientDescent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/include/robothli/GradientDescent.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/include/robothli/GradientDescent.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/include/robothli/Joint.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/robothli/Joint.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/include/robothli/KinematicChain.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/robothli/KinematicChain.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/include/robothli/Matrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/robothli/Matrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/include/robothli/Matrix.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/include/robothli/Matrix.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/include/robothli/Point.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/robothli/Point.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/include/robothli/Point.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/include/robothli/Point.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/include/robothli/Pose.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/robothli/Pose.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/include/robothli/Pose.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/include/robothli/Pose.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/include/robothli/RobotModel.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/robothli/RobotModel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/include/robothli/RobotModel.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/include/robothli/RobotModel.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/src/Al5D.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Al5D.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/src/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/src/Communicator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Communicator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/src/Joint.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Joint.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/src/KinematicChain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/KinematicChain.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/test/GradientDescent_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradientDescent_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/test/Joint_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/Joint_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/test/KinematicChain_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/KinematicChain_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/test/Matrix_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/Matrix_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/test/Point_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/Point_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/robothli/test/Pose_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/Pose_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/.idea/tui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/.idea/tui.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/Doxyfile" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/Doxyfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/bc_s.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/bc_s.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/bdwn.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/bdwn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/closed.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/closed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/doc.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/doc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/doxygen.css" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/doxygen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/doxygen.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/doxygen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/dynsections.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/dynsections.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/files.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/folderclosed.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/folderclosed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/folderopen.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/folderopen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/graph_legend.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/graph_legend.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/graph_legend.md5" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/graph_legend.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/graph_legend.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/graph_legend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/main_8cpp.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/main_8cpp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/menudata.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/menudata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/nav_f.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/nav_f.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/nav_g.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/nav_g.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/nav_h.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/nav_h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/open.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/open.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/search/all_0.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/search/all_0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/search/all_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/search/all_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/search/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/search/close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/search/files_0.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/search/files_0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/search/files_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/search/files_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/search/mag_sel.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/search/mag_sel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/search/nomatches.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/search/nomatches.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/search/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/search/search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/search/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/search/search_l.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/search/search_l.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/search/search_m.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/search/search_m.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/search/search_r.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/search/search_r.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/search/searchdata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/splitbar.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/splitbar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/sync_off.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/sync_off.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/sync_on.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/sync_on.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/tab_a.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/tab_a.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/tab_b.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/tab_b.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/tab_h.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/tab_h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/tab_s.png" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/tab_s.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/html/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/html/tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/latex/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/latex/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/latex/doxygen.sty" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/latex/doxygen.sty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/latex/files.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/latex/files.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/latex/main_8cpp.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/latex/main_8cpp.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/docs/latex/refman.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/docs/latex/refman.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/tui/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/.idea/utilities.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/.idea/utilities.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/include/utilities/IniParser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/include/utilities/LogLevel.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/include/utilities/LogOutput.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/include/utilities/LogToCout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/include/utilities/LogToFile.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/include/utilities/Logger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/src/IniParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/src/IniParser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/src/LogToCout.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/src/LogToCout.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/src/LogToFile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/src/LogToFile.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utilities/src/Logger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/src/Logger.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../world/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../world/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../world/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../world/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/.idea/world.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../world/.idea/world.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../world/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/TestImage/Blocks01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../world/TestImage/Blocks01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../world/config/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/include/Color/ColorFilter.h" beforeDir="false" afterPath="$PROJECT_DIR$/../world/include/Color/ColorFilter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/include/Color/ColorRange.h" beforeDir="false" afterPath="$PROJECT_DIR$/../world/include/Color/ColorRange.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/include/SearchQuery.h" beforeDir="false" afterPath="$PROJECT_DIR$/../world/include/SearchQuery.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/include/Sensor/CameraSensor.h" beforeDir="false" afterPath="$PROJECT_DIR$/../world/include/Sensor/CameraSensor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/include/Sensor/Sensor.h" beforeDir="false" afterPath="$PROJECT_DIR$/../world/include/Sensor/Sensor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/include/Sensor/SensorException.h" beforeDir="false" afterPath="$PROJECT_DIR$/../world/include/Sensor/SensorException.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/include/Sensor/StaticImage.h" beforeDir="false" afterPath="$PROJECT_DIR$/../world/include/Sensor/StaticImage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/include/Shape/AbstractShape.h" beforeDir="false" afterPath="$PROJECT_DIR$/../world/include/Shape/AbstractShape.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/include/Shape/RectShape.h" beforeDir="false" afterPath="$PROJECT_DIR$/../world/include/Shape/RectShape.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/include/Shape/ShapeFinder.h" beforeDir="false" afterPath="$PROJECT_DIR$/../world/include/Shape/ShapeFinder.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/include/Shape/SquareShape.h" beforeDir="false" afterPath="$PROJECT_DIR$/../world/include/Shape/SquareShape.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/msg/Point2d.msg" beforeDir="false" afterPath="$PROJECT_DIR$/../world/msg/Point2d.msg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/msg/Shape.msg" beforeDir="false" afterPath="$PROJECT_DIR$/../world/msg/Shape.msg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../world/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/src/Color/ColorFilter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../world/src/Color/ColorFilter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/src/ShapeFinder/OldShapeFinder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../world/src/ShapeFinder/OldShapeFinder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/src/ShapeFinder/ShapeFinder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../world/src/ShapeFinder/ShapeFinder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/src/WorldService.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../world/src/WorldService.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/world/srv/ShapeFinderService.srv" beforeDir="false" afterPath="$PROJECT_DIR$/../world/srv/ShapeFinderService.srv" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/../../build/" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/Joint_test.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/KinematicChain_test.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/Matrix_test.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/robothli/Al5D.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/robothli/Application.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/Point_test.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Al5D.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/Pose_test.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sources</find>
+      <find>operator&gt;</find>
+      <find>dotProduct</find>
+      <find>sqrt</find>
+      <find>setA</find>
+      <find>cal</find>
+      <find>base</find>
+      <find>Base</find>
+      <find>Base::</find>
+      <find>magnitude</find>
+      <find>constant</find>
+      <find>&amp;&amp;</find>
+      <find>correctAngles</find>
+      <find>correctAngl</find>
+      <find>PosePoint</find>
+      <find>setPrevious</find>
+      <find>setAngle</find>
+      <find>getAngleSumZ</find>
+      <find>radiansTo</find>
+      <find>setAngles</find>
+      <find>calculatePoint</find>
+      <find>set</find>
+      <find>couldn't</find>
+      <find>at</find>
+      <find>operator=</find>
+      <find>catkin_LIBRARIES</find>
+      <find>beta</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Kinematics::</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Derk Wiegerinck &lt;dam.wiegerinck@student.han.nl&gt;" />
+      </list>
+    </option>
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/Implement-kinematic-algorithm" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/include/robothli/GradientDescent.ipp" />
+        <option value="$PROJECT_DIR$/src/Application.cpp" />
+        <option value="$PROJECT_DIR$/src/Joint.cpp" />
+        <option value="$PROJECT_DIR$/include/robothli/Application.h" />
+        <option value="$PROJECT_DIR$/package.xml" />
+        <option value="$PROJECT_DIR$/src/Al5D.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/robothli.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+        <option value="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="683" />
+    <option name="width" value="1370" />
+    <option name="height" value="751" />
+  </component>
+  <component name="ProjectId" id="1Xc538xYgWjDCGuTt7rE7KeTxGZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="robothli" type="b2602c69:ProjectViewProjectNode" />
+              <item name="robothli" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="robothli" type="b2602c69:ProjectViewProjectNode" />
+              <item name="robothli" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="robothli" type="b2602c69:ProjectViewProjectNode" />
+              <item name="robothli" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="robothli" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="robothli" type="b2602c69:ProjectViewProjectNode" />
+              <item name="robothli" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="robothli" type="b2602c69:ProjectViewProjectNode" />
+              <item name="robothli" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.overridden" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../world/CMakeLists.txt" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/include/robothli" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/robothli" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e49a2bff-040b-4dcc-95b6-43dff4231cfa" name="Default Changelist" comment="" />
+      <created>1556564308501</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556564308501</updated>
+      <workItem from="1556564309564" duration="170000" />
+      <workItem from="1557947780024" duration="5803000" />
+      <workItem from="1558083924774" duration="101000" />
+      <workItem from="1558084049667" duration="167000" />
+      <workItem from="1558084232169" duration="49066000" />
+      <workItem from="1559043415471" duration="21946000" />
+      <workItem from="1559393210991" duration="225000" />
+      <workItem from="1559393456436" duration="2340000" />
+      <workItem from="1559589062058" duration="7755000" />
+      <workItem from="1559936398859" duration="9522000" />
+      <workItem from="1560025073451" duration="258000" />
+      <workItem from="1560026146332" duration="5091000" />
+      <workItem from="1570564729284" duration="28000" />
+      <workItem from="1570570323804" duration="21000" />
+      <workItem from="1581325106184" duration="1641000" />
+      <workItem from="1581332342317" duration="54000" />
+      <workItem from="1581332960829" duration="24000" />
+      <workItem from="1581333028517" duration="263000" />
+      <workItem from="1581342438805" duration="10000" />
+    </task>
+    <task id="LOCAL-00001" summary="Implemented kinematic algorithm">
+      <created>1558101611929</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558101611929</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Created kinematics unit tests and did some code refactoring">
+      <created>1558294415635</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558294415635</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Made some unittests and did some refactoring">
+      <created>1558467461735</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558467461735</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Created step in Gradient Descent to make it clearer">
+      <created>1558471781125</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558471781125</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Integrated logger and made logging messages">
+      <created>1559060996815</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559060996815</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Deleted unnecessary files">
+      <created>1559061392810</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559061392810</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Created communication interface with action lib and created basic application class">
+      <created>1559388618916</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559388618916</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Created communication interface with action lib and created basic application class">
+      <created>1559394801454</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1559394801454</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Integrated ini parser">
+      <created>1559395186299</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1559395186299</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Merged the communication stuff with the kinematics stuff.&#10;Extended the mighty config file">
+      <created>1559675986233</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1559675986233</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Made it possible to send goals to the low level driver">
+      <created>1559939455725</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1559939455725</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added timing of the algorithm">
+      <created>1559986441067</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1559986441067</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="710000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-2" y="0" width="1370" height="751" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2152568" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.49924472" weight="0.328594" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49848944" weight="0.328594" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4954683" visible="true" weight="0.32755905" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39968404" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49924472" weight="0.328594" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.48640484" weight="0.32755905" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49093655" weight="0.3270142" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5090634" side_tool="true" visible="true" weight="0.33228347" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49848944" weight="0.328594" />
+      <window_info active="true" anchor="bottom" id="CMake" order="13" sideWeight="0.49093655" visible="true" weight="0.33228347" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ini" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implemented kinematic algorithm" />
+    <MESSAGE value="Created kinematics unit tests and did some code refactoring" />
+    <MESSAGE value="Made some unittests and did some refactoring" />
+    <MESSAGE value="Created step in Gradient Descent to make it clearer" />
+    <MESSAGE value="Integrated logger and made logging messages" />
+    <MESSAGE value="Deleted unnecessary files" />
+    <MESSAGE value="Created communication interface with action lib and created basic application class" />
+    <MESSAGE value="Merged in feature/Create-ini-parser (pull request #1)&#10;&#10;Integrated ini parser with gradient descent&#10;&#10;Made config file" />
+    <MESSAGE value="Merged in feature/Create-ini-parser (pull request #1)&#10;&#10;Created ini parser (I implemented this a few years ago and did some minor refactoring)" />
+    <MESSAGE value="Integrated ini parser" />
+    <MESSAGE value="Merged the communication stuff with the kinematics stuff.&#10;Extended the mighty config file" />
+    <MESSAGE value="Made it possible to send goals to the low level driver" />
+    <MESSAGE value="Added timing of the algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added timing of the algorithm" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="174" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581332977095">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="174" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1581332977095" />
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581342446157">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1581342446157" />
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1581332963196">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1581332963196" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/include/robothli/Point.ipp</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="CidrExceptionBreakpoint">
+          <properties />
+        </breakpoint>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="str" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/Communicator.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/GradientDescent.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/GradientDescent.ipp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+          <folding>
+            <element signature="e#3369#3386#0" expanded="true" />
+            <element signature="e#4178#4195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/Joint.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/KinematicChain.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/Matrix.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/Matrix.ipp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/Point.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/Point.ipp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/Pose.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" selection-start-line="40" selection-end-line="41" selection-end-column="31" />
+          <folding>
+            <element signature="e#371#388#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/Pose.ipp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/RobotModel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/RobotModel.ipp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Communicator.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Joint.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KinematicChain.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/GradientDescent_test.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Joint_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/KinematicChain_test.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Matrix_test.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Point_test.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Pose_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/Al5D.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/Application.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Al5D.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

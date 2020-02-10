@@ -1,5 +1,5 @@
 #include <robothli/Application.h>
-#include <LogToCout.h>
+#include <utilities/LogToCout.h>
 #include <robothli/Al5D.h>
 
 Application::Application(int argc, char **argv, const std::string &configFile) :

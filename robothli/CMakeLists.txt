@@ -4,6 +4,7 @@ project(robothli)
 add_compile_options(-std=c++17)
 
 find_package(catkin REQUIRED COMPONENTS genmsg roscpp actionlib_msgs actionlib std_msgs geometry_msgs)
+find_package(Utilities REQUIRED)
 find_package(Boost REQUIRED)
 add_action_files(DIRECTORY action FILES PickUpObject.action MoveRobot.action)
 
@@ -12,11 +13,13 @@ generate_messages(DEPENDENCIES actionlib_msgs std_msgs geometry_msgs)
 
 catkin_package(
         INCLUDE_DIRS include
+        LIBRARIES Utilities
         CATKIN_DEPENDS message_runtime actionlib_msgs std_msgs
 )
 
 include_directories(
         include
+        ${Utilities_INCLUDE_DIRS}
         ${Boost_INCLUDE_DIRS}
         ${catkin_INCLUDE_DIRS}
 )

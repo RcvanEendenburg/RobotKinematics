@@ -111,17 +111,7 @@ std::vector<std::shared_ptr<T>> ShapeFinder::FindShapes(cv::Mat &input, cv::Mat 
 
         double mincos = cos.front();
         double maxcos = cos.back();
-
-
-<<<<<<< HEAD
-
-        auto squareShape = find<Square>(approx, contours[i],mincos,maxcos);
-        if(squareShape != nullptr)
-        {
-            shapes.push_back(squareShape);
-//            setLabel(markedImg, "VIER", contours[i]);
-        }
-=======
+        
         auto shape = find<T>(approx, contours[i],mincos,maxcos);
         if(shape != nullptr)
          {
@@ -129,7 +119,6 @@ std::vector<std::shared_ptr<T>> ShapeFinder::FindShapes(cv::Mat &input, cv::Mat 
             shapes.push_back(shape);
             setLabel(markedImage, "Id: "  + std::to_string(shape->getId()), contours[i]);
          }
->>>>>>> c9738371636462b95f995eac63831afba0429ced
     }
     return shapes;
 }

@@ -1,5 +1,5 @@
 #include <robothli/Joint.h>
-#include <Logger.h>
+#include <utilities/Logger.h>
 #include <cassert>
 
 namespace Kinematics
