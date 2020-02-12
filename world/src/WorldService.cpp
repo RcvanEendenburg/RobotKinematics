@@ -10,7 +10,7 @@
 #include "Sensor/CameraSensor.h"
 #include "Sensor/StaticImage.h"
 #include "Color/ColorFilter.h"
-#include "IniParser.h"
+#include <utilities/IniParser.h>
 
 
 

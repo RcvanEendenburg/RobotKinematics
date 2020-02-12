@@ -10,6 +10,7 @@ find_package(catkin REQUIRED COMPONENTS
         std_msgs
         message_generation
         ${MESSAGE_DEPENDENCIES}
+        utilities
         )
 
 find_package( OpenCV 3 REQUIRED)
@@ -50,6 +51,7 @@ include_directories(
         INCLUDE_DIRS include
  ${catkin_INCLUDE_DIRS}
  ${OpenCV_INCLUDE_DIRS}
+ ${utilities_INCLUDE_DIRS}
 )
 
 
@@ -85,4 +87,5 @@ add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catk
  target_link_libraries(${PROJECT_NAME}_node
  ${catkin_LIBRARIES}
  ${OpenCV_LIBRARIES}
+ utilities
  )
