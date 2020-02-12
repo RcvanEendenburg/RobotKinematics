@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: world
+Description: Description of world
+Version: 0.0.1
+Cflags: -I/usr/local/include
+Libs:  
+Requires: message_runtime

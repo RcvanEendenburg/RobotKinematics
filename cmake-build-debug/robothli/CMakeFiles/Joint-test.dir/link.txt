@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/Joint-test.dir/test/Joint_test.cpp.o CMakeFiles/Joint-test.dir/src/Joint.cpp.o  -o ../devel/lib/robothli/Joint-test -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

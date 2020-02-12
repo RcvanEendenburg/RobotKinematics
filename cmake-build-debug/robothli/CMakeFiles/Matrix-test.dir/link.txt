@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/Matrix-test.dir/test/Matrix_test.cpp.o  -o ../devel/lib/robothli/Matrix-test -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

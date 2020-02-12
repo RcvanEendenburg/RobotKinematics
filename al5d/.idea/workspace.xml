@@ -1,45 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated>
-      <config projectName="al5d" targetName="_al5d_generate_messages_check_deps_MoveRobotActionGoal" />
-      <config projectName="al5d" targetName="clean_test_results" />
-      <config projectName="al5d" targetName="rosgraph_msgs_generate_messages_py" />
-      <config projectName="al5d" targetName="_al5d_generate_messages_check_deps_MoveRobotGoal" />
-      <config projectName="al5d" targetName="al5d_generate_messages_cpp" />
-      <config projectName="al5d" targetName="_al5d_generate_messages_check_deps_MoveRobotActionFeedback" />
-      <config projectName="al5d" targetName="actionlib_generate_messages_py" />
-      <config projectName="al5d" targetName="al5d_generate_messages_py" />
-      <config projectName="al5d" targetName="std_msgs_generate_messages_py" />
-      <config projectName="al5d" targetName="_al5d_generate_messages_check_deps_MoveRobotResult" />
-      <config projectName="al5d" targetName="roscpp_generate_messages_cpp" />
-      <config projectName="al5d" targetName="al5d_generate_messages" />
-      <config projectName="al5d" targetName="tests" />
-      <config projectName="al5d" targetName="al5d_genlisp" />
-      <config projectName="al5d" targetName="al5d_gencpp" />
-      <config projectName="al5d" targetName="al5d_generate_messages_lisp" />
-      <config projectName="al5d" targetName="download_extra_data" />
-      <config projectName="al5d" targetName="_al5d_generate_messages_check_deps_MoveRobotActionResult" />
-      <config projectName="al5d" targetName="roscpp_generate_messages_lisp" />
-      <config projectName="al5d" targetName="actionlib_msgs_generate_messages_lisp" />
-      <config projectName="al5d" targetName="rosgraph_msgs_generate_messages_lisp" />
-      <config projectName="al5d" targetName="Utilities" />
-      <config projectName="al5d" targetName="_al5d_generate_messages_check_deps_MoveRobotAction" />
-      <config projectName="al5d" targetName="actionlib_generate_messages_lisp" />
-      <config projectName="al5d" targetName="_al5d_generate_messages_check_deps_MoveRobotFeedback" />
-      <config projectName="al5d" targetName="rosgraph_msgs_generate_messages_cpp" />
-      <config projectName="al5d" targetName="doxygen" />
-      <config projectName="al5d" targetName="_catkin_empty_exported_target" />
-      <config projectName="al5d" targetName="roscpp_generate_messages_py" />
-      <config projectName="al5d" targetName="actionlib_generate_messages_cpp" />
-      <config projectName="al5d" targetName="std_msgs_generate_messages_lisp" />
-      <config projectName="al5d" targetName="std_msgs_generate_messages_cpp" />
-      <config projectName="al5d" targetName="actionlib_msgs_generate_messages_py" />
-      <config projectName="al5d" targetName="al5d" />
-      <config projectName="al5d" targetName="al5d_genpy" />
-      <config projectName="al5d" targetName="run_tests" />
-      <config projectName="al5d" targetName="actionlib_msgs_generate_messages_cpp" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -48,9 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cabd652e-1e53-4d16-915c-9e51279efa27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Joint.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Joint.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/al5d/catkin_generated/ordered_paths.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/al5d/catkin_generated/ordered_paths.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/catkin_generated/order_packages.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/catkin_generated/order_packages.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/catkin_generated/setup_cached.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/robothli/catkin_generated/ordered_paths.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/robothli/catkin_generated/ordered_paths.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../robothli/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../robothli/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../robothli/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../robothli/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="0347add3-78a8-4764-9896-40ec66325b37" name="Created action server, created basic setup for the low level driver, made it possible to construct SSC32U messages" comment="Created action server, created basic setup for the low level driver, made it possible to construct SSC32U messages" />
     <list id="c5ffaffc-810a-4dc8-b57e-fd7063a33df2" name="Revert &quot;Created action server, created basic setup for the low level driver, made it possible to construct SSC32U messages&quot;" comment="Revert &quot;Created action server, created basic setup for the low level driver, made it possible to construct SSC32U messages&quot;&#10;&#10;This reverts commit 8cfb9e29" />
@@ -65,21 +39,8 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SerialCommunicator.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller.cpp">
           <provider selected="true" editor-type-id="text-editor">
@@ -89,11 +50,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/config.ini">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -160,9 +130,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-              <folding>
-                <element signature="e#59#76#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -188,7 +155,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="feature/Setup-low-level-driver-structure" />
@@ -198,7 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/package.xml" />
         <option value="$PROJECT_DIR$/include/al5d/Communicator.h" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/action/MoveRobot.action" />
@@ -215,6 +181,7 @@
         <option value="$PROJECT_DIR$/src/Joint.cpp" />
         <option value="$PROJECT_DIR$/src/Application.cpp" />
         <option value="$PROJECT_DIR$/config/config.ini" />
+        <option value="$PROJECT_DIR$/package.xml" />
       </list>
     </option>
   </component>
@@ -233,7 +200,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="456" />
-    <option name="width" value="455" />
+    <option name="width" value="1370" />
     <option name="height" value="751" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -278,9 +245,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.advertisement.text.overridden" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../robothli/CMakeLists.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../world/CMakeLists.txt" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RecentsManager">
@@ -300,232 +268,6 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.al5d">
-    <configuration name="Utilities" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="Utilities" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_al5d_generate_messages_check_deps_MoveRobotAction" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="_al5d_generate_messages_check_deps_MoveRobotAction" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_al5d_generate_messages_check_deps_MoveRobotActionFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="_al5d_generate_messages_check_deps_MoveRobotActionFeedback" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_al5d_generate_messages_check_deps_MoveRobotActionGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="_al5d_generate_messages_check_deps_MoveRobotActionGoal" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_al5d_generate_messages_check_deps_MoveRobotActionResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="_al5d_generate_messages_check_deps_MoveRobotActionResult" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_al5d_generate_messages_check_deps_MoveRobotFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="_al5d_generate_messages_check_deps_MoveRobotFeedback" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_al5d_generate_messages_check_deps_MoveRobotGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="_al5d_generate_messages_check_deps_MoveRobotGoal" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_al5d_generate_messages_check_deps_MoveRobotResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="_al5d_generate_messages_check_deps_MoveRobotResult" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_catkin_empty_exported_target" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="_catkin_empty_exported_target" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="actionlib_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="actionlib_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="actionlib_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="actionlib_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="actionlib_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="actionlib_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="actionlib_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="actionlib_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="actionlib_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="actionlib_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="actionlib_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="actionlib_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="al5d" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="al5d" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="al5d" RUN_TARGET_NAME="al5d">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="al5d_gencpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="al5d_gencpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="al5d_generate_messages" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="al5d_generate_messages" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="al5d_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="al5d_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="al5d_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="al5d_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="al5d_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="al5d_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="al5d_genlisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="al5d_genlisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="al5d_genpy" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="al5d_genpy" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="clean_test_results" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="clean_test_results" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="download_extra_data" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="download_extra_data" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="doxygen" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="roscpp_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="roscpp_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="roscpp_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="roscpp_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="roscpp_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="roscpp_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="rosgraph_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="rosgraph_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="rosgraph_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="rosgraph_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="rosgraph_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="rosgraph_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="run_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="run_tests" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="std_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="std_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="std_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="std_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="std_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="std_msgs_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="al5d" TARGET_NAME="tests" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="CMake Application.Utilities" />
-      <item itemvalue="CMake Application._al5d_generate_messages_check_deps_MoveRobotActionFeedback" />
-      <item itemvalue="CMake Application._al5d_generate_messages_check_deps_MoveRobotActionGoal" />
-      <item itemvalue="CMake Application._al5d_generate_messages_check_deps_MoveRobotActionResult" />
-      <item itemvalue="CMake Application._al5d_generate_messages_check_deps_MoveRobotAction" />
-      <item itemvalue="CMake Application._al5d_generate_messages_check_deps_MoveRobotFeedback" />
-      <item itemvalue="CMake Application._al5d_generate_messages_check_deps_MoveRobotGoal" />
-      <item itemvalue="CMake Application._al5d_generate_messages_check_deps_MoveRobotResult" />
-      <item itemvalue="CMake Application._catkin_empty_exported_target" />
-      <item itemvalue="CMake Application.actionlib_generate_messages_cpp" />
-      <item itemvalue="CMake Application.actionlib_generate_messages_lisp" />
-      <item itemvalue="CMake Application.actionlib_generate_messages_py" />
-      <item itemvalue="CMake Application.actionlib_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.actionlib_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.actionlib_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.al5d" />
-      <item itemvalue="CMake Application.al5d_gencpp" />
-      <item itemvalue="CMake Application.al5d_generate_messages" />
-      <item itemvalue="CMake Application.al5d_generate_messages_cpp" />
-      <item itemvalue="CMake Application.al5d_generate_messages_lisp" />
-      <item itemvalue="CMake Application.al5d_generate_messages_py" />
-      <item itemvalue="CMake Application.al5d_genlisp" />
-      <item itemvalue="CMake Application.al5d_genpy" />
-      <item itemvalue="CMake Application.clean_test_results" />
-      <item itemvalue="CMake Application.download_extra_data" />
-      <item itemvalue="CMake Application.doxygen" />
-      <item itemvalue="CMake Application.roscpp_generate_messages_cpp" />
-      <item itemvalue="CMake Application.roscpp_generate_messages_lisp" />
-      <item itemvalue="CMake Application.roscpp_generate_messages_py" />
-      <item itemvalue="CMake Application.rosgraph_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.rosgraph_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.rosgraph_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.run_tests" />
-      <item itemvalue="CMake Application.std_msgs_generate_messages_cpp" />
-      <item itemvalue="CMake Application.std_msgs_generate_messages_lisp" />
-      <item itemvalue="CMake Application.std_msgs_generate_messages_py" />
-      <item itemvalue="CMake Application.tests" />
-    </list>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cabd652e-1e53-4d16-915c-9e51279efa27" name="Default Changelist" comment="" />
@@ -539,6 +281,7 @@
       <workItem from="1559761637664" duration="19935000" />
       <workItem from="1560025074573" duration="11356000" />
       <workItem from="1570564730410" duration="23000" />
+      <workItem from="1581539148574" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="Created action server, created basic setup for the low level driver, made it possible to construct SSC32U messages">
       <created>1559939957259</created>
@@ -565,7 +308,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32298000" />
+    <option name="totallyTimeSpent" value="32320000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -577,10 +320,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="456" y="0" width="455" height="751" extended-state="0" />
-    <editor active="true" />
+    <frame x="456" y="0" width="1370" height="751" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20537898" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20845921" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -593,9 +335,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.46903324" weight="0.328594" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49924472" weight="0.328594" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.52811736" side_tool="true" visible="true" weight="0.32755905" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5287009" side_tool="true" visible="true" weight="0.32755905" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49921754" weight="0.328594" />
-      <window_info active="true" anchor="bottom" id="CMake" order="12" sideWeight="0.47188264" visible="true" weight="0.32755905" />
+      <window_info anchor="bottom" id="CMake" order="12" sideWeight="0.47129908" visible="true" weight="0.32755905" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -649,13 +391,6 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../devel/include/al5d/MoveRobotGoal.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
@@ -777,9 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding>
-            <element signature="e#59#76#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -787,6 +519,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libutilities.so -o ../devel/lib/libutilities.so CMakeFiles/utilities.dir/src/Logger.cpp.o CMakeFiles/utilities.dir/src/LogToCout.cpp.o CMakeFiles/utilities.dir/src/LogToFile.cpp.o CMakeFiles/utilities.dir/src/IniParser.cpp.o -lpthread 

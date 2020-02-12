@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: robothli
+Description: Description of robothli
+Version: 0.0.1
+Cflags: -I/usr/local/include
+Libs:  -lutilities
+Requires: message_runtime actionlib_msgs std_msgs

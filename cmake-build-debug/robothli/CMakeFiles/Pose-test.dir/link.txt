@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/Pose-test.dir/test/Pose_test.cpp.o CMakeFiles/Pose-test.dir/src/KinematicChain.cpp.o CMakeFiles/Pose-test.dir/src/Joint.cpp.o  -o ../devel/lib/robothli/Pose-test -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

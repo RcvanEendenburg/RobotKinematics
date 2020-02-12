@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: tui
+Description: Description of tui
+Version: 0.0.1
+Cflags: 
+Libs:  
+Requires: 

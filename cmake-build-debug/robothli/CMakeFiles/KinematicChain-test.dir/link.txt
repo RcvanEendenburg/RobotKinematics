@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/KinematicChain-test.dir/test/KinematicChain_test.cpp.o CMakeFiles/KinematicChain-test.dir/src/KinematicChain.cpp.o CMakeFiles/KinematicChain-test.dir/src/Joint.cpp.o  -o ../devel/lib/robothli/KinematicChain-test -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

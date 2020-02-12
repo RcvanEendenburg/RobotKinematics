@@ -1,0 +1,2 @@
+set(world_MESSAGE_FILES "/home/derk/workspace/src/world/msg/Point2d.msg;/home/derk/workspace/src/world/msg/Shape.msg")
+set(world_SERVICE_FILES "/home/derk/workspace/src/world/srv/ShapeFinderService.srv")
