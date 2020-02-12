@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/Point-test.dir/test/Point_test.cpp.o  -o ../devel/lib/robothli/Point-test -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

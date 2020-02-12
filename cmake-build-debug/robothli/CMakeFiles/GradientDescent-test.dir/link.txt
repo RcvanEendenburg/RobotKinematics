@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/GradientDescent-test.dir/test/GradientDescent_test.cpp.o  -o ../devel/lib/robothli/GradientDescent-test -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

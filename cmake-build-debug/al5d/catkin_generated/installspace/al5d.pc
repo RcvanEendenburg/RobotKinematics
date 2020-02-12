@@ -1,8 +1,0 @@
-prefix=/usr/local
-
-Name: al5d
-Description: Description of al5d
-Version: 0.0.1
-Cflags: -I/usr/local/include
-Libs:  
-Requires: message_runtime actionlib_msgs std_msgs

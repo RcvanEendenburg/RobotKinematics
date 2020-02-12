@@ -1,2 +1,0 @@
-set(robothli_MESSAGE_FILES "msg/PickUpObjectAction.msg;msg/PickUpObjectActionGoal.msg;msg/PickUpObjectActionResult.msg;msg/PickUpObjectActionFeedback.msg;msg/PickUpObjectGoal.msg;msg/PickUpObjectResult.msg;msg/PickUpObjectFeedback.msg;msg/MoveRobotAction.msg;msg/MoveRobotActionGoal.msg;msg/MoveRobotActionResult.msg;msg/MoveRobotActionFeedback.msg;msg/MoveRobotGoal.msg;msg/MoveRobotResult.msg;msg/MoveRobotFeedback.msg")
-set(robothli_SERVICE_FILES "")
