@@ -1,5 +1,5 @@
 #include <al5d/Application.h>
-#include <LogToCout.h>
+#include <utilities/LogToCout.h>
 
 Application::Application(int argc, char **argv, const std::string &configFile) :
     logger(Utilities::Logger::instance()),

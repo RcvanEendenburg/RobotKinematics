@@ -4,8 +4,8 @@
 #include <al5d/Communicator.h>
 #include <memory>
 #include <string>
-#include <IniParser.h>
-#include <Logger.h>
+#include <utilities/IniParser.h>
+#include <utilities/Logger.h>
 #include <al5d/Controller.h>
 
 class Application

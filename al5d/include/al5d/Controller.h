@@ -3,7 +3,7 @@
 
 #include <al5d/Joint.h>
 #include <array>
-#include <Logger.h>
+#include <utilities/Logger.h>
 #include <al5d/SerialCommunicator.h>
 
 class Controller
