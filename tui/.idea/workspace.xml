@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated>
-      <config projectName="tui" targetName="run_tests" />
-      <config projectName="tui" targetName="tests" />
-      <config projectName="tui" targetName="_catkin_empty_exported_target" />
-      <config projectName="tui" targetName="download_extra_data" />
-      <config projectName="tui" targetName="clean_test_results" />
-      <config projectName="tui" targetName="doxygen" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -17,7 +10,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c00fc28d-f12b-4d72-983f-997fe222c09c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../al5d/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../al5d/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/config/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../robothli/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../robothli/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../robothli/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../robothli/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../robothli/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../robothli/config/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../robothli/src/Communicator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../robothli/src/Communicator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doxyfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/bc_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/bdwn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/closed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/doxygen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/doxygen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/dynsections.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/folderclosed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/folderopen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/graph_legend.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/graph_legend.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/graph_legend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/main_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/menudata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/nav_f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/nav_g.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/nav_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/all_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/files_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/mag_sel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/nomatches.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search_m.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/search_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/search/searchdata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/splitbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/sync_off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/sync_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tab_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tab_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tab_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tab_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/html/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/doxygen.sty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/files.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/main_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/latex/refman.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../world/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../world/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/../../build/" />
@@ -27,22 +80,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="30">
+              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-599" />
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -65,13 +124,15 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-2" />
     <option name="width" value="1370" />
-    <option name="height" value="749" />
+    <option name="height" value="751" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -83,13 +144,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.advertisement.text.overridden" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../world/CMakeLists.txt" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RunDashboard">
@@ -104,46 +165,6 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application._catkin_empty_exported_target">
-    <configuration name="_catkin_empty_exported_target" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="_catkin_empty_exported_target" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="clean_test_results" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="clean_test_results" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="download_extra_data" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="download_extra_data" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="doxygen" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="run_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="run_tests" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="tests" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="CMake Application._catkin_empty_exported_target" />
-      <item itemvalue="CMake Application.clean_test_results" />
-      <item itemvalue="CMake Application.download_extra_data" />
-      <item itemvalue="CMake Application.doxygen" />
-      <item itemvalue="CMake Application.run_tests" />
-      <item itemvalue="CMake Application.tests" />
-    </list>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c00fc28d-f12b-4d72-983f-997fe222c09c" name="Default Changelist" comment="" />
@@ -155,17 +176,17 @@
       <workItem from="1556736308805" duration="1313000" />
       <workItem from="1557240963398" duration="2029000" />
       <workItem from="1557946827129" duration="28000" />
+      <workItem from="1581942968207" duration="126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5812000" />
+    <option name="totallyTimeSpent" value="5938000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="0" width="1370" height="749" extended-state="0" />
-    <editor active="true" />
+    <frame x="-2" y="0" width="1370" height="751" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12764351" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15407854" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -177,10 +198,10 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.328594" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.328594" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32704404" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" />
+      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.32913387" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -188,18 +209,23 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-600" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Doxyfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-599" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        <state relative-caret-position="30">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>

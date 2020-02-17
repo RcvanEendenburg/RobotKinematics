@@ -10,24 +10,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cd15076-2194-4600-96e7-50d1545e8f17" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/src.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../al5d/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../al5d/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../al5d/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/al5d/catkin_generated/ordered_paths.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/al5d/catkin_generated/ordered_paths.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/catkin_generated/order_packages.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/catkin_generated/order_packages.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/catkin_generated/setup_cached.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/robothli/catkin_generated/ordered_paths.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/robothli/catkin_generated/ordered_paths.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../robothli/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../robothli/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../al5d/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/config/config.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../robothli/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../robothli/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../robothli/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../robothli/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../robothli/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../robothli/config/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../robothli/src/Communicator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../robothli/src/Communicator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/Doxyfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/bc_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/bdwn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/closed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/doxygen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/doxygen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/dynsections.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/folderclosed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/folderopen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/graph_legend.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/graph_legend.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/graph_legend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/main_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/menudata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/nav_f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/nav_g.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/nav_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/all_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/all_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/files_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/files_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/mag_sel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/nomatches.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/search_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/search_m.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/search_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/searchdata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/splitbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/sync_off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/sync_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/tab_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/tab_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/tab_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/tab_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/latex/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/latex/doxygen.sty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/latex/files.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/latex/main_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/latex/refman.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/../../build/" />
@@ -39,20 +82,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ShapeFinder/ShapeFinder.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="117" column="32" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
+            <state relative-caret-position="139">
+              <caret line="150" column="21" lean-forward="true" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+            <state relative-caret-position="585">
+              <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -60,7 +103,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/Shape/SquareShape.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
+            <state>
               <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
             </state>
           </provider>
@@ -69,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Color/ColorFilter.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state>
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -81,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/Color/ColorRange.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+            <state>
+              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -90,7 +133,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/Shape/AbstractShape.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state>
               <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
             </state>
           </provider>
@@ -113,8 +156,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/SearchQuery.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="71" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="71" />
+            <state>
+              <caret line="11" column="79" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -122,7 +165,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/Shape/ShapeFinder.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
+            <state>
               <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
             </state>
           </provider>
@@ -174,7 +217,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="683" />
+    <option name="x" value="-2" />
     <option name="width" value="1370" />
     <option name="height" value="751" />
   </component>
@@ -229,7 +272,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.advertisement.text.overridden" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../al5d/CMakeLists.txt" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RunDashboard">
@@ -256,7 +299,8 @@
       <workItem from="1559676081882" duration="3592000" />
       <workItem from="1570565308082" duration="541000" />
       <workItem from="1581347374772" duration="1177000" />
-      <workItem from="1581539171822" duration="6000" />
+      <workItem from="1581539171822" duration="192000" />
+      <workItem from="1581943095880" duration="458000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed compilation issues">
       <created>1559503490446</created>
@@ -283,13 +327,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9597000" />
+    <option name="totallyTimeSpent" value="10241000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="683" y="0" width="1370" height="751" extended-state="0" />
-    <editor active="true" />
+    <frame x="-2" y="0" width="1370" height="751" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27190334" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27567977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -369,13 +412,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SearchQuery.cpp" />
     <entry file="file://$PROJECT_DIR$/../../devel/include/world/Point2d.h" />
-    <entry file="file://$PROJECT_DIR$/src/ShapeFinder/ShapeFinder.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="117" column="32" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/Sensor/CameraSensor.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -386,17 +422,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShapeFinder/ShapeFinder.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="150" column="21" lean-forward="true" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/include/Shape/SquareShape.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
+        <state>
           <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Color/ColorFilter.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state>
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -405,14 +455,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/Color/ColorRange.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        <state>
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/Shape/AbstractShape.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state>
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
@@ -429,25 +479,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/SearchQuery.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="71" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="71" />
-          <folding>
-            <element signature="e#47#77#0" expanded="true" />
-          </folding>
+        <state>
+          <caret line="11" column="79" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/Shape/ShapeFinder.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
+        <state>
           <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
         </state>
       </provider>
     </entry>

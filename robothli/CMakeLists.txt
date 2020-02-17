@@ -24,7 +24,7 @@ include_directories(
 )
 
 add_executable(${PROJECT_NAME} src/main.cpp src/Communicator.cpp src/Application.cpp src/KinematicChain.cpp src/Al5D.cpp src/Joint.cpp)
-target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} utilities)
+target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${utilities_LIBRARIES})
 add_dependencies(${PROJECT_NAME} ${PROJECT_NAME}_generate_messages_cpp)
 
 catkin_add_gtest(Point-test test/Point_test.cpp)

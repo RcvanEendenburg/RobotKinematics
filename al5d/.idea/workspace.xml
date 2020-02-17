@@ -10,21 +10,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cabd652e-1e53-4d16-915c-9e51279efa27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/src.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/al5d/catkin_generated/ordered_paths.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/al5d/catkin_generated/ordered_paths.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/catkin_generated/order_packages.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/catkin_generated/order_packages.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/catkin_generated/setup_cached.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/robothli/catkin_generated/ordered_paths.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/robothli/catkin_generated/ordered_paths.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../robothli/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../robothli/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../robothli/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../robothli/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../robothli/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../robothli/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../robothli/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../robothli/config/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../robothli/src/Communicator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../robothli/src/Communicator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/Doxyfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/bc_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/bdwn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/closed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/doxygen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/doxygen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/dynsections.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/folderclosed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/folderopen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/graph_legend.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/graph_legend.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/graph_legend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/main_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/menudata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/nav_f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/nav_g.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/nav_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/all_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/all_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/files_0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/files_0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/mag_sel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/nomatches.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/search_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/search_m.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/search_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/search/searchdata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/splitbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/sync_off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/sync_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/tab_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/tab_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/tab_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/tab_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/html/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/latex/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/latex/doxygen.sty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/latex/files.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/latex/main_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/docs/latex/refman.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../world/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../world/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="0347add3-78a8-4764-9896-40ec66325b37" name="Created action server, created basic setup for the low level driver, made it possible to construct SSC32U messages" comment="Created action server, created basic setup for the low level driver, made it possible to construct SSC32U messages" />
     <list id="c5ffaffc-810a-4dc8-b57e-fd7063a33df2" name="Revert &quot;Created action server, created basic setup for the low level driver, made it possible to construct SSC32U messages&quot;" comment="Revert &quot;Created action server, created basic setup for the low level driver, made it possible to construct SSC32U messages&quot;&#10;&#10;This reverts commit 8cfb9e29" />
@@ -42,10 +88,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller.cpp">
+        <entry file="file://$PROJECT_DIR$/src/Communicator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2835">
-              <caret line="189" column="59" selection-start-line="189" selection-start-column="59" selection-end-line="189" selection-end-column="59" />
+            <state relative-caret-position="75">
+              <caret line="5" column="94" selection-start-line="5" selection-start-column="94" selection-end-line="5" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -53,16 +108,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            <state relative-caret-position="30">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
+            <state relative-caret-position="330">
               <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
             </state>
           </provider>
@@ -71,29 +126,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Application.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+            <state relative-caret-position="-330">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/al5d/Application.h">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/al5d/Controller.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
-              <folding>
-                <element signature="e#43#66#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="236">
+              <caret line="21" column="41" selection-end-line="53" selection-end-column="115" />
             </state>
           </provider>
         </entry>
@@ -101,8 +144,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/al5d/SSC32UCommandBuilder.ipp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+            <state relative-caret-position="210">
+              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+              <folding>
+                <element signature="e#9#24#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,9 +225,10 @@
         <option value="$PROJECT_DIR$/src/SerialCommunicator.cpp" />
         <option value="$PROJECT_DIR$/include/al5d/SerialCommunicator.h" />
         <option value="$PROJECT_DIR$/src/Joint.cpp" />
-        <option value="$PROJECT_DIR$/src/Application.cpp" />
-        <option value="$PROJECT_DIR$/config/config.ini" />
         <option value="$PROJECT_DIR$/package.xml" />
+        <option value="$PROJECT_DIR$/config/config.ini" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
+        <option value="$PROJECT_DIR$/src/Application.cpp" />
       </list>
     </option>
   </component>
@@ -199,7 +246,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="456" />
+    <option name="x" value="-2" />
     <option name="width" value="1370" />
     <option name="height" value="751" />
   </component>
@@ -209,7 +256,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,13 +288,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.advertisement.text.overridden" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../world/CMakeLists.txt" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CMakeLists.txt" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RecentsManager">
@@ -282,6 +330,10 @@
       <workItem from="1560025074573" duration="11356000" />
       <workItem from="1570564730410" duration="23000" />
       <workItem from="1581539148574" duration="22000" />
+      <workItem from="1581540647508" duration="4054000" />
+      <workItem from="1581940753199" duration="780000" />
+      <workItem from="1581941959714" duration="635000" />
+      <workItem from="1581943555805" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="Created action server, created basic setup for the low level driver, made it possible to construct SSC32U messages">
       <created>1559939957259</created>
@@ -308,7 +360,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32320000" />
+    <option name="totallyTimeSpent" value="37799000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -320,9 +372,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="456" y="0" width="1370" height="751" extended-state="0" />
+    <frame x="-2" y="0" width="1370" height="751" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20845921" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08308157" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -335,9 +387,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.46903324" weight="0.328594" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49924472" weight="0.328594" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5287009" side_tool="true" visible="true" weight="0.32755905" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.53172207" side_tool="true" visible="true" weight="0.32755905" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49921754" weight="0.328594" />
-      <window_info anchor="bottom" id="CMake" order="12" sideWeight="0.47129908" visible="true" weight="0.32755905" />
+      <window_info anchor="bottom" id="CMake" order="12" sideWeight="0.46827793" visible="true" weight="0.32755905" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -415,23 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Communicator.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="99" selection-start-line="18" selection-start-column="99" selection-end-line="18" selection-end-column="99" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/al5d/Joint.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -446,27 +481,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SerialCommunicator.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2835">
           <caret line="189" column="59" selection-start-line="189" selection-start-column="59" selection-end-line="189" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -481,16 +499,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
           <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
-          <folding>
-            <element signature="e#43#66#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SerialCommunicator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Communicator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="94" selection-start-line="5" selection-start-column="94" selection-end-line="5" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/al5d/SSC32UCommandBuilder.ipp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+        <state relative-caret-position="210">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding>
+            <element signature="e#9#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -515,17 +568,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.ini">
+    <entry file="file://$PROJECT_DIR$/src/Application.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="-330">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.xml">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        <state relative-caret-position="236">
+          <caret line="21" column="41" selection-end-line="53" selection-end-column="115" />
         </state>
       </provider>
     </entry>

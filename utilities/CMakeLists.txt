@@ -8,7 +8,7 @@ include_directories(include)
 add_library(${PROJECT_NAME} src/Logger.cpp src/LogToCout.cpp src/LogToFile.cpp src/IniParser.cpp)
 target_link_libraries(${PROJECT_NAME} ${CMAKE_THREAD_LIBS_INIT} ${catkin_LIBRARIES})
 
-catkin_package(INCLUDE_DIRS include)
+catkin_package(INCLUDE_DIRS include LIBRARIES ${PROJECT_NAME})
 
 install(TARGETS ${PROJECT_NAME}
         ARCHIVE DESTINATION lib ${CMAKE_INSTALL_LIBDIR}
