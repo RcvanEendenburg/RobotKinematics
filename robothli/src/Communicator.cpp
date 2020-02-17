@@ -12,9 +12,12 @@ Communicator::Communicator(const std::string &node_name, const std::string &low_
     application(app)
 {
     application.logger.log(Utilities::LogLevel::Debug, "Starting high level driver action server...");
+    std::cout << low_level_driver_name << std::endl;
     action_server.start();
     application.logger.log(Utilities::LogLevel::Debug, "Waiting for the low level driver to start...");
-    action_client.waitForServer();
+    //TODO: this will hang forever somehow?
+    //EZ fix: just make sure the Al5D is set up before starting the high level interface
+//    action_client.waitForServer();
     application.logger.log(Utilities::LogLevel::Debug, "Ready!");
 }
 
