@@ -32,6 +32,8 @@ LogToFile::handleMessage(LogLevel level, const std::string &message)
             break;
         case LogLevel::Fatal:stream << "[FATAL] " << message;
             break;
+        case LogLevel::Raw:stream << message;
+            break;
         default:break;
     }
 }

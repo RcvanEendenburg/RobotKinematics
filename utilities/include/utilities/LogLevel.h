@@ -8,7 +8,8 @@ enum class LogLevel
     Debug,
     Warning,
     Error,
-    Fatal
+    Fatal,
+    Raw
 };
 }
 #endif //UTILITIES_LOGLEVEL_H
