@@ -16,7 +16,7 @@
 class Shape
     {
     public:
-    enum ShapeTypes{SQUARE, RECTANGLE, UNDEFINED};
+    enum ShapeTypes{SQUARE, RECTANGLE, UNDEFINED, CIRCLE};
 
     Shape(int32_t id, ShapeTypes shape ,world::Point2d center, float rotation) : id(id), shape(shape), center(center), rotation(rotation) {}
 

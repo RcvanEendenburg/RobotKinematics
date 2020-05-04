@@ -5,10 +5,10 @@
 #ifndef WORLD_SQUARESHAPE_H
 #define WORLD_SQUARESHAPE_H
 #include "AbstractShape.h"
-class Square : public Shape
+class SquareShape : public Shape
 {
 public:
-    Square(int32_t id, ShapeTypes shape, world::Point2d center, float rotation):
+    SquareShape(int32_t id, ShapeTypes shape, world::Point2d center, float rotation):
     Shape(id,shape,center,rotation)
     {
 

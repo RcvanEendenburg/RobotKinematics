@@ -39,8 +39,8 @@ std::vector<world::Shape> ShapeFinder::ServiceCallback(Shape::ShapeTypes shape, 
     switch(shape) {
         case Shape::ShapeTypes::SQUARE:
         {
-            std::vector<std::shared_ptr<Square>> shapes;
-            shapes = FindShapes<Square>(colorFiltered, markedImg, ColorMask);
+            std::vector<std::shared_ptr<SquareShape>> shapes;
+            shapes = FindShapes<SquareShape>(colorFiltered, markedImg, ColorMask);
             for(auto shape: shapes)
             {
                 response.push_back(shape->toShapeMessage());
