@@ -37,11 +37,6 @@ class Shape
             return center;
         }
 
-        static double getRotation(std::vector<cv::Point> &contour)
-        {
-
-        }
-
         int32_t getId()
         {
             return id;
@@ -57,7 +52,6 @@ private:
         ShapeTypes shape;
         world::Point2d center;
         float rotation;
-
 };
 
 

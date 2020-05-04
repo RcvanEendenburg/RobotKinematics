@@ -59,8 +59,10 @@ std::vector<world::Shape> ShapeFinder::ServiceCallback(Shape::ShapeTypes shape, 
             break;
         }
     }
-    namedWindow( "Display window", cv::WINDOW_AUTOSIZE );
-    imshow( "Display window", markedImg );
+    std::string windowName = "Display window";
+    namedWindow( windowName, cv::WINDOW_NORMAL);
+    cv::resizeWindow(windowName, 500, 500);
+    imshow( windowName, markedImg );
     cv::waitKey(0);
     return response;
 }
