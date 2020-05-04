@@ -17,15 +17,15 @@ private:
     friend class ShapeFinder;
     static std::shared_ptr<CircleShape> isShape(std::vector<cv::Point> &approx, std::vector<cv::Point> &contours, double mincos, double maxcos)
     {
-        cv::Rect r = cv::boundingRect(contours[i]);
+        cv::Rect r = cv::boundingRect(contours);
         //if the contour has almost the same height as width and the contour area is almost equal to a perfect circle than I assume it is a circle
-        if (aShape == CIRCLE && std::abs(1 - ((double)r.width / r.height)) <= 0.2 &&   std::abs(1 - (cv::contourArea(contours[i]) / (CV_PI * std::pow(r.width / 2, 2)))) <= 0.1)
+        if (std::abs(1 - ((double)r.width / r.height)) <= 0.2 &&   std::abs(1 - (cv::contourArea(contours) / (CV_PI * std::pow(r.width / 2, 2)))) <= 0.1)
         {
             auto cv = Shape::getCenter(contours);
             auto center = world::Point2d();
             center.x = cv.x;
             center.y = cv.y;
-            return std::make_shared<RectShape>(0,ShapeTypes::CIRCLE,center,0);
+            return std::make_shared<CircleShape>(0,ShapeTypes::CIRCLE,center,0);
         }
 
         return nullptr;

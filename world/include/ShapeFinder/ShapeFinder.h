@@ -9,11 +9,13 @@
 #include <opencv2/imgproc.hpp>
 
 #include <world/Shape.h>
-#include "AbstractShape.h"
+#include "../Shape/AbstractShape.h"
 
 #include "Sensor/Sensor.h"
 #include "Color/ColorFilter.h"
 #include "Color/ColorRange.h"
+#include "Calibration/ArucoCalibration.h"
+
 #include <ros/ros.h>
 #include <world/ShapeFinderService.h>
 
@@ -34,7 +36,8 @@
     private:
         template <typename T>
         std::vector<std::shared_ptr<T>> FindShapes(cv::Mat &input, cv::Mat &output, cv::Mat &Mask);
-        cv::Mat getFilteredImage();
+        void convertPixelToMM(std::vector<world::Shape>& foundShapes, ArucoCalibration* calibration);
+        cv::Mat filterImage(cv::Mat input);
         std::unique_ptr<Sensor> mySensor;
         cv::Mat PrepareImgForContourMatching(cv::Mat &input, cv::Mat &Mask);
         double angle(cv::Point pt1, cv::Point pt2, cv::Point pt0);

@@ -1,7 +1,8 @@
 
 
-#include "Shape/ShapeFinder.h"
+#include "ShapeFinder/ShapeFinder.h"
 #include "Shape/SquareShape.h"
+#include "Shape/CircleShape.h"
 #include "Shape/RectShape.h"
 #include "Shape/AbstractShape.h"
 
@@ -27,14 +28,18 @@ bool ShapeFinder::handleRequest(world::ShapeFinderService::Request &req, world::
 std::vector<world::Shape> ShapeFinder::ServiceCallback(Shape::ShapeTypes shape, ColorFilter::color color) {
 
     std::vector<world::Shape> response;
-    cv::Mat img, colorFiltered, ColorMask, markedImg;
-    img = getFilteredImage();
-    img.copyTo(markedImg);
+    cv::Mat img,filteredImg, colorFiltered, ColorMask, markedImg;
+    img = mySensor->getFrame();
+
+    auto calibration = new ArucoCalibration();
+    calibration->Calibrate(img);
+
+    filteredImg = filterImage(img);
+    filteredImg.copyTo(markedImg);
     cv::cvtColor(markedImg, markedImg, cv::COLOR_HSV2BGR);
-    ColorFilter::filterOnColor(img, colorFiltered, ColorMask, color);
+    ColorFilter::filterOnColor(filteredImg, colorFiltered, ColorMask, color);
 
     std::vector<std::shared_ptr<Shape>> shapes;
-
 
     switch(shape) {
         case Shape::ShapeTypes::SQUARE:
@@ -58,7 +63,23 @@ std::vector<world::Shape> ShapeFinder::ServiceCallback(Shape::ShapeTypes shape, 
             }
             break;
         }
+
+        case Shape::ShapeTypes::CIRCLE:
+        {
+            std::vector<std::shared_ptr<CircleShape>> shapes;
+            shapes = FindShapes<CircleShape>(colorFiltered, markedImg, ColorMask);
+            for(auto shape: shapes)
+            {
+                response.push_back(shape->toShapeMessage());
+            }
+            break;
+        }
     }
+
+    if (!response.empty())
+        convertPixelToMM(response, calibration);
+
+    // this window is shown for debugging
     std::string windowName = "Display window";
     namedWindow( windowName, cv::WINDOW_NORMAL);
     cv::resizeWindow(windowName, 500, 500);
@@ -67,15 +88,20 @@ std::vector<world::Shape> ShapeFinder::ServiceCallback(Shape::ShapeTypes shape, 
     return response;
 }
 
-
-
-cv::Mat ShapeFinder::getFilteredImage()
+void ShapeFinder::convertPixelToMM(std::vector<world::Shape>& foundShapes, ArucoCalibration* calibration)
 {
+    for(auto shape : foundShapes)
+    {
+        shape.points.x = calibration->PixelToMM(shape.points.x);
+        shape.points.y = calibration->PixelToMM(shape.points.y);
+    }
+}
 
-    cv::Mat input_grey, dst, input, picture_hsv, picture_blur;
-    input = mySensor->getFrame();
+cv::Mat ShapeFinder::filterImage(cv::Mat bgrImage)
+{
+    cv::Mat picture_hsv, picture_blur;
 
-    cv::cvtColor(input, picture_hsv, cv::COLOR_BGR2HSV);
+    cv::cvtColor(bgrImage, picture_hsv, cv::COLOR_BGR2HSV);
     cv::GaussianBlur(picture_hsv, picture_blur, cv::Size(3,3),0,0);
 
     return picture_blur;
