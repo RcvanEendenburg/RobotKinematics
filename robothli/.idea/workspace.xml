@@ -5,7 +5,77 @@
     <option name="CUSTOM_SCOPE_NAME" value="Current File" />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="robothli" targetName="_run_tests_robothli_gtest_Pose-test" />
+      <config projectName="robothli" targetName="robothli" />
+      <config projectName="robothli" targetName="clean_test_results" />
+      <config projectName="robothli" targetName="_robothli_generate_messages_check_deps_MoveRobotGoal" />
+      <config projectName="robothli" targetName="tests" />
+      <config projectName="robothli" targetName="_run_tests_robothli_gtest_Joint-test" />
+      <config projectName="robothli" targetName="robothli_genpy" />
+      <config projectName="robothli" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="robothli" targetName="robothli_gencpp" />
+      <config projectName="robothli" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="robothli" targetName="_robothli_generate_messages_check_deps_PickUpObjectActionGoal" />
+      <config projectName="robothli" targetName="robothli_generate_messages" />
+      <config projectName="robothli" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="robothli" targetName="_robothli_generate_messages_check_deps_MoveRobotResult" />
+      <config projectName="robothli" targetName="_run_tests_robothli_gtest_Point-test" />
+      <config projectName="robothli" targetName="_run_tests_robothli_gtest_KinematicChain-test" />
+      <config projectName="robothli" targetName="Matrix-test" />
+      <config projectName="robothli" targetName="_robothli_generate_messages_check_deps_PickUpObjectActionResult" />
+      <config projectName="robothli" targetName="run_tests" />
+      <config projectName="robothli" targetName="_catkin_empty_exported_target" />
+      <config projectName="robothli" targetName="_robothli_generate_messages_check_deps_PickUpObjectAction" />
+      <config projectName="robothli" targetName="GradientDescent-test" />
+      <config projectName="robothli" targetName="_robothli_generate_messages_check_deps_MoveRobotActionGoal" />
+      <config projectName="robothli" targetName="Point-test" />
+      <config projectName="robothli" targetName="Joint-test" />
+      <config projectName="robothli" targetName="run_tests_robothli_gtest_KinematicChain-test" />
+      <config projectName="robothli" targetName="_robothli_generate_messages_check_deps_PickUpObjectResult" />
+      <config projectName="robothli" targetName="run_tests_robothli_gtest_Joint-test" />
+      <config projectName="robothli" targetName="_run_tests_robothli_gtest_Matrix-test" />
+      <config projectName="robothli" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="robothli" targetName="run_tests_robothli_gtest" />
+      <config projectName="robothli" targetName="roscpp_generate_messages_py" />
+      <config projectName="robothli" targetName="robothli_generate_messages_py" />
+      <config projectName="robothli" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="robothli" targetName="robothli_genlisp" />
+      <config projectName="robothli" targetName="doxygen" />
+      <config projectName="robothli" targetName="_run_tests_robothli" />
+      <config projectName="robothli" targetName="run_tests_robothli_gtest_Matrix-test" />
+      <config projectName="robothli" targetName="_robothli_generate_messages_check_deps_MoveRobotActionFeedback" />
+      <config projectName="robothli" targetName="robothli_generate_messages_lisp" />
+      <config projectName="robothli" targetName="std_msgs_generate_messages_py" />
+      <config projectName="robothli" targetName="run_tests_robothli_gtest_Point-test" />
+      <config projectName="robothli" targetName="_robothli_generate_messages_check_deps_PickUpObjectFeedback" />
+      <config projectName="robothli" targetName="run_tests_robothli_gtest_Pose-test" />
+      <config projectName="robothli" targetName="actionlib_msgs_generate_messages_py" />
+      <config projectName="robothli" targetName="_run_tests_robothli_gtest_GradientDescent-test" />
+      <config projectName="robothli" targetName="actionlib_msgs_generate_messages_lisp" />
+      <config projectName="robothli" targetName="KinematicChain-test" />
+      <config projectName="robothli" targetName="actionlib_generate_messages_py" />
+      <config projectName="robothli" targetName="actionlib_generate_messages_lisp" />
+      <config projectName="robothli" targetName="_robothli_generate_messages_check_deps_MoveRobotAction" />
+      <config projectName="robothli" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="robothli" targetName="Pose-test" />
+      <config projectName="robothli" targetName="run_tests_robothli" />
+      <config projectName="robothli" targetName="download_extra_data" />
+      <config projectName="robothli" targetName="_robothli_generate_messages_check_deps_PickUpObjectActionFeedback" />
+      <config projectName="robothli" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="robothli" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="robothli" targetName="_robothli_generate_messages_check_deps_MoveRobotActionResult" />
+      <config projectName="robothli" targetName="_robothli_generate_messages_check_deps_MoveRobotFeedback" />
+      <config projectName="robothli" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="robothli" targetName="robothli_generate_messages_cpp" />
+      <config projectName="robothli" targetName="run_tests_robothli_gtest_GradientDescent-test" />
+      <config projectName="robothli" targetName="_run_tests_robothli_gtest" />
+      <config projectName="robothli" targetName="clean_test_results_robothli" />
+      <config projectName="robothli" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="robothli" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="robothli" targetName="_robothli_generate_messages_check_deps_PickUpObjectGoal" />
+      <config projectName="robothli" targetName="actionlib_generate_messages_cpp" />
+    </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
@@ -14,21 +84,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e49a2bff-040b-4dcc-95b6-43dff4231cfa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/src.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tui/action/PickUpObject.action" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tui/config/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tui/include/tui/Communicator.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tui/src/Communicator.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../al5d/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tui/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tui/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../utilities/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/include/tui/Application.h" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/include/tui/Application.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/include/tui/DevelopMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/include/tui/DevelopMode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/include/tui/Mode.h" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/include/tui/Mode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/src/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/src/Application.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/src/DevelopMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/src/DevelopMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/src/Mode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/src/Mode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/src/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../utilities/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../utilities/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../world/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../world/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/include/utilities/LogLevel.h" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/include/utilities/LogLevel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/src/LogToCout.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/src/LogToCout.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/src/LogToFile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/src/LogToFile.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../../build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,22 +119,32 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+            <state relative-caret-position="345">
+              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Communicator.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Communicator.cpp">
+        <entry file="file://$PROJECT_DIR$/include/robothli/Communicator.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="62" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="62" />
+            <state relative-caret-position="405">
+              <caret line="27" column="62" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -63,17 +152,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/action/PickUpObject.action">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/action/MoveRobot.action">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="120">
+              <caret line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -81,8 +161,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Application.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="23" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="23" />
+            <state relative-caret-position="195">
+              <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/robothli/Application.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="30" selection-start-line="25" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -90,8 +179,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="60">
+              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -99,8 +188,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="75">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -191,8 +280,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
-    <option name="width" value="1370" />
+    <option name="x" value="683" />
+    <option name="width" value="685" />
     <option name="height" value="751" />
   </component>
   <component name="ProjectId" id="1Xc538xYgWjDCGuTt7rE7KeTxGZ" />
@@ -256,7 +345,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.advertisement.text.overridden" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../al5d/CMakeLists.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -279,6 +368,424 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="CMake Application.GradientDescent-test">
+    <configuration name="GradientDescent-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="GradientDescent-test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="robothli" RUN_TARGET_NAME="GradientDescent-test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Joint-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="Joint-test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="robothli" RUN_TARGET_NAME="Joint-test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KinematicChain-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="KinematicChain-test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="robothli" RUN_TARGET_NAME="KinematicChain-test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Matrix-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="Matrix-test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="robothli" RUN_TARGET_NAME="Matrix-test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Point-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="Point-test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="robothli" RUN_TARGET_NAME="Point-test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Pose-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="Pose-test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="robothli" RUN_TARGET_NAME="Pose-test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_catkin_empty_exported_target" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_catkin_empty_exported_target" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_robothli_generate_messages_check_deps_MoveRobotAction" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_robothli_generate_messages_check_deps_MoveRobotAction" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_robothli_generate_messages_check_deps_MoveRobotActionFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_robothli_generate_messages_check_deps_MoveRobotActionFeedback" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_robothli_generate_messages_check_deps_MoveRobotActionGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_robothli_generate_messages_check_deps_MoveRobotActionGoal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_robothli_generate_messages_check_deps_MoveRobotActionResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_robothli_generate_messages_check_deps_MoveRobotActionResult" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_robothli_generate_messages_check_deps_MoveRobotFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_robothli_generate_messages_check_deps_MoveRobotFeedback" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_robothli_generate_messages_check_deps_MoveRobotGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_robothli_generate_messages_check_deps_MoveRobotGoal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_robothli_generate_messages_check_deps_MoveRobotResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_robothli_generate_messages_check_deps_MoveRobotResult" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_robothli_generate_messages_check_deps_PickUpObjectAction" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_robothli_generate_messages_check_deps_PickUpObjectAction" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_robothli_generate_messages_check_deps_PickUpObjectActionFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_robothli_generate_messages_check_deps_PickUpObjectActionFeedback" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_robothli_generate_messages_check_deps_PickUpObjectActionGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_robothli_generate_messages_check_deps_PickUpObjectActionGoal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_robothli_generate_messages_check_deps_PickUpObjectActionResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_robothli_generate_messages_check_deps_PickUpObjectActionResult" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_robothli_generate_messages_check_deps_PickUpObjectFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_robothli_generate_messages_check_deps_PickUpObjectFeedback" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_robothli_generate_messages_check_deps_PickUpObjectGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_robothli_generate_messages_check_deps_PickUpObjectGoal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_robothli_generate_messages_check_deps_PickUpObjectResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_robothli_generate_messages_check_deps_PickUpObjectResult" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_run_tests_robothli" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_run_tests_robothli" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_run_tests_robothli_gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_run_tests_robothli_gtest" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_run_tests_robothli_gtest_GradientDescent-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_run_tests_robothli_gtest_GradientDescent-test" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_run_tests_robothli_gtest_Joint-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_run_tests_robothli_gtest_Joint-test" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_run_tests_robothli_gtest_KinematicChain-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_run_tests_robothli_gtest_KinematicChain-test" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_run_tests_robothli_gtest_Matrix-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_run_tests_robothli_gtest_Matrix-test" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_run_tests_robothli_gtest_Point-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_run_tests_robothli_gtest_Point-test" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_run_tests_robothli_gtest_Pose-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="_run_tests_robothli_gtest_Pose-test" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="actionlib_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="actionlib_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="actionlib_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="actionlib_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="actionlib_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="actionlib_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="clean_test_results" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="clean_test_results" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="clean_test_results_robothli" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="clean_test_results_robothli" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="download_extra_data" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="download_extra_data" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="doxygen" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="geometry_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="geometry_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="geometry_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="robothli" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="robothli" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="robothli" RUN_TARGET_NAME="robothli">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="robothli_gencpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="robothli_gencpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="robothli_generate_messages" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="robothli_generate_messages" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="robothli_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="robothli_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="robothli_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="robothli_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="robothli_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="robothli_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="robothli_genlisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="robothli_genlisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="robothli_genpy" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="robothli_genpy" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="roscpp_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="roscpp_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="roscpp_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="roscpp_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="roscpp_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="roscpp_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="rosgraph_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="rosgraph_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="rosgraph_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="run_tests" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_tests_robothli" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="run_tests_robothli" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_tests_robothli_gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="run_tests_robothli_gtest" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_tests_robothli_gtest_GradientDescent-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="run_tests_robothli_gtest_GradientDescent-test" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_tests_robothli_gtest_Joint-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="run_tests_robothli_gtest_Joint-test" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_tests_robothli_gtest_KinematicChain-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="run_tests_robothli_gtest_KinematicChain-test" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_tests_robothli_gtest_Matrix-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="run_tests_robothli_gtest_Matrix-test" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_tests_robothli_gtest_Point-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="run_tests_robothli_gtest_Point-test" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_tests_robothli_gtest_Pose-test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="run_tests_robothli_gtest_Pose-test" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="std_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="std_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="std_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="std_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="std_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="std_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="robothli" TARGET_NAME="tests" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application._catkin_empty_exported_target" />
+      <item itemvalue="CMake Application._robothli_generate_messages_check_deps_MoveRobotAction" />
+      <item itemvalue="CMake Application._robothli_generate_messages_check_deps_MoveRobotActionFeedback" />
+      <item itemvalue="CMake Application._robothli_generate_messages_check_deps_MoveRobotActionGoal" />
+      <item itemvalue="CMake Application._robothli_generate_messages_check_deps_MoveRobotActionResult" />
+      <item itemvalue="CMake Application._robothli_generate_messages_check_deps_MoveRobotFeedback" />
+      <item itemvalue="CMake Application._robothli_generate_messages_check_deps_MoveRobotGoal" />
+      <item itemvalue="CMake Application._robothli_generate_messages_check_deps_MoveRobotResult" />
+      <item itemvalue="CMake Application._robothli_generate_messages_check_deps_PickUpObjectAction" />
+      <item itemvalue="CMake Application._robothli_generate_messages_check_deps_PickUpObjectActionFeedback" />
+      <item itemvalue="CMake Application._robothli_generate_messages_check_deps_PickUpObjectActionGoal" />
+      <item itemvalue="CMake Application._robothli_generate_messages_check_deps_PickUpObjectActionResult" />
+      <item itemvalue="CMake Application._robothli_generate_messages_check_deps_PickUpObjectFeedback" />
+      <item itemvalue="CMake Application._robothli_generate_messages_check_deps_PickUpObjectGoal" />
+      <item itemvalue="CMake Application._robothli_generate_messages_check_deps_PickUpObjectResult" />
+      <item itemvalue="CMake Application._run_tests_robothli" />
+      <item itemvalue="CMake Application._run_tests_robothli_gtest" />
+      <item itemvalue="CMake Application._run_tests_robothli_gtest_GradientDescent-test" />
+      <item itemvalue="CMake Application._run_tests_robothli_gtest_Joint-test" />
+      <item itemvalue="CMake Application._run_tests_robothli_gtest_KinematicChain-test" />
+      <item itemvalue="CMake Application._run_tests_robothli_gtest_Matrix-test" />
+      <item itemvalue="CMake Application._run_tests_robothli_gtest_Point-test" />
+      <item itemvalue="CMake Application._run_tests_robothli_gtest_Pose-test" />
+      <item itemvalue="CMake Application.actionlib_generate_messages_cpp" />
+      <item itemvalue="CMake Application.actionlib_generate_messages_lisp" />
+      <item itemvalue="CMake Application.actionlib_generate_messages_py" />
+      <item itemvalue="CMake Application.actionlib_msgs_generate_messages_cpp" />
+      <item itemvalue="CMake Application.actionlib_msgs_generate_messages_lisp" />
+      <item itemvalue="CMake Application.actionlib_msgs_generate_messages_py" />
+      <item itemvalue="CMake Application.clean_test_results" />
+      <item itemvalue="CMake Application.clean_test_results_robothli" />
+      <item itemvalue="CMake Application.download_extra_data" />
+      <item itemvalue="CMake Application.doxygen" />
+      <item itemvalue="CMake Application.geometry_msgs_generate_messages_cpp" />
+      <item itemvalue="CMake Application.geometry_msgs_generate_messages_lisp" />
+      <item itemvalue="CMake Application.geometry_msgs_generate_messages_py" />
+      <item itemvalue="CMake Application.GradientDescent-test" />
+      <item itemvalue="CMake Application.Joint-test" />
+      <item itemvalue="CMake Application.KinematicChain-test" />
+      <item itemvalue="CMake Application.Matrix-test" />
+      <item itemvalue="CMake Application.Point-test" />
+      <item itemvalue="CMake Application.Pose-test" />
+      <item itemvalue="CMake Application.robothli" />
+      <item itemvalue="CMake Application.robothli_gencpp" />
+      <item itemvalue="CMake Application.robothli_generate_messages" />
+      <item itemvalue="CMake Application.robothli_generate_messages_cpp" />
+      <item itemvalue="CMake Application.robothli_generate_messages_lisp" />
+      <item itemvalue="CMake Application.robothli_generate_messages_py" />
+      <item itemvalue="CMake Application.robothli_genlisp" />
+      <item itemvalue="CMake Application.robothli_genpy" />
+      <item itemvalue="CMake Application.roscpp_generate_messages_cpp" />
+      <item itemvalue="CMake Application.roscpp_generate_messages_lisp" />
+      <item itemvalue="CMake Application.roscpp_generate_messages_py" />
+      <item itemvalue="CMake Application.rosgraph_msgs_generate_messages_cpp" />
+      <item itemvalue="CMake Application.rosgraph_msgs_generate_messages_lisp" />
+      <item itemvalue="CMake Application.rosgraph_msgs_generate_messages_py" />
+      <item itemvalue="CMake Application.run_tests" />
+      <item itemvalue="CMake Application.run_tests_robothli" />
+      <item itemvalue="CMake Application.run_tests_robothli_gtest" />
+      <item itemvalue="CMake Application.run_tests_robothli_gtest_GradientDescent-test" />
+      <item itemvalue="CMake Application.run_tests_robothli_gtest_Joint-test" />
+      <item itemvalue="CMake Application.run_tests_robothli_gtest_KinematicChain-test" />
+      <item itemvalue="CMake Application.run_tests_robothli_gtest_Matrix-test" />
+      <item itemvalue="CMake Application.run_tests_robothli_gtest_Point-test" />
+      <item itemvalue="CMake Application.run_tests_robothli_gtest_Pose-test" />
+      <item itemvalue="CMake Application.std_msgs_generate_messages_cpp" />
+      <item itemvalue="CMake Application.std_msgs_generate_messages_lisp" />
+      <item itemvalue="CMake Application.std_msgs_generate_messages_py" />
+      <item itemvalue="CMake Application.tests" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -319,6 +826,12 @@
       <workItem from="1581539366052" duration="314000" />
       <workItem from="1581940315527" duration="1620000" />
       <workItem from="1581941959094" duration="1496000" />
+      <workItem from="1587995971250" duration="15800000" />
+      <workItem from="1588065797373" duration="4070000" />
+      <workItem from="1588071150969" duration="586000" />
+      <workItem from="1588071881494" duration="315000" />
+      <workItem from="1588072364582" duration="402000" />
+      <workItem from="1588075758182" duration="62000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented kinematic algorithm">
       <created>1558101611929</created>
@@ -408,7 +921,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6808000" />
+    <option name="totallyTimeSpent" value="28043000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -420,9 +933,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="0" width="1370" height="751" extended-state="0" />
+    <frame x="683" y="0" width="685" height="751" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24697885" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.065727696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.49924472" weight="0.328594" />
@@ -436,9 +950,9 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info active="true" anchor="bottom" id="Messages" order="9" sideWeight="0.48489425" visible="true" weight="0.32755905" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49093655" weight="0.3270142" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5173716" side_tool="true" visible="true" weight="0.31811023" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.52425665" side_tool="true" visible="true" weight="0.31811023" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49848944" weight="0.328594" />
-      <window_info anchor="bottom" id="CMake" order="13" sideWeight="0.4826284" visible="true" weight="0.31811023" />
+      <window_info anchor="bottom" id="CMake" order="13" sideWeight="0.47574335" visible="true" weight="0.31811023" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -545,9 +1059,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/robothli/Communicator.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/robothli/GradientDescent.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -654,13 +1165,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/robothli/Application.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/robothli/Al5D.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -668,38 +1172,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/action/MoveRobot.action">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Communicator.cpp">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="62" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="62" />
+        <state relative-caret-position="345">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/Communicator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="62" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/PickUpObject.action">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Application.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="23" />
+        <state relative-caret-position="195">
+          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/Application.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="30" selection-start-line="25" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        <state relative-caret-position="60">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="75">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -717,17 +1242,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/action/PickUpObject.action">
+    <entry file="file://$PROJECT_DIR$/src/Communicator.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/action/MoveRobot.action">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="143">
+          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
         </state>
       </provider>
     </entry>

@@ -2,28 +2,45 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="tui" targetName="std_msgs_generate_messages_cpp" />
       <config projectName="tui" targetName="_catkin_empty_exported_target" />
-      <config projectName="tui" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="tui" targetName="_tui_generate_messages_check_deps_PickUpObjectActionGoal" />
       <config projectName="tui" targetName="rosgraph_msgs_generate_messages_cpp" />
       <config projectName="tui" targetName="roscpp_generate_messages_cpp" />
-      <config projectName="tui" targetName="std_msgs_generate_messages_py" />
       <config projectName="tui" targetName="actionlib_generate_messages_py" />
-      <config projectName="tui" targetName="roscpp_generate_messages_py" />
-      <config projectName="tui" targetName="clean_test_results" />
-      <config projectName="tui" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="tui" targetName="std_msgs_generate_messages_py" />
       <config projectName="tui" targetName="actionlib_msgs_generate_messages_lisp" />
       <config projectName="tui" targetName="rosgraph_msgs_generate_messages_lisp" />
       <config projectName="tui" targetName="run_tests" />
       <config projectName="tui" targetName="download_extra_data" />
       <config projectName="tui" targetName="tests" />
       <config projectName="tui" targetName="actionlib_generate_messages_cpp" />
+      <config projectName="tui" targetName="tui_genpy" />
+      <config projectName="tui" targetName="_tui_generate_messages_check_deps_PickUpObjectFeedback" />
+      <config projectName="tui" targetName="tui_generate_messages_py" />
+      <config projectName="tui" targetName="tui_generate_messages_lisp" />
+      <config projectName="tui" targetName="_tui_generate_messages_check_deps_PickUpObjectGoal" />
+      <config projectName="tui" targetName="geometry_msgs_generate_messages_lisp" />
       <config projectName="tui" targetName="actionlib_generate_messages_lisp" />
-      <config projectName="tui" targetName="tui" />
+      <config projectName="tui" targetName="tui_generate_messages" />
       <config projectName="tui" targetName="actionlib_msgs_generate_messages_py" />
-      <config projectName="tui" targetName="roscpp_generate_messages_lisp" />
       <config projectName="tui" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="tui" targetName="geometry_msgs_generate_messages_py" />
       <config projectName="tui" targetName="doxygen" />
+      <config projectName="tui" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="tui" targetName="_tui_generate_messages_check_deps_PickUpObjectAction" />
+      <config projectName="tui" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="tui" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="tui" targetName="clean_test_results" />
+      <config projectName="tui" targetName="roscpp_generate_messages_py" />
+      <config projectName="tui" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="tui" targetName="tui_genlisp" />
+      <config projectName="tui" targetName="_tui_generate_messages_check_deps_PickUpObjectActionFeedback" />
+      <config projectName="tui" targetName="tui_generate_messages_cpp" />
+      <config projectName="tui" targetName="tui_gencpp" />
+      <config projectName="tui" targetName="_tui_generate_messages_check_deps_PickUpObjectResult" />
+      <config projectName="tui" targetName="tui" />
+      <config projectName="tui" targetName="_tui_generate_messages_check_deps_PickUpObjectActionResult" />
+      <config projectName="tui" targetName="roscpp_generate_messages_lisp" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -32,25 +49,31 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c00fc28d-f12b-4d72-983f-997fe222c09c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/include/tui/Application.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/tui/DevelopMode.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/tui/Mode.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DevelopMode.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mode.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/src.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="c00fc28d-f12b-4d72-983f-997fe222c09c" name="Default Changelist" comment="Created connection between TUI and the">
+      <change afterPath="$PROJECT_DIR$/action/PickUpObject.action" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/tui/Communicator.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Communicator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../al5d/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../robothli/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../robothli/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/tui/Application.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/tui/Application.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/tui/DevelopMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/tui/DevelopMode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/tui/Mode.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/tui/Mode.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DevelopMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/DevelopMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/include/utilities/LogLevel.h" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/include/utilities/LogLevel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/src/LogToCout.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/src/LogToCout.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/src/LogToFile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/src/LogToFile.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/../../build/" />
@@ -67,31 +90,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/tui/Application.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-              <folding>
-                <element signature="e#115#136#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Application.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="9" selection-start-line="9" selection-end-line="28" selection-end-column="1" />
+            <state relative-caret-position="210">
+              <caret line="14" column="41" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="41" />
               <folding>
                 <element signature="e#38#66#0" expanded="true" />
               </folding>
@@ -102,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/tui/Mode.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14">
-              <caret line="92" column="6" lean-forward="true" selection-start-line="92" selection-start-column="6" selection-end-line="92" selection-end-column="6" />
+            <state relative-caret-position="125">
+              <caret line="82" column="46" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
               <folding>
                 <element signature="e#101#118#0" expanded="true" />
               </folding>
@@ -111,35 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Mode.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="63" selection-start-line="63" selection-end-line="66" selection-end-column="1" />
-              <folding>
-                <element signature="e#38#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="270">
-                <caret line="161" selection-start-line="161" selection-end-line="161" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DevelopMode.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="242">
+              <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -147,8 +125,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/tui/DevelopMode.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="17" selection-end-column="38" />
+            <state relative-caret-position="180">
+              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Communicator.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="e#38#67#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/config.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="33" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mode.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-30">
+              <caret line="34" column="98" selection-start-line="34" selection-start-column="85" selection-end-line="34" selection-end-column="98" />
+              <folding>
+                <element signature="e#38#59#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,17 +167,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="25" column="66" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
+            <state relative-caret-position="295">
+              <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.xml">
+        <entry file="file://$PROJECT_DIR$/include/tui/Communicator.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+            <state relative-caret-position="225">
+              <caret line="27" column="28" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -178,24 +189,37 @@
       <find>mutex</find>
       <find>started</find>
       <find>addA</find>
+      <find>Goto</find>
+      <find>Quit</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/package.xml" />
-        <option value="$PROJECT_DIR$/include/tui/DevelopMode.h" />
+        <option value="$PROJECT_DIR$/../README.md" />
+        <option value="$PROJECT_DIR$/action/PickUpObject.action" />
+        <option value="$PROJECT_DIR$/include/tui/Communicator.h" />
         <option value="$PROJECT_DIR$/include/tui/Application.h" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/config/config.ini" />
+        <option value="$PROJECT_DIR$/package.xml" />
+        <option value="$PROJECT_DIR$/../utilities/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/Application.cpp" />
-        <option value="$PROJECT_DIR$/src/DevelopMode.cpp" />
         <option value="$PROJECT_DIR$/src/Mode.cpp" />
         <option value="$PROJECT_DIR$/include/tui/Mode.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/../README.md" />
+        <option value="$PROJECT_DIR$/include/tui/DevelopMode.h" />
+        <option value="$PROJECT_DIR$/src/Communicator.cpp" />
+        <option value="$PROJECT_DIR$/src/DevelopMode.cpp" />
       </list>
     </option>
   </component>
@@ -211,13 +235,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="tui" type="b2602c69:ProjectViewProjectNode" />
               <item name="tui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tui" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tui" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tui" type="b2602c69:ProjectViewProjectNode" />
@@ -239,13 +272,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.advertisement.text.overridden" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../readme.md" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../robothli/CMakeLists.txt" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
@@ -267,6 +301,41 @@
   </component>
   <component name="RunManager" selected="CMake Application.tui">
     <configuration name="_catkin_empty_exported_target" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="_catkin_empty_exported_target" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_tui_generate_messages_check_deps_PickUpObjectAction" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="_tui_generate_messages_check_deps_PickUpObjectAction" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_tui_generate_messages_check_deps_PickUpObjectActionFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="_tui_generate_messages_check_deps_PickUpObjectActionFeedback" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_tui_generate_messages_check_deps_PickUpObjectActionGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="_tui_generate_messages_check_deps_PickUpObjectActionGoal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_tui_generate_messages_check_deps_PickUpObjectActionResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="_tui_generate_messages_check_deps_PickUpObjectActionResult" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_tui_generate_messages_check_deps_PickUpObjectFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="_tui_generate_messages_check_deps_PickUpObjectFeedback" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_tui_generate_messages_check_deps_PickUpObjectGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="_tui_generate_messages_check_deps_PickUpObjectGoal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_tui_generate_messages_check_deps_PickUpObjectResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="_tui_generate_messages_check_deps_PickUpObjectResult" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -312,6 +381,21 @@
       </method>
     </configuration>
     <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="doxygen" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="geometry_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="geometry_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="geometry_msgs_generate_messages_py" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -376,8 +460,50 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="tui_gencpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="tui_gencpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tui_generate_messages" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="tui_generate_messages" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tui_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="tui_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tui_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="tui_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tui_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="tui_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tui_genlisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="tui_genlisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tui_genpy" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tui" TARGET_NAME="tui_genpy" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="CMake Application._catkin_empty_exported_target" />
+      <item itemvalue="CMake Application._tui_generate_messages_check_deps_PickUpObjectAction" />
+      <item itemvalue="CMake Application._tui_generate_messages_check_deps_PickUpObjectActionFeedback" />
+      <item itemvalue="CMake Application._tui_generate_messages_check_deps_PickUpObjectActionGoal" />
+      <item itemvalue="CMake Application._tui_generate_messages_check_deps_PickUpObjectActionResult" />
+      <item itemvalue="CMake Application._tui_generate_messages_check_deps_PickUpObjectFeedback" />
+      <item itemvalue="CMake Application._tui_generate_messages_check_deps_PickUpObjectGoal" />
+      <item itemvalue="CMake Application._tui_generate_messages_check_deps_PickUpObjectResult" />
       <item itemvalue="CMake Application.actionlib_generate_messages_cpp" />
       <item itemvalue="CMake Application.actionlib_generate_messages_lisp" />
       <item itemvalue="CMake Application.actionlib_generate_messages_py" />
@@ -387,6 +513,9 @@
       <item itemvalue="CMake Application.clean_test_results" />
       <item itemvalue="CMake Application.download_extra_data" />
       <item itemvalue="CMake Application.doxygen" />
+      <item itemvalue="CMake Application.geometry_msgs_generate_messages_cpp" />
+      <item itemvalue="CMake Application.geometry_msgs_generate_messages_lisp" />
+      <item itemvalue="CMake Application.geometry_msgs_generate_messages_py" />
       <item itemvalue="CMake Application.roscpp_generate_messages_cpp" />
       <item itemvalue="CMake Application.roscpp_generate_messages_lisp" />
       <item itemvalue="CMake Application.roscpp_generate_messages_py" />
@@ -399,6 +528,13 @@
       <item itemvalue="CMake Application.std_msgs_generate_messages_py" />
       <item itemvalue="CMake Application.tests" />
       <item itemvalue="CMake Application.tui" />
+      <item itemvalue="CMake Application.tui_gencpp" />
+      <item itemvalue="CMake Application.tui_generate_messages" />
+      <item itemvalue="CMake Application.tui_generate_messages_cpp" />
+      <item itemvalue="CMake Application.tui_generate_messages_lisp" />
+      <item itemvalue="CMake Application.tui_generate_messages_py" />
+      <item itemvalue="CMake Application.tui_genlisp" />
+      <item itemvalue="CMake Application.tui_genpy" />
     </list>
   </component>
   <component name="TaskManager">
@@ -416,12 +552,26 @@
       <workItem from="1587982636712" duration="878000" />
       <workItem from="1587983537948" duration="150000" />
       <workItem from="1587983708288" duration="1292000" />
-      <workItem from="1587990159802" duration="3942000" />
+      <workItem from="1587990159802" duration="4757000" />
+      <workItem from="1587997144491" duration="7729000" />
+      <workItem from="1588065796433" duration="5272000" />
+      <workItem from="1588071148570" duration="588000" />
+      <workItem from="1588071879191" duration="318000" />
+      <workItem from="1588072361714" duration="630000" />
+      <workItem from="1588073156475" duration="4160000" />
     </task>
+    <task id="LOCAL-00001" summary="Created the basic TUI structure. Added information in the readme on how to use it.">
+      <created>1587994228501</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587994228502</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15024000" />
+    <option name="totallyTimeSpent" value="34536000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -436,19 +586,19 @@
     <frame x="-2" y="0" width="1370" height="751" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.086858004" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17824773" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32913387" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32913387" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32755905" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32440946" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.32755905" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32389936" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32913387" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.32913387" />
@@ -462,6 +612,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="Created the basic TUI structure. Added information in the readme on how to use it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the basic TUI structure. Added information in the readme on how to use it." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Doxyfile" />
@@ -473,88 +625,175 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+    <entry file="file://$PROJECT_DIR$/../utilities/include/utilities/LogToCout.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/tui/Application.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding>
-            <element signature="e#115#136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/tui/DevelopMode.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="25" column="66" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="9" selection-start-line="9" selection-end-line="28" selection-end-column="1" />
-          <folding>
-            <element signature="e#38#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DevelopMode.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/tui/Mode.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="92" column="6" lean-forward="true" selection-start-line="92" selection-start-column="6" selection-end-line="92" selection-end-column="6" />
-          <folding>
-            <element signature="e#101#118#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mode.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="63" selection-start-line="63" selection-end-line="66" selection-end-column="1" />
-          <folding>
-            <element signature="e#38#59#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="270">
-            <caret line="161" selection-start-line="161" selection-end-line="161" />
+          <first_editor relative-caret-position="75">
+            <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/tui/Application.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding>
+            <element signature="e#115#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/9/bits/atomic_base.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4335">
+          <caret line="289" selection-start-line="289" selection-end-line="289" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/9/atomic">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../utilities/include/utilities/IniParser.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="176" column="14" selection-start-line="176" selection-start-column="11" selection-end-line="176" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="49" column="43" lean-forward="true" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../utilities/include/utilities/LogLevel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../utilities/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../robothli/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="26" column="58" lean-forward="true" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/9/bits/unique_ptr.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="347" selection-start-line="347" selection-end-line="347" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/tui/Communicator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mode.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="34" column="98" selection-start-line="34" selection-start-column="85" selection-end-line="34" selection-end-column="98" />
+          <folding>
+            <element signature="e#38#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/tui/Mode.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="82" column="46" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
+          <folding>
+            <element signature="e#101#118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="41" />
+          <folding>
+            <element signature="e#38#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/tui/DevelopMode.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/PickUpObject.action">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Communicator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#38#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DevelopMode.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
         </state>
       </provider>
     </entry>

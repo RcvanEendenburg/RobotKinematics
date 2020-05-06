@@ -10,11 +10,13 @@
 #include <map>
 #include <mutex>
 #include <atomic>
+#include <utilities/Logger.h>
+#include <tui/Communicator.h>
 
 class Mode
 {
 public:
-    Mode();
+    explicit Mode(Communication::Communicator& aCommunicator);
     virtual ~Mode() = default;
 
     /**
@@ -61,7 +63,8 @@ protected:
      */
     enum class Keyword
     {
-        Quit
+        Quit,
+        Goto,
     };
 
     ///@{
@@ -77,6 +80,7 @@ protected:
     void scheduleAction(const std::function<void()>& action);
 
     std::atomic_bool started;
+    Communication::Communicator& communicator;
 private:
     /**
      * Action which defines what to do on the exit operation.
@@ -104,6 +108,7 @@ private:
 
     static const std::map<Keyword, std::string> keywordTable;
     std::mutex mutex;
+    Utilities::Logger &logger;
 };
 
 #endif //TUI_INCLUDE_TUI_MODE_H

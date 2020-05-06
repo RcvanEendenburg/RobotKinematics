@@ -18,6 +18,8 @@ LogToCout::handleMessage(LogLevel level, const std::string &message)
             break;
         case LogLevel::Fatal:std::cout << "[FATAL] " << message;
             break;
+        case LogLevel::Raw:std::cout << message;
+            break;
         default:break;
     }
 }
