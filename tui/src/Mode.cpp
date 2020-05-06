@@ -10,7 +10,8 @@
 
 const std::map<Mode::Keyword, std::string> Mode::keywordTable
 {
-    {Keyword::Quit, "quit"}
+    {Keyword::Quit, "quit"},
+    {Keyword::Goto, "goto"}
 };
 
 const std::string& Mode::keywordToString(Keyword keyword)
@@ -31,7 +32,8 @@ Mode::Keyword Mode::stringToKeyword(const std::string& str)
     throw std::runtime_error("Couldn't find the keyword");
 }
 
-Mode::Mode() : started(false), welcomeMessage(), exitMessage()
+Mode::Mode(Communication::Communicator& aCommunicator) : started(true), communicator(aCommunicator), welcomeMessage(), exitMessage(),
+logger(Utilities::Logger::instance())
 {
     addSingleOperation(keywordToString(Keyword::Quit), std::bind(&Mode::exitAction, this));
 }
@@ -141,7 +143,7 @@ void Mode::setupUserInputThread()
                     }
                     catch(std::exception& e)
                     {
-                        std::cerr << e.what() << std::endl;
+                        logger.log(Utilities::LogLevel::Error, e.what());
                     }
                 }
             }
@@ -171,8 +173,8 @@ void Mode::setupCommandThread()
 
 void Mode::start()
 {
-    std::cout << welcomeMessage << std::endl;
+    logger.log(Utilities::LogLevel::Raw, welcomeMessage.data());
     setupUserInputThread();
     setupCommandThread();
-    std::cout << exitMessage << std::endl;
+    logger.log(Utilities::LogLevel::Raw, exitMessage.data());
 }

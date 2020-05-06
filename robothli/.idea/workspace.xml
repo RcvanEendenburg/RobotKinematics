@@ -13,12 +13,21 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e49a2bff-040b-4dcc-95b6-43dff4231cfa" name="Default Changelist" comment="Created bash script to launch all the components">
+    <list default="true" id="e49a2bff-040b-4dcc-95b6-43dff4231cfa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../al5d_stub/config/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../al5d_stub/include/al5d_stub/SerialCommunicator.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../al5d_stub/include/al5d_stub/Stoppable.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../al5d_stub/src/SerialCommunicator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../al5d/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../al5d/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/config/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../al5d/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/src/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../al5d_stub/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d_stub/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../al5d_stub/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d_stub/package.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tui/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../../build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
+            <state relative-caret-position="150">
               <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
             </state>
           </provider>
@@ -71,17 +80,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/config_sim.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-228">
+            <state relative-caret-position="30">
               <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../scripts/run_sim.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150">
-              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="285">
+              <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -330,7 +339,7 @@
       <workItem from="1588071881494" duration="315000" />
       <workItem from="1588072364582" duration="402000" />
       <workItem from="1588075758182" duration="62000" />
-      <workItem from="1588755333444" duration="2975000" />
+      <workItem from="1588755333444" duration="1633000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented kinematic algorithm">
       <created>1558101611929</created>
@@ -416,18 +425,11 @@
       <option name="project" value="LOCAL" />
       <updated>1559986441067</updated>
     </task>
-    <task id="LOCAL-00013" summary="Added timing of the algorithm">
-      <created>1588757082371</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1588757082371</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31018000" />
+    <option name="totallyTimeSpent" value="29676000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -440,9 +442,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="0" width="1370" height="751" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17900302" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17900302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.49924472" weight="0.328594" />
@@ -455,10 +456,10 @@
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49924472" weight="0.328594" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info active="true" anchor="bottom" id="Messages" order="9" sideWeight="0.48489425" visible="true" weight="0.32755905" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49018127" visible="true" weight="0.32598424" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50981873" side_tool="true" visible="true" weight="0.32598424" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49773413" weight="0.32755905" />
-      <window_info anchor="bottom" id="CMake" order="13" sideWeight="0.47507554" weight="0.32913387" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49093655" weight="0.3270142" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.52492446" side_tool="true" visible="true" weight="0.32913387" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49848944" weight="0.328594" />
+      <window_info anchor="bottom" id="CMake" order="13" sideWeight="0.47507554" visible="true" weight="0.32913387" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -525,12 +526,18 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="174" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
-    <state x="174" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" />
-    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" />
-    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" />
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" />
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" />
+    <state x="174" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581332977095">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="174" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1581332977095" />
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581342446157">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1581342446157" />
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1581332963196">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1581332963196" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -759,17 +766,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../scripts/run_sim.sh">
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config_sim.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        <state relative-caret-position="150">
+          <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -780,10 +780,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+    <entry file="file://$PROJECT_DIR$/config/config_sim.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        <state relative-caret-position="30">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../scripts/run_sim.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
         </state>
       </provider>
     </entry>
