@@ -6,8 +6,11 @@ main(int argc, char **argv)
 {
     try
     {
-        Application application(argc, argv, "/home/derk/workspace/src/al5d/config/config.ini");
-        application.run();
+        if(argc > 1)
+        {
+            Application application(argc, argv, argv[1]);
+            application.run();
+        }
     }
     catch (std::exception &e)
     {
