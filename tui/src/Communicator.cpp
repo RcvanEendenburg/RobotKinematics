@@ -16,7 +16,7 @@ Communicator::Communicator(const std::string &highLevelDriver, Application &app)
 }
 
 void
-Communicator::goToPosition(unsigned int x, unsigned int y, unsigned int z)
+Communicator::goToPosition(double x, double y, double z)
 {
     application.logger.log(Utilities::LogLevel::Debug, "Sending goal to the high level driver...");
     tui::PickUpObjectGoal goal;
