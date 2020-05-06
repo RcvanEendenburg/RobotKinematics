@@ -19,7 +19,7 @@ class Communicator
 public:
     Communicator(const std::string &highLevelDriverName, Application &app);
 
-    void goToPosition(unsigned int x, unsigned int y, unsigned int z);
+    void goToPosition(double x, double y, double z);
 
 private:
     ros::NodeHandle node_handle;
