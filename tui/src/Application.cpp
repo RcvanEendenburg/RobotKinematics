@@ -4,8 +4,18 @@
 
 #include <tui/Application.h>
 #include <tui/DevelopMode.h>
+#include <utilities/LogToCout.h>
 
 #include <iostream>
+
+Application::Application(int argc, char **argv, const std::string &configFile) :
+                             logger(Utilities::Logger::instance()),
+                             iniParser((Utilities::Logger::instance().setLogOutput(std::make_unique<Utilities::LogToCout>()), configFile)),
+                             currentMode(nullptr),
+                             communicator(((iniParser.parse()), ros::init(argc, argv, iniParser.get<std::string>("TUI", "node_name")),
+                             Communication::Communicator(iniParser.get<std::string>("TUI", "high_level_driver_name"), *this)))
+{
+}
 
 void Application::run()
 {
@@ -14,16 +24,16 @@ void Application::run()
   {
     if(!currentMode || !currentMode->isStarted())
     {
-      std::cout << "Type 'develop' to access the developer mode." << std::endl;
-      std::cout << "'exit' will exit the application." << std::endl;
-      std::cin >> operation;
-      if (operation == "develop")
-      {
-        currentMode = std::move(std::make_unique<DevelopMode>());
-        currentMode->start();
-      }
-      else if (operation == "exit")
-        break;
+        logger.log(Utilities::LogLevel::Raw, "Type 'develop' to access the developer mode.");
+        logger.log(Utilities::LogLevel::Raw, "'exit' will exit the application.");
+        std::cin >> operation;
+        if (operation == "develop")
+        {
+            currentMode = std::move(std::make_unique<DevelopMode>(communicator));
+            currentMode->start();
+        }
+        else if (operation == "exit")
+            break;
     }
   }
 }

@@ -14,21 +14,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e49a2bff-040b-4dcc-95b6-43dff4231cfa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/src.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../al5d_stub/config/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../al5d_stub/include/al5d_stub/SerialCommunicator.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../al5d_stub/include/al5d_stub/Stoppable.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../al5d_stub/src/SerialCommunicator.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../al5d/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tui/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../al5d/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/config/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../al5d/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../al5d_stub/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d_stub/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../al5d_stub/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../al5d_stub/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tui/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tui/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../utilities/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../utilities/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../utilities/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../utilities/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../world/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../world/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utilities/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../../build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,46 +42,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Communicator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="62" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="62" />
+            <state relative-caret-position="143">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/action/PickUpObject.action">
+        <entry file="file://$PROJECT_DIR$/include/robothli/Application.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/action/MoveRobot.action">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="23" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="23" />
+            <state relative-caret-position="375">
+              <caret line="25" column="30" selection-start-line="25" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -90,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="150">
+              <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -99,8 +71,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="30">
+              <caret line="2" column="21" selection-start-line="2" selection-end-line="2" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/config_sim.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../scripts/run_sim.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/config_generated.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_sim.launch">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="137" selection-start-line="3" selection-start-column="137" selection-end-line="3" selection-end-column="137" />
             </state>
           </provider>
         </entry>
@@ -170,6 +178,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
+        <entry key="$PROJECT_DIR$/.." value="TUI-implementPickUpAction" />
         <entry key="$PROJECT_DIR$" value="feature/Implement-kinematic-algorithm" />
       </map>
     </option>
@@ -186,6 +195,11 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/config/config.ini" />
         <option value="$PROJECT_DIR$/src/Communicator.cpp" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/../al5d/test.launch" />
+        <option value="$PROJECT_DIR$/run_sim.launch" />
+        <option value="$PROJECT_DIR$/../scripts/run_sim.sh" />
+        <option value="$PROJECT_DIR$/config/config_sim.ini" />
       </list>
     </option>
   </component>
@@ -256,7 +270,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.advertisement.text.overridden" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../al5d/CMakeLists.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/run_sim.launch" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -319,6 +333,13 @@
       <workItem from="1581539366052" duration="314000" />
       <workItem from="1581940315527" duration="1620000" />
       <workItem from="1581941959094" duration="1496000" />
+      <workItem from="1587995971250" duration="15800000" />
+      <workItem from="1588065797373" duration="4070000" />
+      <workItem from="1588071150969" duration="586000" />
+      <workItem from="1588071881494" duration="315000" />
+      <workItem from="1588072364582" duration="402000" />
+      <workItem from="1588075758182" duration="62000" />
+      <workItem from="1588755333444" duration="1633000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented kinematic algorithm">
       <created>1558101611929</created>
@@ -408,7 +429,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6808000" />
+    <option name="totallyTimeSpent" value="29676000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -422,7 +443,7 @@
   <component name="ToolWindowManager">
     <frame x="-2" y="0" width="1370" height="751" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24697885" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17900302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.49924472" weight="0.328594" />
@@ -436,9 +457,9 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info active="true" anchor="bottom" id="Messages" order="9" sideWeight="0.48489425" visible="true" weight="0.32755905" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49093655" weight="0.3270142" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5173716" side_tool="true" visible="true" weight="0.31811023" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.52492446" side_tool="true" visible="true" weight="0.32913387" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49848944" weight="0.328594" />
-      <window_info anchor="bottom" id="CMake" order="13" sideWeight="0.4826284" visible="true" weight="0.31811023" />
+      <window_info anchor="bottom" id="CMake" order="13" sideWeight="0.47507554" visible="true" weight="0.32913387" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -545,9 +566,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/robothli/Communicator.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/robothli/GradientDescent.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -654,13 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/robothli/Application.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/robothli/Al5D.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -668,38 +679,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/action/MoveRobot.action">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Communicator.cpp">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="62" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="62" />
+        <state relative-caret-position="465">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/robothli/Communicator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="62" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/PickUpObject.action">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Application.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="23" />
+        <state relative-caret-position="195">
+          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+    <entry file="file://$PROJECT_DIR$/include/robothli/Application.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="375">
+          <caret line="25" column="30" selection-start-line="25" selection-end-line="26" />
         </state>
       </provider>
     </entry>
@@ -717,17 +735,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/action/PickUpObject.action">
+    <entry file="file://$PROJECT_DIR$/src/Communicator.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="143">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/action/MoveRobot.action">
+    <entry file="file://$USER_HOME$/Downloads/bp2_world-master@cb3e6ba31fc/al5d/al5d.launch">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../al5d/test.launch">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="60">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config_generated.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_sim.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="137" selection-start-line="3" selection-start-column="137" selection-end-line="3" selection-end-column="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config_sim.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../scripts/run_sim.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
         </state>
       </provider>
     </entry>
