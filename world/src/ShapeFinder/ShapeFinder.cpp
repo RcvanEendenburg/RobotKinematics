@@ -48,6 +48,7 @@ std::vector<world::Shape> ShapeFinder::ServiceCallback(Shape::ShapeTypes shape, 
             shapes = FindShapes<SquareShape>(colorFiltered, markedImg, ColorMask);
             for(auto shape: shapes)
             {
+                shape->translateCoordinate(calibration->GetMarkerLocation());
                 response.push_back(shape->toShapeMessage());
             }
 
@@ -59,6 +60,7 @@ std::vector<world::Shape> ShapeFinder::ServiceCallback(Shape::ShapeTypes shape, 
             shapes = FindShapes<RectShape>(colorFiltered, markedImg, ColorMask);
             for(auto shape: shapes)
             {
+                shape->translateCoordinate(calibration->GetMarkerLocation());
                 response.push_back(shape->toShapeMessage());
             }
             break;
@@ -70,6 +72,7 @@ std::vector<world::Shape> ShapeFinder::ServiceCallback(Shape::ShapeTypes shape, 
             shapes = FindShapes<CircleShape>(colorFiltered, markedImg, ColorMask);
             for(auto shape: shapes)
             {
+                shape->translateCoordinate(calibration->GetMarkerLocation());
                 response.push_back(shape->toShapeMessage());
             }
             break;

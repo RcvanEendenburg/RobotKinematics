@@ -31,12 +31,6 @@ class Shape
 
         virtual ~Shape() = default;
 
-        static cv::Point2d getCenter(std::vector<cv::Point> &contour) {
-            cv::Moments mom = cv::moments(contour, false);
-            cv::Point2d center(mom.m10/mom.m00, mom.m01/mom.m00);
-            return center;
-        }
-
         int32_t getId()
         {
             return id;
@@ -46,12 +40,25 @@ class Shape
             id = aId;
         }
 
-private:
+        void translateCoordinate(cv::Point2d aOrigin)
+        {
+            center.x = center.x - aOrigin.x;
+            center.y = center.y - aOrigin.y;
+        }
 
-        int32_t id;
-        ShapeTypes shape;
-        world::Point2d center;
-        float rotation;
+protected:
+
+    static cv::Point2d getCenter(std::vector<cv::Point> &contour) {
+        cv::Moments mom = cv::moments(contour, false);
+        cv::Point2d center(mom.m10/mom.m00, mom.m01/mom.m00);
+        return center;
+    }
+
+private:
+    world::Point2d center;
+    int32_t id;
+    ShapeTypes shape;
+    float rotation;
 };
 
 

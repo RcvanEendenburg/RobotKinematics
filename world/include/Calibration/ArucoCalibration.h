@@ -29,6 +29,8 @@ public:
     }
 
 private:
+    void setMarker(std::vector<cv::Point2f> c, int markerSize);
+
     float pixelToMMRatio;
     bool isCalibrated = false;
     cv::Point2d markerLocation;
