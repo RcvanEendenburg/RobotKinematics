@@ -5,23 +5,23 @@
 #ifndef WORLD_SQUARESHAPE_H
 #define WORLD_SQUARESHAPE_H
 #include "AbstractShape.h"
-class Square : public Shape
+class SquareShape : public Shape
 {
 public:
-    Square(int32_t id, ShapeTypes shape, world::Point2d center, float rotation):
+    SquareShape(int32_t id, ShapeTypes shape, world::Point2d center, float rotation):
     Shape(id,shape,center,rotation)
     {
 
     };
 private:
     friend class ShapeFinder;
-    static std::shared_ptr<Square> isShape(std::vector<cv::Point> &approx, std::vector<cv::Point> &contours, double mincos, double maxcos)
+    static std::shared_ptr<SquareShape> isShape(std::vector<cv::Point> &approx, std::vector<cv::Point> &contours, double mincos, double maxcos)
     {
             cv::RotatedRect rotated = cv::minAreaRect(contours);
 
             cv::Point2f vertices[4];
             rotated.points(vertices);
-            // TODO: Add the dimensions stuffs here!
+
             double length = cv::norm(vertices[0] - vertices[1]);//length of rotated box
             double width = cv::norm(vertices[1] - vertices[2]);//width of rotated box
 
@@ -31,7 +31,7 @@ private:
             auto center = world::Point2d();
             center.x = cv.x;
             center.y = cv.y;
-            return std::make_shared<Square>(0,ShapeTypes::SQUARE,center,rotated.angle);
+            return std::make_shared<SquareShape>(0,ShapeTypes::SQUARE,center,rotated.angle);
         }
 
         return nullptr;

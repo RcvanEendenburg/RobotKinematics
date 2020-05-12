@@ -71,7 +71,7 @@ include_directories(
  add_executable(${PROJECT_NAME}_node src/WorldService.cpp
                                      src/ShapeFinder/ShapeFinder.cpp
                                      src/Color/ColorFilter.cpp
-                                     src/WorldService.cpp)
+                                     src/WorldService.cpp include/Calibration/ArucoCalibration.h src/Calibration/ArucoCalibration.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use

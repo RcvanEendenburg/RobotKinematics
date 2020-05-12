@@ -6,7 +6,10 @@
 	class Sensor
 	{
 	public:
-		virtual cv::Mat getFrame() = 0;
+		virtual cv::Mat getFrame()
+        {
+		    throw SensorException("not a sensor");
+        };
 	};
 
 
