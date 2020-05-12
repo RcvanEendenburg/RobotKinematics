@@ -16,7 +16,7 @@
 class Shape
     {
     public:
-    enum ShapeTypes{SQUARE, RECTANGLE, UNDEFINED};
+    enum ShapeTypes{SQUARE, RECTANGLE, UNDEFINED, CIRCLE};
 
     Shape(int32_t id, ShapeTypes shape ,world::Point2d center, float rotation) : id(id), shape(shape), center(center), rotation(rotation) {}
 
@@ -31,17 +31,6 @@ class Shape
 
         virtual ~Shape() = default;
 
-        static cv::Point2d getCenter(std::vector<cv::Point> &contour) {
-            cv::Moments mom = cv::moments(contour, false);
-            cv::Point2d center(mom.m10/mom.m00, mom.m01/mom.m00);
-            return center;
-        }
-
-        static double getRotation(std::vector<cv::Point> &contour)
-        {
-
-        }
-
         int32_t getId()
         {
             return id;
@@ -51,13 +40,25 @@ class Shape
             id = aId;
         }
 
+        void translateCoordinate(cv::Point2d aOrigin)
+        {
+            center.x = center.x - aOrigin.x;
+            center.y = center.y - aOrigin.y;
+        }
+
+protected:
+
+    static cv::Point2d getCenter(std::vector<cv::Point> &contour) {
+        cv::Moments mom = cv::moments(contour, false);
+        cv::Point2d center(mom.m10/mom.m00, mom.m01/mom.m00);
+        return center;
+    }
+
 private:
-
-        int32_t id;
-        ShapeTypes shape;
-        world::Point2d center;
-        float rotation;
-
+    world::Point2d center;
+    int32_t id;
+    ShapeTypes shape;
+    float rotation;
 };
 
 
