@@ -29,7 +29,7 @@ void Application::run()
         std::cin >> operation;
         if (operation == "develop")
         {
-            currentMode = std::move(std::make_unique<DevelopMode>(communicator));
+            currentMode = std::move(std::make_unique<DevelopMode>(communicator, iniParser.get<int>("TUI", "standard_z")));
             currentMode->start();
         }
         else if (operation == "exit")

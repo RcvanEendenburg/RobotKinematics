@@ -65,6 +65,17 @@ protected:
     {
         Quit,
         Goto,
+        Black,
+        Blue,
+        Green,
+        Red,
+        Yellow,
+        White,
+        Rectangle,
+        Square,
+        Circle,
+        All,
+        Wood
     };
 
     ///@{
@@ -108,6 +119,8 @@ private:
 
     static const std::map<Keyword, std::string> keywordTable;
     std::mutex mutex;
+
+protected:
     Utilities::Logger &logger;
 };
 

@@ -3,17 +3,31 @@ project(tui)
 
 add_compile_options(-std=c++17)
 
-find_package(catkin REQUIRED COMPONENTS genmsg roscpp actionlib_msgs actionlib std_msgs geometry_msgs)
+find_package(catkin REQUIRED COMPONENTS genmsg roscpp actionlib_msgs actionlib std_msgs geometry_msgs message_generation ${MESSAGE_DEPENDENCIES})
 find_package(Boost REQUIRED)
 find_package(utilities REQUIRED)
 add_action_files(DIRECTORY action FILES PickUpObject.action)
 
 
+## Generate messages in the 'msg' folder
+add_message_files(
+        FILES
+        Point2d.msg
+        Shape.msg
+)
+
+## Generate services in the 'srv' folder
+add_service_files(
+        FILES
+        ShapeFinderService.srv
+
+)
+
 generate_messages(DEPENDENCIES actionlib_msgs std_msgs geometry_msgs)
 
 catkin_package(
         INCLUDE_DIRS include
-        CATKIN_DEPENDS message_runtime actionlib_msgs std_msgs
+        CATKIN_DEPENDS message_runtime actionlib_msgs std_msgs ${MESSAGE_DEPENDENCIES}
 )
 
 include_directories(

@@ -9,6 +9,7 @@
 #include <ros/ros.h>
 #include <actionlib/client/simple_action_client.h>
 #include <tui/PickUpObjectAction.h>
+#include <tui/ShapeFinderService.h>
 
 class Application;
 
@@ -21,11 +22,13 @@ public:
 
     void goToPosition(double x, double y, double z);
 
-private:
-    ros::NodeHandle node_handle;
-    actionlib::SimpleActionClient<tui::PickUpObjectAction> actionClient;
+    std::vector<tui::Shape> findShapes(unsigned int shape, unsigned int color);
 
+private:
+    ros::NodeHandle node;
+    actionlib::SimpleActionClient<tui::PickUpObjectAction> actionClient;
     Application &application;
+    ros::ServiceClient worldClient;
 };
 }
 

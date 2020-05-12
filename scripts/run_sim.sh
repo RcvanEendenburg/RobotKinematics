@@ -4,6 +4,15 @@
 ROS_WS=~/workspace
 LOG_PIPE=rk_log_output
 
+#Log mode (not for TUI logging)
+#0 = zero logging (log pipe will be written to /dev/null)
+#1 = log to file (log pipe will be written to log.txt
+#2 = log all (pipe must be emptied with cat)
+LOG_MODE=1
+
+#Only if log mode is set to 1
+LOG_FILE=rk_log.txt
+
 #Config related variables
 CONFIG_FOLDER_NAME=config
 
@@ -99,14 +108,27 @@ sed -i "s/$ROBOT_HLI_DRIVER_SUBSTITUTE_STR/$AL5D_NODE_NAME/g" "${ROS_WS}/src/${R
 echo "Creating log pipe..."
 mkfifo /tmp/${LOG_PIPE}
 
+if [[ ${LOG_MODE} -eq 0 ]]; then
+    echo "Logging disabled"
+    cat /tmp/${LOG_PIPE} > /dev/null &
+elif [[ ${LOG_MODE} -eq 1 ]]; then
+    echo "Logging to /tmp/${LOG_FILE}"
+    cat /tmp/${LOG_PIPE} > /tmp/${LOG_FILE} &
+elif [[ ${LOG_MODE} -eq 2 ]]; then
+    echo "Logging enabled, make sure to read the pipe in another terminal. E.g. cat /tmp/${LOG_PIPE}"
+else
+    echo "Log mode is not set to 0, 1 or 2. Exiting..."
+    exit 1
+fi
+
 echo "Starting ${AL5D_NODE_NAME}..."
-rosrun ${AL5D_PACKAGE_NAME} ${AL5D_NODE_NAME} "${ROS_WS}/src/${AL5D_NODE_NAME}/${CONFIG_FOLDER_NAME}/${AL5D_CONFIG_FILE_NAME_OUT}" | sed -u "s/DEBUG/${AL5D_NODE_NAME}: DEBUG/" | sed -u "s/ERROR/${AL5D_NODE_NAME}: ERROR/" | sed -u "s/WARNING/${AL5D_NODE_NAME}: WARNING/" | sed -u "s/FATAL/${AL5D_NODE_NAME}: FATAL/" > /tmp/${LOG_PIPE} &
+rosrun ${AL5D_PACKAGE_NAME} ${AL5D_NODE_NAME} "${ROS_WS}/src/${AL5D_NODE_NAME}/${CONFIG_FOLDER_NAME}/${AL5D_CONFIG_FILE_NAME_OUT}" |& sed -u -r "s/DEBUG/${AL5D_NODE_NAME}: DEBUG/;s/ERROR/${AL5D_NODE_NAME}: ERROR/;s/WARNING/${AL5D_NODE_NAME}: WARNING/;s/FATAL/${AL5D_NODE_NAME}: FATAL/;s/\[ WARN\] \[[0-9]*.[0-9]*\]:/[${AL5D_NODE_NAME}: ROS WARNING]/;s/\[${AL5D_NODE_NAME}: ERROR\] \[[0-9]*.[0-9]*\]:/[${AL5D_NODE_NAME}: ROS ERROR]/" > /tmp/${LOG_PIPE} &
 
 echo "Starting ${ROBOT_HLI_NODE_NAME}..."
-rosrun ${ROBOT_HLI_PACKAGE_NAME} ${ROBOT_HLI_NODE_NAME} "${ROS_WS}/src/${ROBOT_HLI_NODE_NAME}/${CONFIG_FOLDER_NAME}/${ROBOT_HLI_CONFIG_FILE_NAME_OUT}" | sed -u "s/DEBUG/${ROBOT_HLI_NODE_NAME}: DEBUG/" | sed -u "s/ERROR/${ROBOT_HLI_NODE_NAME}: ERROR/" | sed -u "s/WARNING/${ROBOT_HLI_NODE_NAME}: WARNING/" | sed -u "s/FATAL/${ROBOT_HLI_NODE_NAME}: FATAL/" > /tmp/${LOG_PIPE} &
+rosrun ${ROBOT_HLI_PACKAGE_NAME} ${ROBOT_HLI_NODE_NAME} "${ROS_WS}/src/${ROBOT_HLI_NODE_NAME}/${CONFIG_FOLDER_NAME}/${ROBOT_HLI_CONFIG_FILE_NAME_OUT}" |& sed -u -r "s/DEBUG/${ROBOT_HLI_NODE_NAME}: DEBUG/;s/ERROR/${ROBOT_HLI_NODE_NAME}: ERROR/;s/WARNING/${ROBOT_HLI_NODE_NAME}: WARNING/;s/FATAL/${ROBOT_HLI_NODE_NAME}: FATAL/;s/\[ WARN\] \[[0-9]*.[0-9]*\]:/[${ROBOT_HLI_NODE_NAME}: ROS WARNING]/;s/\[${ROBOT_HLI_NODE_NAME}: ERROR\] \[[0-9]*.[0-9]*\]:/[${ROBOT_HLI_NODE_NAME}: ROS ERROR]/" > /tmp/${LOG_PIPE} &
 
 echo "Running ${WORLD_NODE_NAME}..."
-rosrun ${WORLD_PACKAGE_NAME} ${WORLD_NODE_NAME} &
+rosrun ${WORLD_PACKAGE_NAME} ${WORLD_NODE_NAME} |& sed -u -r "s/DEBUG/${WORLD_NODE_NAME}: DEBUG/;s/ERROR/${WORLD_NODE_NAME}: ERROR/;s/FATAL/${WORLD_NODE_NAME}: FATAL/;s/\[ WARN\] \[[0-9]*.[0-9]*\]:/[${WORLD_NODE_NAME}: ROS WARNING]/;s/\[${WORLD_NODE_NAME}: ERROR\] \[[0-9]*.[0-9]*\]:/[${WORLD_NODE_NAME}: ROS ERROR]/" > /tmp/${LOG_PIPE} &
 
 echo "Running ${TUI_NODE_NAME}..."
 rosrun ${TUI_PACKAGE_NAME} ${TUI_NODE_NAME}
