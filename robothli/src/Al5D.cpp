@@ -6,8 +6,10 @@ namespace Robot
 
 Al5D::Al5D(const Kinematics::PosePoint &start, std::array<double, 4> currentAngles) : RobotModel(start)
 {
+    auto &logger = Utilities::Logger::instance();
     setupKinematicChain(currentAngles);
     endEffector = pose.calculatePoint(start);
+    logger.log(Utilities::LogLevel::Debug, "Initial end effector position: (%f, %f, %f)", endEffector.x(), endEffector.y(), endEffector.z());
 }
 
 void
@@ -28,4 +30,5 @@ Al5D::setupKinematicChain(std::array<double, 4> currentAngles)
     kinematicChain.set(base, wrist);
     pose.setKinematicChain(kinematicChain);
 }
+
 }

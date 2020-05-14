@@ -45,7 +45,7 @@ void DevelopMode::handleFindRectangle(const std::string& color)
         const WorldColor worldColor = colorKeywordToWorldInterface(colorKeyword);
         auto shapes = communicator.findShapes(worldShape, worldColor);
         if(shapes.size() > 1) createShapeChoiceMenu(shapes);
-        if(shapes.size() == 1) communicator.goToPosition(shapes[0].points.x, shapes[0].points.y, standardZ);
+        if(shapes.size() == 1) communicator.goToPosition(shapes[0].points.x/100.0, shapes[0].points.y/100.0, standardZ/100.0);
     }
     catch(std::exception& e)
     {
@@ -62,7 +62,7 @@ void DevelopMode::handleFindSquare(const std::string& color)
         const WorldColor worldColor = colorKeywordToWorldInterface(colorKeyword);
         auto shapes = communicator.findShapes(worldShape, worldColor);
         if(shapes.size() > 1) createShapeChoiceMenu(shapes);
-        if(shapes.size() == 1) communicator.goToPosition(shapes[0].points.x, shapes[0].points.y, standardZ);
+        if(shapes.size() == 1) communicator.goToPosition(shapes[0].points.x/100.0, shapes[0].points.y/100.0, standardZ/100.0);
     }
     catch(std::exception& e)
     {
@@ -113,24 +113,28 @@ DevelopMode::WorldColor DevelopMode::colorKeywordToWorldInterface(Keyword keywor
 void DevelopMode::createShapeChoiceMenu(const std::vector<tui::Shape>& shapes)
 {
     char choice;
-    bool successfulChoice = false;
     logger.log(Utilities::LogLevel::Raw, "Found multiple shapes! Make a choice from the following shapes.");
-    do {
+    while(true)
+    {
         for (unsigned int i = 0; i < shapes.size(); ++i) {
             logger.log(Utilities::LogLevel::Raw, "%d -> center: (%f, %f), rotation: %d", i, shapes[i].points.x,
                        shapes[i].points.y, shapes[i].rotation);
         }
         logger.log(Utilities::LogLevel::Raw, "q: exit menu");
         std::cin >> choice;
-        if(choice == 'q') successfulChoice = true;
-        if(isdigit(choice) && choice < shapes.size())
+        if(choice == 'q') break;
+        else if(isdigit(choice))
         {
             //TODO: make an option for rotation
-            communicator.goToPosition(shapes[choice].points.x, shapes[choice].points.y, standardZ);
-            successfulChoice = true;
+            int index = static_cast<int>(choice) - 48;
+            if(index < shapes.size())
+            {
+                communicator.goToPosition(shapes[index].points.x/100.0, shapes[index].points.y/100.0, standardZ/100.0);
+                break;
+            }
         }
 
-    }while(!successfulChoice);
+    }
 
 }
 
@@ -143,7 +147,7 @@ void DevelopMode::handleFindCircle(const std::string& color)
         const WorldColor worldColor = colorKeywordToWorldInterface(colorKeyword);
         auto shapes = communicator.findShapes(worldShape, worldColor);
         if(shapes.size() > 1) createShapeChoiceMenu(shapes);
-        if(shapes.size() == 1) communicator.goToPosition(shapes[0].points.x, shapes[0].points.y, standardZ);
+        if(shapes.size() == 1) communicator.goToPosition(shapes[0].points.x/100.0, shapes[0].points.y/100.0, standardZ/100.0);
     }
     catch(std::exception& e)
     {

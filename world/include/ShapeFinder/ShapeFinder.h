@@ -19,11 +19,13 @@
 #include <ros/ros.h>
 #include <world/ShapeFinderService.h>
 
+#include <utilities/IniParser.h>
+
     class ShapeFinder{
     public:
         std::vector<world::Shape> ServiceCallback(Shape::ShapeTypes shape, ColorFilter::color color);
 
-        explicit ShapeFinder(std::unique_ptr<Sensor> sensor);
+        ShapeFinder(std::unique_ptr<Sensor> sensor, Utilities::IniParser& anIniParser);
 
       bool handleRequest(world::ShapeFinderService::Request &req, world::ShapeFinderService::Response &res);
 
@@ -42,7 +44,8 @@
         cv::Mat PrepareImgForContourMatching(cv::Mat &input, cv::Mat &Mask);
         double angle(cv::Point pt1, cv::Point pt2, cv::Point pt0);
         void setLabel(cv::Mat& im, const std::string label, std::vector<cv::Point>& contour);
-      ros::NodeHandle n;
-      ros::ServiceServer service;
+        ros::NodeHandle n;
+        ros::ServiceServer service;
+        Utilities::IniParser& iniParser;
     };
 #endif 

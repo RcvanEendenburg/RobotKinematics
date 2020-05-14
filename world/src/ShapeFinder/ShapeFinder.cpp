@@ -6,7 +6,8 @@
 #include "Shape/RectShape.h"
 #include "Shape/AbstractShape.h"
 
-ShapeFinder::ShapeFinder(std::unique_ptr<Sensor> sensor) : mySensor(std::move(sensor)), n()
+ShapeFinder::ShapeFinder(std::unique_ptr<Sensor> sensor, Utilities::IniParser& anIniParser) : mySensor(std::move(sensor)),
+n(), iniParser(anIniParser)
 {
     service = n.advertiseService("ShapeFinderService" , &ShapeFinder::handleRequest, this);
 }
@@ -32,7 +33,8 @@ std::vector<world::Shape> ShapeFinder::ServiceCallback(Shape::ShapeTypes shape, 
     img = mySensor->getFrame();
 
     auto calibration = new ArucoCalibration();
-    calibration->Calibrate(img);
+    calibration->Calibrate(img, iniParser.get<int>("Calibration","ArucoMarkerSize"),
+        iniParser.get<int>("Calibration","ArucoId"));
 
     filteredImg = filterImage(img);
     filteredImg.copyTo(markedImg);
@@ -83,11 +85,11 @@ std::vector<world::Shape> ShapeFinder::ServiceCallback(Shape::ShapeTypes shape, 
         convertPixelToMM(response, calibration);
 
     // this window is shown for debugging
-    std::string windowName = "Display window";
-    namedWindow( windowName, cv::WINDOW_NORMAL);
-    cv::resizeWindow(windowName, 500, 500);
-    imshow( windowName, markedImg );
-    cv::waitKey(0);
+//    std::string windowName = "Display window";
+//    namedWindow( windowName, cv::WINDOW_NORMAL);
+//    cv::resizeWindow(windowName, 500, 500);
+//    imshow( windowName, markedImg );
+//    cv::waitKey(0);
     return response;
 }
 
