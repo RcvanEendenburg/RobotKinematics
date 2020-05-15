@@ -1,17 +1,6 @@
 #include <al5d/Joint.h>
 
-Joint::Joint() : channel(0), angle(0), minAngle(0), maxAngle(0), minPwm(0), maxPwm(0), speed(0)
-{
-
-}
-
-Joint::Joint(unsigned short aChannel, double anAngle) : channel(aChannel),
-                                                        angle(anAngle),
-                                                        minAngle(0),
-                                                        maxAngle(0),
-                                                        minPwm(0),
-                                                        maxPwm(0),
-                                                        speed(0)
+Joint::Joint() : channel(0), valueBounds({0,0}), pwmBounds({0,0}), speed(0)
 {
 
 }
@@ -22,20 +11,18 @@ Joint::operator=(const Joint &rhs)
     if (this != &rhs)
     {
         channel = rhs.channel;
-        angle = rhs.angle;
-        minAngle = rhs.minAngle;
-        maxAngle = rhs.maxAngle;
-        minPwm = rhs.minPwm;
-        maxPwm = rhs.maxPwm;
+        currentValue = rhs.currentValue;
+        valueBounds = rhs.valueBounds;
+        pwmBounds = rhs.pwmBounds;
         speed = rhs.speed;
     }
     return *this;
 }
 
 void
-Joint::setAngle(double anAngle)
+Joint::setValue(double value)
 {
-    angle = anAngle;
+    currentValue = value;
 }
 
 void
@@ -53,16 +40,15 @@ Joint::getChannel() const
 unsigned short
 Joint::getPwm() const
 {
-    return static_cast<unsigned short>(minPwm + ((maxPwm - minPwm) / (maxAngle - minAngle)) * (angle - minAngle));
+    return static_cast<unsigned short>(pwmBounds.first + ((pwmBounds.second - pwmBounds.first) /
+    (valueBounds.second - valueBounds.first)) * (currentValue - valueBounds.first));
 }
 
 void
-Joint::setLimits(double aMinAngle, double aMaxAngle, unsigned short aMinPwm, unsigned short aMaxPwm)
+Joint::setLimits(MinMaxValue value, MinMaxPwm pwm)
 {
-    minAngle = aMinAngle;
-    maxAngle = aMaxAngle;
-    minPwm = aMinPwm;
-    maxPwm = aMaxPwm;
+    valueBounds = value;
+    pwmBounds = pwm;
 }
 
 void

@@ -1,5 +1,7 @@
 #goal definition
 geometry_msgs/Point point
+float64 rotation
+float64 opening_distance
 ---
 #result definition
 bool result

@@ -33,7 +33,7 @@ public:
     void
     setWristRotateAngle(double angle);
     void
-    setGripperAngle(double angle);
+    setGripperDistance(double distance);
 
     void
     setBaseChannel(unsigned short channel);
@@ -49,17 +49,17 @@ public:
     setGripperChannel(unsigned short channel);
 
     void
-    setBaseLimits(double aMinAngle, double aMaxAngle, unsigned short aMinPwm, unsigned short aMaxPwm);
+    setBaseLimits(Joint::MinMaxValue angleBounds, Joint::MinMaxPwm pwm);
     void
-    setShoulderLimits(double aMinAngle, double aMaxAngle, unsigned short aMinPwm, unsigned short aMaxPwm);
+    setShoulderLimits(Joint::MinMaxValue angleBounds, Joint::MinMaxPwm pwm);
     void
-    setElbowLimits(double aMinAngle, double aMaxAngle, unsigned short aMinPwm, unsigned short aMaxPwm);
+    setElbowLimits(Joint::MinMaxValue angleBounds, Joint::MinMaxPwm pwm);
     void
-    setWristLimits(double aMinAngle, double aMaxAngle, unsigned short aMinPwm, unsigned short aMaxPwm);
+    setWristLimits(Joint::MinMaxValue angleBounds, Joint::MinMaxPwm pwm);
     void
-    setWristRotateLimits(double aMinAngle, double aMaxAngle, unsigned short aMinPwm, unsigned short aMaxPwm);
+    setWristRotateLimits(Joint::MinMaxValue angleBounds, Joint::MinMaxPwm pwm);
     void
-    setGripperLimits(double aMinAngle, double aMaxAngle, unsigned short aMinPwm, unsigned short aMaxPwm);
+    setGripperLimits(Joint::MinMaxValue distanceBounds, Joint::MinMaxPwm pwm);
 
     void
     setBaseSpeed(unsigned short speed);
@@ -74,8 +74,7 @@ public:
     void
     setGripperSpeed(unsigned short speed);
 
-    void
-    move(unsigned short time);
+    void move(unsigned short time);
 
 private:
     Utilities::Logger &logger;

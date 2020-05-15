@@ -16,35 +16,35 @@ Application::Application(int argc, char **argv, const std::string &configFile) :
     controller.setWristRotateChannel(static_cast<unsigned short>(iniParser.get<int>("Joints", "wrist_rotate_channel")));
     controller.setGripperChannel(static_cast<unsigned short>(iniParser.get<int>("Joints", "gripper_channel")));
 
-    controller.setBaseLimits(iniParser.get<double>("Joints", "base_min_angle"),
-                             iniParser.get<double>("Joints", "base_max_angle"),
-                             static_cast<unsigned short>(iniParser.get<int>("Joints", "base_min_pwm")),
-                             static_cast<unsigned short>(iniParser.get<int>("Joints", "base_max_pwm")));
+    controller.setBaseLimits({iniParser.get<double>("Joints", "base_min_angle"),
+                             iniParser.get<double>("Joints", "base_max_angle")},
+                             {static_cast<unsigned short>(iniParser.get<int>("Joints", "base_min_pwm")),
+                             static_cast<unsigned short>(iniParser.get<int>("Joints", "base_max_pwm"))});
 
-    controller.setShoulderLimits(iniParser.get<double>("Joints", "shoulder_min_angle"),
-                                 iniParser.get<double>("Joints", "shoulder_max_angle"),
-                                 static_cast<unsigned short>(iniParser.get<int>("Joints", "shoulder_min_pwm")),
-                                 static_cast<unsigned short>(iniParser.get<int>("Joints", "shoulder_max_pwm")));
+    controller.setShoulderLimits({iniParser.get<double>("Joints", "shoulder_min_angle"),
+                                 iniParser.get<double>("Joints", "shoulder_max_angle")},
+                                 {static_cast<unsigned short>(iniParser.get<int>("Joints", "shoulder_min_pwm")),
+                                 static_cast<unsigned short>(iniParser.get<int>("Joints", "shoulder_max_pwm"))});
 
-    controller.setElbowLimits(iniParser.get<double>("Joints", "elbow_min_angle"),
-                              iniParser.get<double>("Joints", "elbow_max_angle"),
-                              static_cast<unsigned short>(iniParser.get<int>("Joints", "elbow_min_pwm")),
-                              static_cast<unsigned short>(iniParser.get<int>("Joints", "elbow_max_pwm")));
+    controller.setElbowLimits({iniParser.get<double>("Joints", "elbow_min_angle"),
+                              iniParser.get<double>("Joints", "elbow_max_angle")},
+                              {static_cast<unsigned short>(iniParser.get<int>("Joints", "elbow_min_pwm")),
+                              static_cast<unsigned short>(iniParser.get<int>("Joints", "elbow_max_pwm"))});
 
-    controller.setWristLimits(iniParser.get<double>("Joints", "wrist_min_angle"),
-                              iniParser.get<double>("Joints", "wrist_max_angle"),
-                              static_cast<unsigned short>(iniParser.get<int>("Joints", "wrist_min_pwm")),
-                              static_cast<unsigned short>(iniParser.get<int>("Joints", "wrist_max_pwm")));
+    controller.setWristLimits({iniParser.get<double>("Joints", "wrist_min_angle"),
+                              iniParser.get<double>("Joints", "wrist_max_angle")},
+                              {static_cast<unsigned short>(iniParser.get<int>("Joints", "wrist_min_pwm")),
+                              static_cast<unsigned short>(iniParser.get<int>("Joints", "wrist_max_pwm"))});
 
-    controller.setWristRotateLimits(iniParser.get<double>("Joints", "wrist_rotate_min_angle"),
-                                    iniParser.get<double>("Joints", "wrist_rotate_max_angle"),
-                                    static_cast<unsigned short>(iniParser.get<int>("Joints", "wrist_rotate_min_pwm")),
-                                    static_cast<unsigned short>(iniParser.get<int>("Joints", "wrist_rotate_max_pwm")));
+    controller.setWristRotateLimits({iniParser.get<double>("Joints", "wrist_rotate_min_angle"),
+                                    iniParser.get<double>("Joints", "wrist_rotate_max_angle")},
+                                    {static_cast<unsigned short>(iniParser.get<int>("Joints", "wrist_rotate_min_pwm")),
+                                    static_cast<unsigned short>(iniParser.get<int>("Joints", "wrist_rotate_max_pwm"))});
 
-    controller.setGripperLimits(iniParser.get<double>("Joints", "gripper_min_angle"),
-                                iniParser.get<double>("Joints", "gripper_max_angle"),
-                                static_cast<unsigned short>(iniParser.get<int>("Joints", "gripper_min_pwm")),
-                                static_cast<unsigned short>(iniParser.get<int>("Joints", "gripper_max_pwm")));
+    controller.setGripperLimits({iniParser.get<double>("Joints", "gripper_min_distance"),
+                                iniParser.get<double>("Joints", "gripper_max_distance")},
+                                {static_cast<unsigned short>(iniParser.get<int>("Joints", "gripper_min_pwm")),
+                                static_cast<unsigned short>(iniParser.get<int>("Joints", "gripper_max_pwm"))});
 
     controller.setBaseSpeed(static_cast<unsigned short>(iniParser.get<int>("Joints", "base_speed")));
     controller.setShoulderSpeed(static_cast<unsigned short>(iniParser.get<int>("Joints", "shoulder_speed")));
@@ -56,15 +56,14 @@ Application::Application(int argc, char **argv, const std::string &configFile) :
 
 void
 Application::move(double baseAngle, double shoulderAngle, double elbowAngle,
-                  double wristAngle, double wristRotateAngle, double gripperAngle, unsigned short time)
+                  double wristAngle, double wristRotateAngle, double gripperDistance, unsigned short time)
 {
     controller.setBaseAngle(baseAngle);
-    controller.setShoulderAngle(0);
+    controller.setShoulderAngle(shoulderAngle);
     controller.setElbowAngle(elbowAngle);
     controller.setWristAngle(wristAngle);
     controller.setWristRotateAngle(wristRotateAngle);
-    controller.setGripperAngle(gripperAngle);
-
+    controller.setGripperDistance(gripperDistance);
     controller.move(time);
 }
 

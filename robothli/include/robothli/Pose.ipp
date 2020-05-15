@@ -51,6 +51,24 @@ Pose<dof>::setAngles(Pose<dof>::Angles angles)
             joint = joint->getNext();
         }
     }
+    keepVertical();
+}
+
+template <std::size_t dof> void Pose<dof>::keepVertical()
+{
+    double sum                   = 45;
+    std::shared_ptr<Joint> joint = kinematicChain.end()->getPrevious();
+    while(joint)
+    {
+        if(joint->canYRotate())
+        {
+            joint = joint->getPrevious();
+            continue;
+        }
+        sum -= joint->getAngle();
+        joint = joint->getPrevious();
+    }
+    kinematicChain.end()->setAngle(sum);
 }
 
 template<std::size_t dof> const KinematicChain &

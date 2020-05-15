@@ -28,7 +28,7 @@ Application::Application(int argc, char **argv, const std::string &configFile) :
 }
 
 void
-Application::moveToGoal(double x, double y, double z)
+Application::moveToGoal(double x, double y, double z, double rotation, double openingDistance)
 {
     static Kinematics::Beta beta
         {
@@ -48,7 +48,7 @@ Application::moveToGoal(double x, double y, double z)
         auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
         logger.log(Utilities::LogLevel::Debug, "Gradient descent took %d microseconds to calculate", duration.count());
         auto angles = algorithm.getCurrentAngles();
-        communicator.move(angles[0], angles[1], angles[2], angles[3], 0, 0,
+        communicator.move(angles[0], angles[1], angles[2], angles[3], rotation, openingDistance,
                           static_cast<unsigned short>(iniParser.get<int>("Robot", "move_time")));
     }
     catch (Kinematics::UnableToMove& e)

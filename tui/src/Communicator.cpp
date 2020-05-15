@@ -12,17 +12,19 @@ Communicator::Communicator(const std::string &highLevelDriver, Application &app)
     application.iniParser.get<std::string>("TUI", "world_service")))
 {
     application.logger.log(Utilities::LogLevel::Debug, "Setting up communication module...");
-//    actionClient.waitForServer();
+    actionClient.waitForServer();
 }
 
 void
-Communicator::goToPosition(double x, double y, double z)
+Communicator::goToPosition(double x, double y, double z, double rotation, double openingDistance)
 {
     application.logger.log(Utilities::LogLevel::Debug, "Sending goal to the high level driver...");
     tui::PickUpObjectGoal goal;
     goal.point.x = x;
     goal.point.y = y;
     goal.point.z = z;
+    goal.rotation = rotation;
+    goal.opening_distance = openingDistance;
 
     actionClient.sendGoal(goal);
 
