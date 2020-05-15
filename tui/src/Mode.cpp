@@ -10,8 +10,19 @@
 
 const std::map<Mode::Keyword, std::string> Mode::keywordTable
 {
-    {Keyword::Quit, "quit"},
-    {Keyword::Goto, "goto"}
+    {Keyword::Quit, "exit"},
+    {Keyword::Goto, "goto"},
+    {Keyword::Black, "black"},
+    {Keyword::Blue, "blue"},
+    {Keyword::Green, "green"},
+    {Keyword::Red, "red"},
+    {Keyword::Yellow, "yellow"},
+    {Keyword::White, "white"},
+    {Keyword::Rectangle, "rectangle"},
+    {Keyword::Square, "square"},
+    {Keyword::Circle, "circle"},
+    {Keyword::All, "all"},
+    {Keyword::Wood, "wood"}
 };
 
 const std::string& Mode::keywordToString(Keyword keyword)

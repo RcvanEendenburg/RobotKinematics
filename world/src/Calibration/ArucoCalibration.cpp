@@ -11,18 +11,12 @@
 
 #include <algorithm>
 
-void ArucoCalibration::Calibrate(cv::Mat img)
+void ArucoCalibration::Calibrate(cv::Mat img, int markerSize, int arucoId)
 {
     // retrieve aruco size from config file.
     auto& logger = Utilities::Logger::instance();
     logger.setLogOutput(std::make_unique<Utilities::LogToCout>());
     logger.log(Utilities::LogLevel::Debug, "Calibrating coordinate system and camera with Aruco");
-
-    Utilities::IniParser parser = Utilities::IniParser("/home/rene/G/RobotKinematics/src/world/config/config.ini");
-    parser.parse();
-
-    int markerSize = parser.get<int>("Calibration","ArucoMarkerSize");
-    int arucoId = parser.get<int>("Calibration","ArucoId");
 
     std::vector<int> ids;
     std::vector<std::vector<cv::Point2f> > corners;

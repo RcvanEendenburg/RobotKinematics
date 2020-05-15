@@ -21,7 +21,7 @@ public:
 
     void
     move(double baseAngle, double shoulderAngle, double elbowAngle,
-         double wristAngle, double wristRotateAngle, double gripperAngle, unsigned short time);
+         double wristAngle, double wristRotateAngle, double gripperDistance, unsigned short time);
 
 private:
     ros::NodeHandle node_handle;

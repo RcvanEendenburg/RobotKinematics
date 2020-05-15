@@ -26,7 +26,7 @@ private:
     Utilities::IniParser iniParser;
 
     void
-    moveToGoal(double x, double y, double z);
+    moveToGoal(double x, double y, double z, double rotation, double openingDistance);
 
     Communication::Communicator communicator;
     Kinematics::PosePoint start;

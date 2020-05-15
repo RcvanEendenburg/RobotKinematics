@@ -5,7 +5,7 @@ namespace Kinematics
 template<std::size_t dof>
 GradientDescent<dof>::GradientDescent(const Beta &aBeta, std::unique_ptr<Robot::RobotModel<dof>> aRobot,
                                       double maxMagnitude, double maxIterations)
-    : beta(aBeta), robot(std::move(aRobot)), maximumMagnitude(maxMagnitude), maximumIterations(maxIterations)
+    : beta(aBeta), robot(std::move(aRobot)), maximumMagnitude(maxMagnitude), maximumIterations(maxIterations), previousAngles()
 {
     auto &logger = Utilities::Logger::instance();
     logger.log(Utilities::LogLevel::Debug, "Gradient descent: beta begin = %f", beta.begin);
@@ -28,16 +28,11 @@ GradientDescent<dof>::startMoving(const Kinematics::PosePoint &goal)
 
     logger.log(Utilities::LogLevel::Debug, "Starting to move to point: (%f, %f, %f)", goal.x(), goal.y(), goal.z());
 
-    //If we save the current position, we always have a point to fallback to when the robot cannot reach the goal!
-    auto start = robot->position();
-
     while (robot->distance(goal) > maximumMagnitude)
     {
         if (its > maximumIterations)
         {
-            logger.log(Utilities::LogLevel::Warning, "Now trying to go back to previous position");
-            startMoving(start);
-            throw std::runtime_error("Gradient descent exceeded maximum amount of iterations!");
+            throw UnableToMove();
         }
 
         auto thetaOld = robot->angles();
@@ -112,6 +107,18 @@ GradientDescent<dof>::getCurrentAngles() const
     for (std::size_t i = 0; i < dof; ++i)
         result[i] = currentAngles[0][i];
     return result;
+}
+
+template <std::size_t dof>
+void GradientDescent<dof>::restoreAngles()
+{
+    robot->update(previousAngles);
+}
+
+template <std::size_t dof>
+void GradientDescent<dof>::saveAngles()
+{
+    previousAngles = robot->angles();
 }
 
 

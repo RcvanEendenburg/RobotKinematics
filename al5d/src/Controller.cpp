@@ -52,92 +52,96 @@ void
 Controller::setBaseAngle(double angle)
 {
     logger.log(Utilities::LogLevel::Debug, "Setting base angle to %f", angle);
-    joints[Base].setAngle(angle);
+    joints[Base].setValue(angle);
 }
 
 void
 Controller::setShoulderAngle(double angle)
 {
     logger.log(Utilities::LogLevel::Debug, "Setting shoulder angle to %f", angle);
-    joints[Shoulder].setAngle(angle);
+    joints[Shoulder].setValue(angle);
 }
 
 void
 Controller::setElbowAngle(double angle)
 {
     logger.log(Utilities::LogLevel::Debug, "Setting elbow angle to %f", angle);
-    joints[Elbow].setAngle(angle);
+    joints[Elbow].setValue(angle);
 }
 
 void
 Controller::setWristAngle(double angle)
 {
     logger.log(Utilities::LogLevel::Debug, "Setting wrist angle to %f", angle);
-    joints[Wrist].setAngle(angle);
+    joints[Wrist].setValue(angle);
 }
 
 void
 Controller::setWristRotateAngle(double angle)
 {
     logger.log(Utilities::LogLevel::Debug, "Setting wrist rotate angle to %f", angle);
-    joints[WristRotate].setAngle(angle);
+    joints[WristRotate].setValue(angle);
 }
 
 void
-Controller::setGripperAngle(double angle)
+Controller::setGripperDistance(double distance)
 {
-    logger.log(Utilities::LogLevel::Debug, "Setting gripper angle to %f", angle);
-    joints[Gripper].setAngle(angle);
+    logger.log(Utilities::LogLevel::Debug, "Setting gripper distance to %f", distance);
+    joints[Gripper].setValue(distance);
 }
 
 void
-Controller::setBaseLimits(double aMinAngle, double aMaxAngle, unsigned short aMinPwm, unsigned short aMaxPwm)
+Controller::setBaseLimits(Joint::MinMaxValue angleBounds, Joint::MinMaxPwm pwm)
 {
     logger.log(Utilities::LogLevel::Debug, "Setting base limits -> min_angle: %f, max_angle: %f, "
-                                           "min_pwm: %d, max_pwm: %d", aMinAngle, aMaxAngle, aMinPwm, aMaxPwm);
-    joints[Base].setLimits(aMinAngle, aMaxAngle, aMinPwm, aMaxPwm);
-
+                                           "min_pwm: %d, max_pwm: %d", angleBounds.first, angleBounds.second,
+                                           pwm.first, pwm.second);
+    joints[Base].setLimits(angleBounds, pwm);
 }
 
 void
-Controller::setShoulderLimits(double aMinAngle, double aMaxAngle, unsigned short aMinPwm, unsigned short aMaxPwm)
+Controller::setShoulderLimits(Joint::MinMaxValue angleBounds, Joint::MinMaxPwm pwm)
 {
     logger.log(Utilities::LogLevel::Debug, "Setting shoulder limits -> min_angle: %f, max_angle: %f, "
-                                           "min_pwm: %d, max_pwm: %d", aMinAngle, aMaxAngle, aMinPwm, aMaxPwm);
-    joints[Shoulder].setLimits(aMinAngle, aMaxAngle, aMinPwm, aMaxPwm);
-
+                                           "min_pwm: %d, max_pwm: %d", angleBounds.first, angleBounds.second,
+                                           pwm.first, pwm.second);
+    joints[Shoulder].setLimits(angleBounds, pwm);
 }
 
 void
-Controller::setElbowLimits(double aMinAngle, double aMaxAngle, unsigned short aMinPwm, unsigned short aMaxPwm)
+Controller::setElbowLimits(Joint::MinMaxValue angleBounds, Joint::MinMaxPwm pwm)
 {
     logger.log(Utilities::LogLevel::Debug, "Setting elbow limits -> min_angle: %f, max_angle: %f, "
-                                           "min_pwm: %d, max_pwm: %d", aMinAngle, aMaxAngle, aMinPwm, aMaxPwm);
-    joints[Elbow].setLimits(aMinAngle, aMaxAngle, aMinPwm, aMaxPwm);
+                                           "min_pwm: %d, max_pwm: %d", angleBounds.first, angleBounds.second,
+                                           pwm.first, pwm.second);
+    joints[Elbow].setLimits(angleBounds, pwm);
 }
 
 void
-Controller::setWristLimits(double aMinAngle, double aMaxAngle, unsigned short aMinPwm, unsigned short aMaxPwm)
+Controller::setWristLimits(Joint::MinMaxValue angleBounds, Joint::MinMaxPwm pwm)
 {
     logger.log(Utilities::LogLevel::Debug, "Setting wrist limits -> min_angle: %f, max_angle: %f, "
-                                           "min_pwm: %d, max_pwm: %d", aMinAngle, aMaxAngle, aMinPwm, aMaxPwm);
-    joints[Wrist].setLimits(aMinAngle, aMaxAngle, aMinPwm, aMaxPwm);
+                                           "min_pwm: %d, max_pwm: %d", angleBounds.first, angleBounds.second,
+                                           pwm.first, pwm.second);
+    joints[Wrist].setLimits(angleBounds, pwm);
 }
 
 void
-Controller::setWristRotateLimits(double aMinAngle, double aMaxAngle, unsigned short aMinPwm, unsigned short aMaxPwm)
+Controller::setWristRotateLimits(Joint::MinMaxValue angleBounds, Joint::MinMaxPwm pwm)
 {
     logger.log(Utilities::LogLevel::Debug, "Setting wrist rotate limits -> min_angle: %f, max_angle: %f, "
-                                           "min_pwm: %d, max_pwm: %d", aMinAngle, aMaxAngle, aMinPwm, aMaxPwm);
-    joints[WristRotate].setLimits(aMinAngle, aMaxAngle, aMinPwm, aMaxPwm);
+                                           "min_pwm: %d, max_pwm: %d", angleBounds.first, angleBounds.second,
+                                           pwm.first, pwm.second);
+    joints[WristRotate].setLimits(angleBounds, pwm);
 }
 
 void
-Controller::setGripperLimits(double aMinAngle, double aMaxAngle, unsigned short aMinPwm, unsigned short aMaxPwm)
+Controller::setGripperLimits(Joint::MinMaxValue distanceBounds, Joint::MinMaxPwm pwm)
 {
-    logger.log(Utilities::LogLevel::Debug, "Setting gripper limits -> min_angle: %f, max_angle: %f, "
-                                           "min_pwm: %d, max_pwm: %d", aMinAngle, aMaxAngle, aMinPwm, aMaxPwm);
-    joints[Gripper].setLimits(aMinAngle, aMaxAngle, aMinPwm, aMaxPwm);
+    logger.log(Utilities::LogLevel::Debug, "Setting gripper limits -> min_distance: %f, max_distance: %f, "
+                                           "min_pwm: %d, max_pwm: %d", distanceBounds.first, distanceBounds.second,
+                                           pwm.first, pwm.second);
+    joints[Gripper].setLimits(distanceBounds, pwm);
 }
 
 void

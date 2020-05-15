@@ -1,10 +1,13 @@
 #ifndef JOINT_H
 #define JOINT_H
 
+#include <utility>
+
 class Joint
 {
 public:
-    Joint(unsigned short aChannel, double anAngle);
+    using MinMaxValue = std::pair<double, double>;
+    using MinMaxPwm = std::pair<unsigned short, unsigned short>;
 
     Joint();
 
@@ -16,7 +19,7 @@ public:
     operator=(const Joint &rhs);
 
     void
-    setAngle(double anAngle);
+    setValue(double value);
 
     void
     setChannel(unsigned short aChannel);
@@ -28,7 +31,7 @@ public:
     getPwm() const;
 
     void
-    setLimits(double aMinAngle, double aMaxAngle, unsigned short aMinPwm, unsigned short aMaxPwm);
+    setLimits(MinMaxValue value, MinMaxPwm pwm);
 
     void
     setSpeed(unsigned short aSpeed);
@@ -38,11 +41,9 @@ public:
 
 private:
     unsigned short channel;
-    double angle;
-    double minAngle;
-    double maxAngle;
-    unsigned short minPwm;
-    unsigned short maxPwm;
+    double currentValue{};
+    MinMaxValue valueBounds;
+    MinMaxPwm pwmBounds;
     unsigned short speed;
 };
 

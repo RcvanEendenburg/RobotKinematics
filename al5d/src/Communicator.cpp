@@ -16,7 +16,7 @@ void
 Communicator::execute(const al5d::MoveRobotGoalConstPtr &goal)
 {
     application.move(goal->base_angle, goal->shoulder_angle, goal->elbow_angle,
-                     goal->wrist_angle, goal->wrist_rotate_angle, goal->gripper_angle, goal->time);
+                     goal->wrist_angle, goal->wrist_rotate_angle, goal->gripper_distance, goal->time);
     action_server.setSucceeded();
 }
 

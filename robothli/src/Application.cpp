@@ -23,31 +23,39 @@ Application::Application(int argc, char **argv, const std::string &configFile) :
             iniParser.get<double>("Kinematics", "start_angle_wrist")};
 
     robot = std::move(std::make_unique<Robot::Al5D>(start, currentAngles));
+
     logger.log(Utilities::LogLevel::Debug, "Starting application...");
 }
 
 void
-Application::moveToGoal(double x, double y, double z)
+Application::moveToGoal(double x, double y, double z, double rotation, double openingDistance)
 {
+    static Kinematics::Beta beta
+        {
+            .bigFactor = iniParser.get<double>("Kinematics", "beta_big_factor"),
+            .smallFactor = iniParser.get<double>("Kinematics", "beta_small_factor"),
+            .begin = iniParser.get<double>("Kinematics", "beta_begin"),
+        };
+    static Kinematics::GradientDescent<4> algorithm(beta, std::move(robot),
+                                                    iniParser.get<double>("Kinematics", "maximum_magnitude"),
+                                                    iniParser.get<double>("Kinematics", "maximum_iterations"));
+    algorithm.saveAngles();
     try
     {
-        static Kinematics::Beta beta
-            {
-                .bigFactor = iniParser.get<double>("Kinematics", "beta_big_factor"),
-                .smallFactor = iniParser.get<double>("Kinematics", "beta_small_factor"),
-                .begin = iniParser.get<double>("Kinematics", "beta_begin"),
-            };
-        static Kinematics::GradientDescent<4> algorithm(beta, std::move(robot),
-                                                        iniParser.get<double>("Kinematics", "maximum_magnitude"),
-                                                        iniParser.get<double>("Kinematics", "maximum_iterations"));
         auto start = std::chrono::high_resolution_clock::now();
         algorithm.startMoving(Kinematics::PosePoint(x, y, z));
         auto stop = std::chrono::high_resolution_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
         logger.log(Utilities::LogLevel::Debug, "Gradient descent took %d microseconds to calculate", duration.count());
         auto angles = algorithm.getCurrentAngles();
-        communicator.move(angles[0], angles[1], angles[2], angles[3], 0, 0,
+        communicator.move(angles[0], angles[1], angles[2], angles[3], rotation, openingDistance,
                           static_cast<unsigned short>(iniParser.get<int>("Robot", "move_time")));
+    }
+    catch (Kinematics::UnableToMove& e)
+    {
+        logger.log(Utilities::LogLevel::Error, e.what());
+        logger.log(Utilities::LogLevel::Warning, "Changing angles to previous angles...");
+        algorithm.restoreAngles();
     }
     catch (std::exception &e)
     {

@@ -8,21 +8,23 @@
 namespace Communication
 {
 Communicator::Communicator(const std::string &highLevelDriver, Application &app) :
-    actionClient(highLevelDriver, true),
-    application(app)
+    actionClient(highLevelDriver, true), application(app), worldClient(node.serviceClient<tui::ShapeFinderService>(
+    application.iniParser.get<std::string>("TUI", "world_service")))
 {
     application.logger.log(Utilities::LogLevel::Debug, "Setting up communication module...");
-//    actionClient.waitForServer();
+    actionClient.waitForServer();
 }
 
 void
-Communicator::goToPosition(double x, double y, double z)
+Communicator::goToPosition(double x, double y, double z, double rotation, double openingDistance)
 {
     application.logger.log(Utilities::LogLevel::Debug, "Sending goal to the high level driver...");
     tui::PickUpObjectGoal goal;
     goal.point.x = x;
     goal.point.y = y;
     goal.point.z = z;
+    goal.rotation = rotation;
+    goal.opening_distance = openingDistance;
 
     actionClient.sendGoal(goal);
 
@@ -34,5 +36,16 @@ Communicator::goToPosition(double x, double y, double z)
         application.logger.log(Utilities::LogLevel::Error, "Oops action server timed out...");
 }
 
+std::vector<tui::Shape> Communicator::findShapes(unsigned int shape, unsigned int color)
+{
+    tui::ShapeFinderService srv;
+    srv.request.shape = shape;
+    srv.request.color = color;
+    if(worldClient.call(srv))
+    {
+        return srv.response.foundShapes;
+    }
+    throw std::runtime_error("Failed to call world service");
+}
 
 }

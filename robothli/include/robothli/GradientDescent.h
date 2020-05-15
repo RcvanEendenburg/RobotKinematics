@@ -13,6 +13,14 @@
 namespace Kinematics
 {
 
+struct UnableToMove : public std::exception
+{
+    const char* what () const throw()
+    {
+        return "Unable to move to position";
+    }
+};
+
 struct Beta
 {
     const double bigFactor;
@@ -43,6 +51,9 @@ public:
     void
     startMoving(const PosePoint &goal);
 
+    void restoreAngles();
+    void saveAngles();
+
     std::array<double, dof>
     getCurrentAngles() const;
 
@@ -63,6 +74,7 @@ private:
 
     const double maximumMagnitude;
     const double maximumIterations;
+    typename Pose<dof>::Angles previousAngles;
 };
 }
 

@@ -12,7 +12,7 @@
 class ArucoCalibration
 {
 public:
-    void Calibrate(cv::Mat img);
+    void Calibrate(cv::Mat img, int markerSize, int arucoId);
 
     cv::Point2d GetMarkerLocation()
     {

@@ -12,12 +12,9 @@ Communicator::Communicator(const std::string &node_name, const std::string &low_
     application(app)
 {
     application.logger.log(Utilities::LogLevel::Debug, "Starting high level driver action server...");
-    std::cout << low_level_driver_name << std::endl;
     action_server.start();
     application.logger.log(Utilities::LogLevel::Debug, "Waiting for the low level driver to start...");
-    //TODO: this will hang forever somehow?
-    //EZ fix: just make sure the Al5D is set up before starting the high level interface
-//    action_client.waitForServer();
+    action_client.waitForServer();
     application.logger.log(Utilities::LogLevel::Debug, "Ready!");
 }
 
@@ -25,13 +22,13 @@ void
 Communicator::execute(const robothli::PickUpObjectGoalConstPtr &goal)
 {
     auto point = goal->point;
-    application.moveToGoal(point.x, point.y, point.z);
+    application.moveToGoal(point.x, point.y, point.z, goal->rotation, goal->opening_distance);
     action_server.setSucceeded();
 }
 
 void
 Communicator::move(double baseAngle, double shoulderAngle, double elbowAngle,
-                   double wristAngle, double wristRotateAngle, double gripperAngle, unsigned short time)
+                   double wristAngle, double wristRotateAngle, double gripperDistance, unsigned short time)
 {
     application.logger.log(Utilities::LogLevel::Debug, "Sending goal to the low level driver...");
     robothli::MoveRobotGoal goal;
@@ -40,7 +37,7 @@ Communicator::move(double baseAngle, double shoulderAngle, double elbowAngle,
     goal.elbow_angle = elbowAngle;
     goal.wrist_angle = wristAngle;
     goal.wrist_rotate_angle = wristRotateAngle;
-    goal.gripper_angle = gripperAngle;
+    goal.gripper_distance = gripperDistance;
     goal.time = time;
 
     action_client.sendGoal(goal);
