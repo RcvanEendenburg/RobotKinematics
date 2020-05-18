@@ -16,16 +16,16 @@
 
 int main(int argc, char **argv)
 {
+    auto &logger = Utilities::Logger::instance();
+    logger.setLogOutput(std::make_unique<Utilities::LogToCout>());
+    logger.log(Utilities::LogLevel::Debug, "Starting WorldService");
+
     if(argc > 1) {
         ros::init(argc, argv, "WorldService");
 
         //ShapeFinder shapeFinder(std::move(std::make_unique<StaticImage>("/home/rene/G/RobotKinematics/src/world/TestImage/Blocks01.jpg")));
         Utilities::IniParser parser = Utilities::IniParser(argv[1]);
         parser.parse();
-
-        auto &logger = Utilities::Logger::instance();
-        logger.setLogOutput(std::make_unique<Utilities::LogToCout>());
-        logger.log(Utilities::LogLevel::Debug, "Starting WorldService");
 
         std::unique_ptr<Sensor> aSensor;
 
@@ -41,6 +41,9 @@ int main(int argc, char **argv)
         ShapeFinder shapeFinder(std::move(aSensor), parser);
 
         ros::spin();
+    }
+    else {
+        logger.log(Utilities::LogLevel::Error, "No config file supplied!");
     }
     return 0;
 }
