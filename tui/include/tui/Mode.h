@@ -75,7 +75,9 @@ protected:
         Square,
         Circle,
         All,
-        Wood
+        Wood,
+        Develop,
+        Interactive
     };
 
     ///@{

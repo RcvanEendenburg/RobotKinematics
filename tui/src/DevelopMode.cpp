@@ -7,9 +7,6 @@
 DevelopMode::DevelopMode(Communication::Communicator& communicator, unsigned int zCoordinate) : Mode(communicator), standardZ(zCoordinate)
 {
     addOperationWithArgument(keywordToString(Keyword::Goto), [this](const std::string& arg){return goToPosition(arg);});
-    addOperationWithArgument(keywordToString(Keyword::Rectangle), [this](const std::string& arg){handleFindRectangle(arg);});
-    addOperationWithArgument(keywordToString(Keyword::Square), [this](const std::string& arg){handleFindSquare(arg);});
-    addOperationWithArgument(keywordToString(Keyword::Circle), [this](const std::string& arg){handleFindCircle(arg);});
 }
 
 void DevelopMode::goToPosition(const std::string& positionStr)
@@ -34,128 +31,6 @@ void DevelopMode::goToPosition(const std::string& positionStr)
         throw std::runtime_error("This is not a valid coordinate!");
 
     communicator.goToPosition(coordinates.at(0)/100.0, coordinates.at(1)/100.0, coordinates.at(2)/100.0);
-}
-
-void DevelopMode::handleFindRectangle(const std::string& color)
-{
-    try
-    {
-        const Keyword colorKeyword = stringToKeyword(color);
-        const WorldShape worldShape = shapeKeywordToWorldInterface(Keyword::Rectangle);
-        const WorldColor worldColor = colorKeywordToWorldInterface(colorKeyword);
-        auto shapes = communicator.findShapes(worldShape, worldColor);
-        if(shapes.size() > 1) createShapeChoiceMenu(shapes);
-        if(shapes.size() == 1) communicator.goToPosition(shapes[0].points.x/100.0, shapes[0].points.y/100.0,
-            standardZ/100.0, shapes[0].rotation);
-    }
-    catch(std::exception& e)
-    {
-        throw;
-    }
-}
-
-void DevelopMode::handleFindSquare(const std::string& color)
-{
-    try
-    {
-        const Keyword colorKeyword = stringToKeyword(color);
-        const WorldShape worldShape = shapeKeywordToWorldInterface(Keyword::Square);
-        const WorldColor worldColor = colorKeywordToWorldInterface(colorKeyword);
-        auto shapes = communicator.findShapes(worldShape, worldColor);
-        if(shapes.size() > 1) createShapeChoiceMenu(shapes);
-        if(shapes.size() == 1) communicator.goToPosition(shapes[0].points.x/100.0, shapes[0].points.y/100.0,
-            standardZ/100.0, shapes[0].rotation);
-    }
-    catch(std::exception& e)
-    {
-        throw;
-    }
-}
-
-DevelopMode::WorldShape DevelopMode::shapeKeywordToWorldInterface(Keyword keyword)
-{
-    switch(keyword)
-    {
-    case Keyword::Rectangle:
-        return WorldShape::RECTANGLE;
-    case Keyword::Square:
-        return WorldShape::SQUARE;
-    case Keyword::Circle:
-        return WorldShape::CIRCLE;
-    default:
-        throw std::runtime_error("This keyword is not a shape");
-    }
-}
-
-DevelopMode::WorldColor DevelopMode::colorKeywordToWorldInterface(Keyword keyword)
-{
-    switch(keyword)
-    {
-    case Keyword::All:
-        return WorldColor::ALL;
-    case Keyword::Yellow:
-        return WorldColor::YELLOW;
-    case Keyword::Red:
-        return WorldColor::RED;
-    case Keyword::Green:
-        return WorldColor::GREEN;
-    case Keyword::Blue:
-        return WorldColor::BLUE;
-    case Keyword::Black:
-        return WorldColor::BLACK;
-    case Keyword::White:
-        return WorldColor::WHITE;
-    case Keyword::Wood:
-        return WorldColor::WOOD;
-    default:
-        throw std::runtime_error("This keyword is not a color");
-    }
-}
-
-void DevelopMode::createShapeChoiceMenu(const std::vector<tui::Shape>& shapes)
-{
-    char choice;
-    logger.log(Utilities::LogLevel::Raw, "Found multiple shapes! Make a choice from the following shapes.");
-    while(true)
-    {
-        for (unsigned int i = 0; i < shapes.size(); ++i) {
-            logger.log(Utilities::LogLevel::Raw, "%d -> center: (%f, %f), rotation: %f", i, shapes[i].points.x,
-                       shapes[i].points.y, shapes[i].rotation);
-        }
-        logger.log(Utilities::LogLevel::Raw, "q: exit menu");
-        std::cin >> choice;
-        if(choice == 'q') break;
-        else if(isdigit(choice))
-        {
-            int index = static_cast<int>(choice) - '0';
-            if(index < shapes.size())
-            {
-                communicator.goToPosition(shapes[index].points.x/100.0, shapes[index].points.y/100.0, standardZ/100.0,
-                    shapes[index].rotation);
-                break;
-            }
-        }
-
-    }
-
-}
-
-void DevelopMode::handleFindCircle(const std::string& color)
-{
-    try
-    {
-        const Keyword colorKeyword = stringToKeyword(color);
-        const WorldShape worldShape = shapeKeywordToWorldInterface(Keyword::Circle);
-        const WorldColor worldColor = colorKeywordToWorldInterface(colorKeyword);
-        auto shapes = communicator.findShapes(worldShape, worldColor);
-        if(shapes.size() > 1) createShapeChoiceMenu(shapes);
-        if(shapes.size() == 1) communicator.goToPosition(shapes[0].points.x/100.0, shapes[0].points.y/100.0,
-            standardZ/100.0, shapes[0].rotation);
-    }
-    catch(std::exception& e)
-    {
-        throw;
-    }
 }
 
 void DevelopMode::start()

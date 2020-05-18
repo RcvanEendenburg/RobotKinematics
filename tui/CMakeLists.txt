@@ -37,6 +37,6 @@ include_directories(
         ${utilities_INCLUDE_DIRS}
 )
 
-add_executable(${PROJECT_NAME} src/main.cpp src/Application.cpp src/DevelopMode.cpp src/Mode.cpp src/Communicator.cpp)
+add_executable(${PROJECT_NAME} src/main.cpp src/Application.cpp src/DevelopMode.cpp src/Mode.cpp src/Communicator.cpp src/InteractiveMode.cpp include/tui/InteractiveMode.h src/MainMenu.cpp include/tui/MainMenu.h src/ChooseShapeMode.cpp include/tui/ChooseShapeMode.h)
 target_link_libraries(${PROJECT_NAME}  ${catkin_LIBRARIES} ${utilities_LIBRARIES} pthread)
 add_dependencies(${PROJECT_NAME} ${PROJECT_NAME}_generate_messages_cpp)

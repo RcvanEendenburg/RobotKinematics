@@ -23,10 +23,7 @@ private:
     friend class Communication::Communicator;
 
     Utilities::IniParser iniParser;
-
     Utilities::Logger &logger;
-    std::unique_ptr<Mode> currentMode;
-
     Communication::Communicator communicator;
 };
 

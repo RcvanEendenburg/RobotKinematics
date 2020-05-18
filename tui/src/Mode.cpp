@@ -22,7 +22,9 @@ const std::map<Mode::Keyword, std::string> Mode::keywordTable
     {Keyword::Square, "square"},
     {Keyword::Circle, "circle"},
     {Keyword::All, "all"},
-    {Keyword::Wood, "wood"}
+    {Keyword::Wood, "wood"},
+    {Keyword::Develop, "develop"},
+    {Keyword::Interactive, "interactive"}
 };
 
 const std::string& Mode::keywordToString(Keyword keyword)
