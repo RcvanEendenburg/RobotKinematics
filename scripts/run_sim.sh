@@ -87,6 +87,7 @@ prepare_generated_ini_file(){
 #$1 is the package
 #$2 is the node name
 #$3 is the config out file
+#$4 0 is async, 1 is sync
 start_ros_node(){
     echo "Starting $2..."
     REPLACE_DEBUG_STR="s/DEBUG/$2: DEBUG/"
@@ -98,7 +99,11 @@ start_ros_node(){
 
     REPLACE_LOG_STR="${REPLACE_DEBUG_STR};${REPLACE_ERROR_STR};${REPLACE_WARNING_STR};${REPLACE_FATAL_STR};${REPLACE_ROS_WARNING_STR};${REPLACE_ROS_ERROR_STR}"
 
-    rosrun $1 $2 "${ROS_WS}/src/$1/${CONFIG_FOLDER_NAME}/$3" |& sed -u -r "${REPLACE_LOG_STR}" > /tmp/${LOG_PIPE} &
+    if [[ ${4} -eq 0 ]]; then
+        rosrun $1 $2 "${ROS_WS}/src/$1/${CONFIG_FOLDER_NAME}/$3" |& sed -u -r "${REPLACE_LOG_STR}" > /tmp/${LOG_PIPE} &
+    else
+        rosrun $1 $2 "${ROS_WS}/src/$1/${CONFIG_FOLDER_NAME}/$3" |& sed -u -r "${REPLACE_LOG_STR}" > /tmp/${LOG_PIPE}
+    fi
 }
 
 trap cleanup EXIT
@@ -159,9 +164,9 @@ if [[ ${START_ROS_MASTER} -eq 1 ]]; then
     sleep 2
 fi
 
-start_ros_node ${AL5D_PACKAGE_NAME} ${AL5D_NODE_NAME} ${AL5D_CONFIG_FILE_NAME_OUT}
-start_ros_node ${ROBOT_HLI_PACKAGE_NAME} ${ROBOT_HLI_NODE_NAME} ${ROBOT_HLI_CONFIG_FILE_NAME_OUT}
-start_ros_node ${WORLD_PACKAGE_NAME} ${WORLD_NODE_NAME} ${WORLD_CONFIG_FILE_NAME_OUT}
+start_ros_node ${AL5D_PACKAGE_NAME} ${AL5D_NODE_NAME} ${AL5D_CONFIG_FILE_NAME_OUT} 0
+start_ros_node ${ROBOT_HLI_PACKAGE_NAME} ${ROBOT_HLI_NODE_NAME} ${ROBOT_HLI_CONFIG_FILE_NAME_OUT} 0
+start_ros_node ${WORLD_PACKAGE_NAME} ${WORLD_NODE_NAME} ${WORLD_CONFIG_FILE_NAME_OUT} 0
 
 echo "Running ${TUI_NODE_NAME}..."
 rosrun ${TUI_PACKAGE_NAME} ${TUI_NODE_NAME}
