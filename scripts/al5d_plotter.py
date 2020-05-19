@@ -89,8 +89,8 @@ class AL5D:
 
 al5d = AL5D(start=(0, 0, 0))
 al5d.add_joint(Joint(50, 20, True, True))
-al5d.add_joint(Joint(180, -30))
-al5d.add_joint(Joint(200, 90))
-al5d.add_joint(Joint(30, 90))
+al5d.add_joint(Joint(145, -30))
+al5d.add_joint(Joint(188, 90))
+al5d.add_joint(Joint(120, 90))
 al5d.plot_side_view()
 al5d.plot_top_view()

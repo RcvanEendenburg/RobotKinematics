@@ -17,9 +17,9 @@ Al5D::setupKinematicChain(std::array<double, 4> currentAngles)
     logger.log(Utilities::LogLevel::Debug, "Setting up AL5D kinematic chain");
 
     auto base = std::make_shared<Kinematics::Joint>(50, currentAngles[0], 0, -90, 90, true, true);
-    auto shoulder = std::make_shared<Kinematics::Joint>(180, currentAngles[1], 0, -30, 90, false, false);
-    auto elbow = std::make_shared<Kinematics::Joint>(200, currentAngles[2], 0, 0, 135, false, false);
-    auto wrist = std::make_shared<Kinematics::Joint>(30, currentAngles[3], 0, -90, 90, false, false);
+    auto shoulder = std::make_shared<Kinematics::Joint>(145, currentAngles[1], 0, -30, 90, false, false);
+    auto elbow = std::make_shared<Kinematics::Joint>(188, currentAngles[2], 0, 0, 135, false, false);
+    auto wrist = std::make_shared<Kinematics::Joint>(120, currentAngles[3], 0, -90, 90, false, false);
 
     base->setNext(shoulder);
     shoulder->setNext(elbow);
