@@ -22,8 +22,11 @@ Joint::Joint(double aLength,
     assert(anAngle >= aLowerBound && anAngle <= anUpperBound);
     auto &logger = Utilities::Logger::instance();
     logger.log(Utilities::LogLevel::Debug, "New joint -> {length: %f, angle: %f, angle offset: %f, lower bound: %f, "
-                                           "upper bound: %f, y rotate: %f, static length: %f}", length, angle,
-                                           lowerBound, upperBound, yRotate, staticLength);
+                                           "upper bound: %f, y rotate: %d, static length: %d}",
+               length,
+               angle,
+               angleOffset,
+               lowerBound, upperBound, yRotate, staticLength);
 }
 
 double

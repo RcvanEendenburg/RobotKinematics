@@ -13,6 +13,12 @@ START_ROS_MASTER=1
 #2 = log all (pipe must be emptied with cat)
 LOG_MODE=2
 
+#Sim mode (if disabled the hardware AL5D serial port will be read)
+#0 = disabled
+#1 = enabled
+SIM_MODE=1
+AL5D_SERIAL_PORT=
+
 #Only if log mode is set to 1
 LOG_FILE=rk_log.txt
 
@@ -42,12 +48,12 @@ TUI_NODE_NAME=tui
 #World
 WORLD_PACKAGE_NAME=world
 WORLD_NODE_NAME=world_node
-WORLD_CONFIG_FILE_NAME_IN=config_sim.ini
+WORLD_CONFIG_FILE_NAME_IN=config.ini
 WORLD_CONFIG_FILE_NAME_OUT=config_generated.ini
 WORLD_IMAGE_PATH_SUBSTITUTE_STR=IMAGE_PATH
 WORLD_IMAGE_PATH=TestImage/Blocks01.jpg
 WORLD_CAMERA_ENABLED_SUBSTITUTE_STR=CAMERA_ENABLED
-WORLD_CAMERA_ENABLED=0
+WORLD_CAMERA_ENABLED=1
 
 #Temporary file
 TMP_SERIAL_FILE_NAME=rk_serial_ports
@@ -113,23 +119,32 @@ cd ${ROS_WS}
 echo "Source ROS..."
 source devel/setup.bash
 
-echo "Opening virtual serial ports..."
-( socat -d -d pty,raw,echo=0 pty,raw,echo=0 2>&1 | grep --line-buffered -Eo "/dev/pts/\w+" > /tmp/${TMP_SERIAL_FILE_NAME} ) &
-sleep 1
-echo "Serial ports opened! Written information to /tmp/${TMP_SERIAL_FILE_NAME}."
+if [[ ${SIM_MODE} -eq 1 ]]; then
+    echo "Opening virtual serial ports..."
+    ( socat -d -d pty,raw,echo=0 pty,raw,echo=0 2>&1 | grep --line-buffered -Eo "/dev/pts/\w+" > /tmp/${TMP_SERIAL_FILE_NAME} ) &
+    sleep 1
+    echo "Serial ports opened! Written information to /tmp/${TMP_SERIAL_FILE_NAME}."
 
-SERIAL_PORT_A=$(head -n 1 /tmp/${TMP_SERIAL_FILE_NAME})
-SERIAL_PORT_B=$(tail -n 1 /tmp/${TMP_SERIAL_FILE_NAME})
+    SERIAL_PORT_A=$(head -n 1 /tmp/${TMP_SERIAL_FILE_NAME})
+    SERIAL_PORT_B=$(tail -n 1 /tmp/${TMP_SERIAL_FILE_NAME})
 
-SERIAL_PORT_A_SED_STR=${SERIAL_PORT_A////\\\/}
-SERIAL_PORT_B_SED_STR=${SERIAL_PORT_B////\\\/}
+    SERIAL_PORT_A_SED_STR=${SERIAL_PORT_A////\\\/}
+    SERIAL_PORT_B_SED_STR=${SERIAL_PORT_B////\\\/}
 
-echo "Serial ports ${SERIAL_PORT_A} and ${SERIAL_PORT_B} are opened."
+    echo "Serial ports ${SERIAL_PORT_A} and ${SERIAL_PORT_B} are opened."
+else
+    AL5D_SERIAL_PORT_SED_STR=${AL5D_SERIAL_PORT////\\\/}
+fi
 
 #Setting al5d parameters
 prepare_generated_ini_file ${AL5D_PACKAGE_NAME} ${AL5D_CONFIG_FILE_NAME_IN} ${AL5D_CONFIG_FILE_NAME_OUT}
 replace_config_value ${AL5D_NODE_NAME_SUBSTITUTE_STR} ${AL5D_NODE_NAME} ${AL5D_PACKAGE_NAME} ${AL5D_CONFIG_FILE_NAME_OUT}
-replace_config_value ${AL5D_SERIAL_PORT_SUBSTITUTE_STR} ${SERIAL_PORT_B_SED_STR} ${AL5D_PACKAGE_NAME} ${AL5D_CONFIG_FILE_NAME_OUT}
+
+if [[ ${SIM_MODE} -eq 1 ]]; then
+    replace_config_value ${AL5D_SERIAL_PORT_SUBSTITUTE_STR} ${SERIAL_PORT_B_SED_STR} ${AL5D_PACKAGE_NAME} ${AL5D_CONFIG_FILE_NAME_OUT}
+else
+    replace_config_value ${AL5D_SERIAL_PORT_SUBSTITUTE_STR} ${AL5D_SERIAL_PORT_SED_STR} ${AL5D_PACKAGE_NAME} ${AL5D_CONFIG_FILE_NAME_OUT}
+fi
 
 #Setting robot hli parameters
 prepare_generated_ini_file ${ROBOT_HLI_PACKAGE_NAME} ${ROBOT_HLI_CONFIG_FILE_NAME_IN} ${ROBOT_HLI_CONFIG_FILE_NAME_OUT}
@@ -165,7 +180,7 @@ if [[ ${START_ROS_MASTER} -eq 1 ]]; then
 fi
 
 start_ros_node ${AL5D_PACKAGE_NAME} ${AL5D_NODE_NAME} ${AL5D_CONFIG_FILE_NAME_OUT} 0
-start_ros_node ${ROBOT_HLI_PACKAGE_NAME} ${ROBOT_HLI_NODE_NAME} ${ROBOT_HLI_CONFIG_FILE_NAME_OUT} 0
+#start_ros_node ${ROBOT_HLI_PACKAGE_NAME} ${ROBOT_HLI_NODE_NAME} ${ROBOT_HLI_CONFIG_FILE_NAME_OUT} 0
 start_ros_node ${WORLD_PACKAGE_NAME} ${WORLD_NODE_NAME} ${WORLD_CONFIG_FILE_NAME_OUT} 0
 
 echo "Running ${TUI_NODE_NAME}..."

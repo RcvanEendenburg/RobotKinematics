@@ -67,7 +67,7 @@ public:
      * @return PosePoint The calculated point.
      */
     PosePoint
-    calculatePoint(const PosePoint &beginPoint, std::size_t jointNr = dof - 1) const;
+    calculatePoint(const PosePoint &beginPoint) const;
 
     /**
      * @brief Calculate the point with forward kinematics.
@@ -117,29 +117,26 @@ private:
     /**
      * @brief Calculate the x with forward kinematics.
      * @param x0 The start x.
-     * @param jointNr (optional) The joint number
      * @return double The calculated x.
      */
     double
-    calculateX(double x0, std::size_t jointNr = dof) const;
+    calculateX(double x0) const;
 
     /**
      * @brief Calculate the y with forward kinematics.
      * @param y0 The start y.
-     * @param jointNr (optional) The joint number
      * @return double The calculated y.
      */
     double
-    calculateY(double y0, std::size_t jointNr = dof) const;
+    calculateY(double y0) const;
 
     /**
      * @brief Calculate the z with forward kinematics.
      * @param z0 The start z.
-     * @param jointNr (optional) The joint number
      * @return double The calculated z.
      */
     double
-    calculateZ(double z0, std::size_t jointNr = dof) const;
+    calculateZ(double z0) const;
 
     KinematicChain kinematicChain;
 };
