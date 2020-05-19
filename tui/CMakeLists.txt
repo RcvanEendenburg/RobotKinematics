@@ -12,7 +12,6 @@ add_action_files(DIRECTORY action FILES PickUpObject.action)
 ## Generate messages in the 'msg' folder
 add_message_files(
         FILES
-        Point2d.msg
         Shape.msg
 )
 

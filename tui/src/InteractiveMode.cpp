@@ -5,7 +5,7 @@
 #include <tui/InteractiveMode.h>
 #include <tui/ChooseShapeMode.h>
 
-InteractiveMode::InteractiveMode(Communication::Communicator& communicator, unsigned int zCoordinate) : Mode(communicator), standardZ(zCoordinate)
+InteractiveMode::InteractiveMode(Communication::Communicator& communicator) : Mode(communicator)
 {
     addOperationWithArgument(keywordToString(Keyword::Rectangle), [this](const std::string& arg){handleFindRectangle(arg);});
     addOperationWithArgument(keywordToString(Keyword::Square), [this](const std::string& arg){handleFindSquare(arg);});
@@ -21,8 +21,8 @@ void InteractiveMode::handleFindRectangle(const std::string& color)
         const WorldColor worldColor = colorKeywordToWorldInterface(colorKeyword);
         auto shapes = communicator.findShapes(worldShape, worldColor);
         if(shapes.size() > 1) createShapeChoiceMenu(shapes);
-        if(shapes.size() == 1) communicator.goToPosition(shapes[0].points.x/100.0, shapes[0].points.y/100.0,
-                                                         standardZ/100.0, shapes[0].rotation);
+        if(shapes.size() == 1) communicator.goToPosition(shapes[0].points.x, shapes[0].points.y,
+                                                         shapes[0].points.z, shapes[0].rotation);
     }
     catch(std::exception& e)
     {
@@ -39,8 +39,8 @@ void InteractiveMode::handleFindSquare(const std::string& color)
         const WorldColor worldColor = colorKeywordToWorldInterface(colorKeyword);
         auto shapes = communicator.findShapes(worldShape, worldColor);
         if(shapes.size() > 1) createShapeChoiceMenu(shapes);
-        if(shapes.size() == 1) communicator.goToPosition(shapes[0].points.x/100.0, shapes[0].points.y/100.0,
-                                                         standardZ/100.0, shapes[0].rotation);
+        if(shapes.size() == 1) communicator.goToPosition(shapes[0].points.x, shapes[0].points.y,
+                                                         shapes[0].points.z, shapes[0].rotation);
     }
     catch(std::exception& e)
     {
@@ -90,7 +90,7 @@ InteractiveMode::WorldColor InteractiveMode::colorKeywordToWorldInterface(Keywor
 
 void InteractiveMode::createShapeChoiceMenu(const std::vector<tui::Shape>& shapes)
 {
-    ChooseShapeMode chooseShapeMode(communicator, shapes, standardZ);
+    ChooseShapeMode chooseShapeMode(communicator, shapes);
     chooseShapeMode.start();
 }
 
@@ -103,8 +103,8 @@ void InteractiveMode::handleFindCircle(const std::string& color)
         const WorldColor worldColor = colorKeywordToWorldInterface(colorKeyword);
         auto shapes = communicator.findShapes(worldShape, worldColor);
         if(shapes.size() > 1) createShapeChoiceMenu(shapes);
-        if(shapes.size() == 1) communicator.goToPosition(shapes[0].points.x/100.0, shapes[0].points.y/100.0,
-                                                         standardZ/100.0, shapes[0].rotation);
+        if(shapes.size() == 1) communicator.goToPosition(shapes[0].points.x, shapes[0].points.y,
+                                                         shapes[0].points.z, shapes[0].rotation);
     }
     catch(std::exception& e)
     {

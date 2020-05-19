@@ -10,14 +10,12 @@
 class DevelopMode : public Mode
 {
 public:
-  DevelopMode(Communication::Communicator& communicator, unsigned int zCoordinate);
+  DevelopMode(Communication::Communicator& communicator);
   ~DevelopMode() override = default;
   virtual void start() override;
 
 private:
     void goToPosition(const std::string& positionStr);
-
-    unsigned int standardZ;
 };
 
 #endif //TUI_INCLUDE_TUI_DEVELOPMODE_H

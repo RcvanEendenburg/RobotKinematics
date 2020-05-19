@@ -10,7 +10,7 @@
 class InteractiveMode : public Mode
 {
 public:
-    InteractiveMode(Communication::Communicator& communicator, unsigned int zCoordinate);
+    InteractiveMode(Communication::Communicator& communicator);
     ~InteractiveMode() override = default;
     virtual void start() override;
 
@@ -24,8 +24,6 @@ private:
     void handleFindSquare(const std::string& color);
     void handleFindCircle(const std::string& color);
     void createShapeChoiceMenu(const std::vector<tui::Shape>& shapes);
-
-    unsigned int standardZ;
 };
 
 
