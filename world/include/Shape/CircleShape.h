@@ -3,12 +3,12 @@
 //
 
 #ifndef WORLD_CIRCLESHAPE_H
-#define WORLD_CIRCLEHAPE_H
+#define WORLD_CIRCLESHAPE_H
 #include "AbstractShape.h"
 class CircleShape : public Shape
 {
 public:
-    CircleShape(int32_t id, ShapeTypes shape, world::Point2d center, float rotation):
+    CircleShape(int32_t id, ShapeTypes shape, geometry_msgs::Point center, float rotation):
     Shape(id,shape,center,rotation)
     {
 
@@ -22,9 +22,9 @@ private:
         if (std::abs(1 - ((double)r.width / r.height)) <= 0.2 &&   std::abs(1 - (cv::contourArea(contours) / (CV_PI * std::pow(r.width / 2, 2)))) <= 0.1)
         {
             auto cv = Shape::getCenter(contours);
-            auto center = world::Point2d();
+            auto center = geometry_msgs::Point();
             center.x = cv.x;
-            center.y = cv.y;
+            center.z = cv.y;
             return std::make_shared<CircleShape>(0,ShapeTypes::CIRCLE,center,0);
         }
 
