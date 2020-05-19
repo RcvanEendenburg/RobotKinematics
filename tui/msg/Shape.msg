@@ -1,4 +1,4 @@
 int32 id
 int32 shape
-tui/Point2d points
+geometry_msgs/Point points
 float32 rotation

@@ -15,13 +15,13 @@ Mode(communicator), iniParser(anIniParser), logger(aLogger)
 
 void MainMenu::startDevelopMode()
 {
-    currentMode = std::move(std::make_unique<DevelopMode>(communicator, iniParser.get<int>("TUI", "standard_z")));
+    currentMode = std::move(std::make_unique<DevelopMode>(communicator));
     currentMode->start();
 }
 
 void MainMenu::startInteractiveMode()
 {
-    currentMode = std::move(std::make_unique<InteractiveMode>(communicator, iniParser.get<int>("TUI", "standard_z")));
+    currentMode = std::move(std::make_unique<InteractiveMode>(communicator));
     currentMode->start();
 }
 

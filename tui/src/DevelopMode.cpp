@@ -4,7 +4,7 @@
 
 #include <tui/DevelopMode.h>
 
-DevelopMode::DevelopMode(Communication::Communicator& communicator, unsigned int zCoordinate) : Mode(communicator), standardZ(zCoordinate)
+DevelopMode::DevelopMode(Communication::Communicator& communicator) : Mode(communicator)
 {
     addOperationWithArgument(keywordToString(Keyword::Goto), [this](const std::string& arg){return goToPosition(arg);});
 }

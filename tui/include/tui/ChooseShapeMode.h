@@ -10,7 +10,7 @@
 class ChooseShapeMode : public Mode
 {
 public:
-    ChooseShapeMode(Communication::Communicator& communicator, const std::vector<tui::Shape>& theShapes, double standardZ);
+    ChooseShapeMode(Communication::Communicator& communicator, const std::vector<tui::Shape>& theShapes);
     ~ChooseShapeMode() override = default;
 
     void start() override;
