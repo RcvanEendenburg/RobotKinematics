@@ -4,7 +4,7 @@
 #include <cstdlib>
 #include <vector>
 #include <opencv2/opencv.hpp>
-#include <world/Point2d.h>
+#include <geometry_msgs/Point.h>
 #include <world/Shape.h>
 #include <opencv2/imgproc.hpp>
 #include <ros/ros.h>
@@ -18,7 +18,7 @@ class Shape
     public:
     enum ShapeTypes{SQUARE, RECTANGLE, UNDEFINED, CIRCLE};
 
-    Shape(int32_t id, ShapeTypes shape ,world::Point2d center, float rotation) : id(id), shape(shape), center(center), rotation(rotation) {}
+    Shape(int32_t id, ShapeTypes shape ,geometry_msgs::Point center, float rotation) : id(id), shape(shape), center(center), rotation(rotation) {}
 
         world::Shape toShapeMessage()
         {
@@ -55,7 +55,7 @@ protected:
     }
 
 private:
-    world::Point2d center;
+    geometry_msgs::Point center;
     int32_t id;
     ShapeTypes shape;
     float rotation;

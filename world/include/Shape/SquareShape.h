@@ -8,7 +8,7 @@
 class SquareShape : public Shape
 {
 public:
-    SquareShape(int32_t id, ShapeTypes shape, world::Point2d center, float rotation):
+    SquareShape(int32_t id, ShapeTypes shape, geometry_msgs::Point center, float rotation):
     Shape(id,shape,center,rotation)
     {
 
@@ -28,9 +28,9 @@ private:
         if (approx.size() == 4 && mincos >= -0.15 && maxcos <= 0.3 && std::abs(1 - ((length / width))) <= 0.15 )
         {
             auto cv = Shape::getCenter(contours);
-            auto center = world::Point2d();
+            auto center = geometry_msgs::Point();
             center.x = cv.x;
-            center.y = cv.y;
+            center.z = cv.y;
             return std::make_shared<SquareShape>(0,ShapeTypes::SQUARE,center,rotated.angle);
         }
 

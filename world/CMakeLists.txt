@@ -8,6 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
         roscpp
         rospy
         std_msgs
+        geometry_msgs
         message_generation
         ${MESSAGE_DEPENDENCIES}
         utilities
@@ -18,7 +19,6 @@ find_package( OpenCV 3 REQUIRED)
 ## Generate messages in the 'msg' folder
  add_message_files(
          FILES
-  Point2d.msg
    Shape.msg
  )
 
@@ -32,7 +32,8 @@ find_package( OpenCV 3 REQUIRED)
 ## Generate added messages and services with any dependencies listed here
  generate_messages(
   DEPENDENCIES
-   std_msgs # Or other packages containing msgs
+   std_msgs
+   geometry_msgs# Or other packages containing msgs
  )
 
 catkin_package(
