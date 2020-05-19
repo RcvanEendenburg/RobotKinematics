@@ -51,7 +51,7 @@ Pose<dof>::setAngles(Pose<dof>::Angles angles)
             joint = joint->getNext();
         }
     }
-    keepVertical();
+//    keepVertical();
 }
 
 template <std::size_t dof> void Pose<dof>::keepVertical()
@@ -158,11 +158,11 @@ Pose<dof>::getPartialDerivativeZ(std::size_t theta) const
 
 template<std::size_t dof>
 PosePoint
-Pose<dof>::calculatePoint(const PosePoint &beginPoint, std::size_t jointNr) const
+Pose<dof>::calculatePoint(const PosePoint &beginPoint) const
 {
-    return PosePoint(calculateX(beginPoint.x(), jointNr),
-                     calculateY(beginPoint.y(), jointNr),
-                     calculateZ(beginPoint.z(), jointNr));
+    return PosePoint(calculateX(beginPoint.x()),
+                     calculateY(beginPoint.y()),
+                     calculateZ(beginPoint.z()));
 }
 
 template<std::size_t dof> PosePoint
@@ -172,13 +172,50 @@ Pose<dof>::calculatePoint(double x0, double y0, double z0) const
 }
 
 template<std::size_t dof> double
-Pose<dof>::calculateX(double x0, std::size_t jointNr) const
+Pose<dof>::calculateX(double x0) const
 {
     std::shared_ptr<Joint> joint = kinematicChain.begin();
-    std::shared_ptr<Joint> end = kinematicChain.at(jointNr);
     double sum = 0;
 
-    while (joint!=end)
+    while (joint)
+    {
+        if (joint->canYRotate())
+        {
+            joint = joint->getNext();
+            continue;
+        }
+
+        sum += joint->getLength()*std::sin(kinematicChain.getAngleSumZ(kinematicChain.begin(), joint))*
+            std::cos(kinematicChain.getAngleSumY(kinematicChain.begin(), joint));
+        joint = joint->getNext();
+    }
+    return sum + x0;
+}
+
+template<std::size_t dof> double
+Pose<dof>::calculateY(double y0) const
+{
+    std::shared_ptr<Joint> joint = kinematicChain.begin();
+    double sum = 0;
+    while (joint)
+    {
+        if (joint->canYRotate())
+        {
+            joint = joint->getNext();
+            continue;
+        }
+        sum += joint->getLength()*std::cos(kinematicChain.getAngleSumZ(kinematicChain.begin(), joint));
+        joint = joint->getNext();
+    }
+    return sum + kinematicChain.getStaticLength() + y0;
+}
+
+template<std::size_t dof> double
+Pose<dof>::calculateZ(double z0) const
+{
+    std::shared_ptr<Joint> joint = kinematicChain.begin();
+    double sum = 0;
+    while (joint)
     {
         if (joint->canYRotate())
         {
@@ -189,46 +226,7 @@ Pose<dof>::calculateX(double x0, std::size_t jointNr) const
             std::sin(kinematicChain.getAngleSumY(kinematicChain.begin(), joint));
         joint = joint->getNext();
     }
-    return sum + x0;
-}
-
-template<std::size_t dof> double
-Pose<dof>::calculateY(double y0, std::size_t jointNr) const
-{
-    std::shared_ptr<Joint> joint = kinematicChain.begin();
-    std::shared_ptr<Joint> end = kinematicChain.at(jointNr);
-    double sum = 0;
-    while (joint!=end)
-    {
-        if (joint->canYRotate())
-        {
-            joint = joint->getNext();
-            continue;
-        }
-        sum += joint->getLength()*std::sin(kinematicChain.getAngleSumZ(kinematicChain.begin(), joint))*
-            std::cos(kinematicChain.getAngleSumY(kinematicChain.begin(), joint));
-        joint = joint->getNext();
-    }
-    return sum + y0;
-}
-
-template<std::size_t dof> double
-Pose<dof>::calculateZ(double z0, std::size_t jointNr) const
-{
-    std::shared_ptr<Joint> joint = kinematicChain.begin();
-    std::shared_ptr<Joint> end = kinematicChain.at(jointNr);
-    double sum = 0;
-    while (joint!=end)
-    {
-        if (joint->canYRotate())
-        {
-            joint = joint->getNext();
-            continue;
-        }
-        sum += joint->getLength()*std::cos(kinematicChain.getAngleSumZ(kinematicChain.begin(), joint));
-        joint = joint->getNext();
-    }
-    return sum + kinematicChain.getStaticLength() + z0;
+    return sum + z0;
 }
 
 template<std::size_t dof> typename Pose<dof>::JacobianMatrix

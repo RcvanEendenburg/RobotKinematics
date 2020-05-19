@@ -30,7 +30,7 @@ void DevelopMode::goToPosition(const std::string& positionStr)
     if(coordinates.size() != 3)
         throw std::runtime_error("This is not a valid coordinate!");
 
-    communicator.goToPosition(coordinates.at(0)/100.0, coordinates.at(1)/100.0, coordinates.at(2)/100.0);
+    communicator.goToPosition(coordinates.at(0), coordinates.at(1), coordinates.at(2));
 }
 
 void DevelopMode::start()
