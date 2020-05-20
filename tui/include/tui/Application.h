@@ -22,8 +22,8 @@ public:
 private:
     friend class Communication::Communicator;
 
-    Utilities::IniParser iniParser;
     Utilities::Logger &logger;
+    Utilities::IniParser iniParser;
     Communication::Communicator communicator;
 };
 
