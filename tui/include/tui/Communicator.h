@@ -22,6 +22,9 @@ public:
 
     void goToPosition(double x, double y, double z, double rotation = 0, double openingDistance = 0);
 
+    void setRobotConfiguration(float baseAngle, float shoulderAngle, float elbowAngle, float wristAngle,
+            float wristRotateAngle, float gripperDistance, int time);
+
     std::vector<tui::Shape> findShapes(unsigned int shape, unsigned int color);
 
 private:

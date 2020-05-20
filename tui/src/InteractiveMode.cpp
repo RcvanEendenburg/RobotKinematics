@@ -10,7 +10,14 @@ InteractiveMode::InteractiveMode(Communication::Communicator& communicator) : Mo
     addOperationWithArgument(keywordToString(Keyword::Rectangle), [this](const std::string& arg){handleFindRectangle(arg);});
     addOperationWithArgument(keywordToString(Keyword::Square), [this](const std::string& arg){handleFindSquare(arg);});
     addOperationWithArgument(keywordToString(Keyword::Circle), [this](const std::string& arg){handleFindCircle(arg);});
+    addSingleOperation("Park", [this](){goToParkPosition();});
 }
+
+void InteractiveMode::goToParkPosition()
+{
+   // communicator.GoToPark()
+}
+
 
 void InteractiveMode::handleFindRectangle(const std::string& color)
 {
@@ -124,6 +131,7 @@ void InteractiveMode::start()
     keywordToString(Keyword::Red) << " or " << keywordToString(Keyword::White) << std::endl;
     ss << "In addition to this, it is also possible to search for all colors with $shape " <<
     keywordToString(Keyword::All) << std::endl;
+    ss << "In order to set the robot back in its park position, the command Park, can be used" << std::endl;
     setWelcomeMessage(ss.str());
     setExitMessage("Exiting interactive mode...");
     Mode::start();

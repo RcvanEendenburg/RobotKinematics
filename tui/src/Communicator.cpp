@@ -48,4 +48,10 @@ std::vector<tui::Shape> Communicator::findShapes(unsigned int shape, unsigned in
     throw std::runtime_error("Failed to call world service");
 }
 
+    void Communicator::setRobotConfiguration()
+    {
+        application.logger.log(Utilities::LogLevel::Debug, "Sending configuration to the high level driver...");
+
+    }
+
 }

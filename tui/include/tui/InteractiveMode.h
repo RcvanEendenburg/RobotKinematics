@@ -24,6 +24,7 @@ private:
     void handleFindSquare(const std::string& color);
     void handleFindCircle(const std::string& color);
     void createShapeChoiceMenu(const std::vector<tui::Shape>& shapes);
+    void goToParkPosition();
 };
 
 
