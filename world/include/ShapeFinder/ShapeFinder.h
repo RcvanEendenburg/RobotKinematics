@@ -39,11 +39,11 @@
         template <typename T>
         std::vector<std::shared_ptr<T>> FindShapes(cv::Mat &input, cv::Mat &output, cv::Mat &Mask);
         void convertPixelToMM(std::vector<world::Shape>& foundShapes, ArucoCalibration* calibration);
-        cv::Mat filterImage(cv::Mat input);
+        static cv::Mat filterImage(const cv::Mat& input);
         std::unique_ptr<Sensor> mySensor;
-        cv::Mat PrepareImgForContourMatching(cv::Mat &input, cv::Mat &Mask);
-        double angle(cv::Point pt1, cv::Point pt2, cv::Point pt0);
-        void setLabel(cv::Mat& im, const std::string& label, std::vector<cv::Point>& contour);
+        static cv::Mat PrepareImgForContourMatching(cv::Mat &input, cv::Mat &Mask);
+        static double angle(const cv::Point& pt1, cv::Point pt2, cv::Point pt0);
+        static void setLabel(cv::Mat& im, const std::string& label, std::vector<cv::Point>& contour);
         ros::NodeHandle n;
         ros::ServiceServer service;
         Utilities::IniParser& iniParser;

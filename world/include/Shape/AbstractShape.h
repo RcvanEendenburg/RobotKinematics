@@ -18,38 +18,39 @@ class Shape
     public:
     enum ShapeTypes{SQUARE, RECTANGLE, UNDEFINED, CIRCLE};
 
-    Shape(int32_t id, ShapeTypes shape ,geometry_msgs::Point center, float rotation) : id(id), shape(shape), center(center), rotation(rotation) {}
+    Shape(int32_t id, ShapeTypes shape ,geometry_msgs::Point center, float rotation) :
+        id(id), shape(shape), center(center), rotation(rotation) {}
 
-        world::Shape toShapeMessage()
-        {
-            world::Shape shapeMessage;
-            shapeMessage.shape = shape;
-            shapeMessage.points = center;
-            shapeMessage.rotation = rotation;
-            return shapeMessage;
-        }
 
-        virtual ~Shape() = default;
+    world::Shape toShapeMessage() {
+        world::Shape shapeMessage;
+        shapeMessage.shape = shape;
+        shapeMessage.points = center;
+        shapeMessage.rotation = rotation;
+        return shapeMessage;
+    }
 
-        int32_t getId()
-        {
-            return id;
-        }
-        void setId(int32_t aId)
-        {
-            id = aId;
-        }
+    virtual ~Shape() = default;
 
-        void translateCoordinate(cv::Point2d aOrigin)
-        {
-            center.x = center.x - aOrigin.x;
-            center.z = center.z - aOrigin.y;
-        }
+    int32_t getId()
+    {
+        return id;
+    }
+    void setId(int32_t aId)
+    {
+        id = aId;
+    }
 
-        geometry_msgs::Point getCenter()
-        {
-            return center;
-        }
+    void translateCoordinate(cv::Point2d aOrigin)
+    {
+        center.x = center.x - aOrigin.x;
+        center.z = center.z - aOrigin.y;
+    }
+
+    geometry_msgs::Point getCenter()
+    {
+        return center;
+    }
 
 protected:
 
@@ -60,9 +61,9 @@ protected:
     }
 
 private:
-    geometry_msgs::Point center;
     int32_t id;
     ShapeTypes shape;
+    geometry_msgs::Point center;
     float rotation;
 };
 

@@ -56,39 +56,41 @@ std::vector<world::Shape> ShapeFinder::ServiceCallback(Shape::ShapeTypes shape, 
     switch(shape) {
         case Shape::ShapeTypes::SQUARE:
         {
-            std::vector<std::shared_ptr<SquareShape>> shapes;
-            shapes = FindShapes<SquareShape>(colorFiltered, markedImg, ColorMask);
-            for(auto shape: shapes)
+            std::vector<std::shared_ptr<SquareShape>> foundShapes;
+            foundShapes = FindShapes<SquareShape>(colorFiltered, markedImg, ColorMask);
+            for(const auto& item: foundShapes)
             {
-                shape->translateCoordinate(calibration->GetMarkerLocation());
-                response.push_back(shape->toShapeMessage());
+                item->translateCoordinate(calibration->GetMarkerLocation());
+                response.push_back(item->toShapeMessage());
             }
 
             break;
         }
         case Shape::ShapeTypes::RECTANGLE:
         {
-            std::vector<std::shared_ptr<RectShape>> shapes;
-            shapes = FindShapes<RectShape>(colorFiltered, markedImg, ColorMask);
-            for(auto shape: shapes)
+            std::vector<std::shared_ptr<RectShape>> foundShapes;
+            foundShapes = FindShapes<RectShape>(colorFiltered, markedImg, ColorMask);
+            for(const auto& item: foundShapes)
             {
-                shape->translateCoordinate(calibration->GetMarkerLocation());
-                response.push_back(shape->toShapeMessage());
+                item->translateCoordinate(calibration->GetMarkerLocation());
+                response.push_back(item->toShapeMessage());
             }
             break;
         }
 
         case Shape::ShapeTypes::CIRCLE:
         {
-            std::vector<std::shared_ptr<CircleShape>> shapes;
-            shapes = FindShapes<CircleShape>(colorFiltered, markedImg, ColorMask);
-            for(auto shape: shapes)
+            std::vector<std::shared_ptr<CircleShape>> foundShapes;
+            foundShapes = FindShapes<CircleShape>(colorFiltered, markedImg, ColorMask);
+            for(const auto& item: foundShapes)
             {
-                shape->translateCoordinate(calibration->GetMarkerLocation());
-                response.push_back(shape->toShapeMessage());
+                item->translateCoordinate(calibration->GetMarkerLocation());
+                response.push_back(item->toShapeMessage());
             }
             break;
         }
+        case Shape::ShapeTypes::UNDEFINED:
+            break;
     }
 
     if (!response.empty())
@@ -103,10 +105,10 @@ std::vector<world::Shape> ShapeFinder::ServiceCallback(Shape::ShapeTypes shape, 
 
     // this section is used for debugging
 
-    for(auto shape : response)
+    for(auto item : response)
     {
-        geometry_msgs::Point center = shape.points;
-        logger.log(Utilities::LogLevel::Debug, "Shape id: %d on position x: %f y: %f z: %f", shape.id, center.x,center.y,center.z);
+        geometry_msgs::Point center = item.points;
+        logger.log(Utilities::LogLevel::Debug, "Shape id: %d on position x: %f y: %f z: %f", item.id, center.x,center.y,center.z);
     }
 
     std::string windowName = "Display window";
@@ -127,7 +129,7 @@ void ShapeFinder::convertPixelToMM(std::vector<world::Shape>& foundShapes, Aruco
     }
 }
 
-cv::Mat ShapeFinder::filterImage(cv::Mat bgrImage)
+cv::Mat ShapeFinder::filterImage(const cv::Mat& bgrImage)
 {
     cv::Mat picture_hsv, picture_blur;
 
@@ -192,7 +194,7 @@ cv::Mat ShapeFinder::PrepareImgForContourMatching(cv::Mat &input, cv::Mat &Mask)
 }
 
 
-double ShapeFinder::angle(cv::Point pt1, cv::Point pt2, cv::Point pt0)
+double ShapeFinder::angle(const cv::Point& pt1, cv::Point pt2, cv::Point pt0)
 {
     double dx1 = pt1.x - pt0.x;
     double dy1 = pt1.y - pt0.y;
