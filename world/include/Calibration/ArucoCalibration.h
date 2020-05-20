@@ -12,7 +12,7 @@
 class ArucoCalibration
 {
 public:
-    void Calibrate(cv::Mat img, int markerSize, int arucoId);
+    void Calibrate(cv::Mat img, int markerSize, int arucoId, int ArucoDistanceToBase);
 
     cv::Point2d GetMarkerLocation()
     {
@@ -29,7 +29,7 @@ public:
     }
 
 private:
-    void setMarker(std::vector<cv::Point2f> c, int markerSize);
+    void setMarker(std::vector<cv::Point2f> c, int markerSize, int ArucoDistanceToBase);
 
     float pixelToMMRatio;
     bool isCalibrated = false;

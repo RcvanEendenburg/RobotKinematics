@@ -13,9 +13,9 @@
 		cv::Mat getFrame() override
 		{
 			cv::Mat output;
-			cv::VideoCapture cap(0);
+			cv::VideoCapture cap(2);
 
-			for (int x = 0; x < 10; ++x) {//collect 30 frames because the webcam has to initialize
+			for (int x = 0; x < 30; ++x) {//collect 30 frames because the webcam has to initialize
 				cap >> output;
 
 				cv::waitKey(30);

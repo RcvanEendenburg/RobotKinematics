@@ -43,7 +43,8 @@ std::vector<world::Shape> ShapeFinder::ServiceCallback(Shape::ShapeTypes shape, 
 
     auto calibration = new ArucoCalibration();
     calibration->Calibrate(img, iniParser.get<int>("Calibration","ArucoMarkerSize"),
-        iniParser.get<int>("Calibration","ArucoId"));
+        iniParser.get<int>("Calibration","ArucoId"),
+                           iniParser.get<int>("Calibration","ArucoDistanceToBaseZ"));
 
     filteredImg = filterImage(img);
     filteredImg.copyTo(markedImg);
