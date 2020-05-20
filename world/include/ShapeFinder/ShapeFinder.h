@@ -43,7 +43,7 @@
         std::unique_ptr<Sensor> mySensor;
         cv::Mat PrepareImgForContourMatching(cv::Mat &input, cv::Mat &Mask);
         double angle(cv::Point pt1, cv::Point pt2, cv::Point pt0);
-        void setLabel(cv::Mat& im, const std::string label, std::vector<cv::Point>& contour);
+        void setLabel(cv::Mat& im, const std::string& label, std::vector<cv::Point>& contour);
         ros::NodeHandle n;
         ros::ServiceServer service;
         Utilities::IniParser& iniParser;

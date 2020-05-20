@@ -1,5 +1,7 @@
 
 
+#include <utilities/Logger.h>
+#include <utilities/LogToCout.h>
 #include "ShapeFinder/ShapeFinder.h"
 #include "Shape/SquareShape.h"
 #include "Shape/CircleShape.h"
@@ -28,9 +30,16 @@ bool ShapeFinder::handleRequest(world::ShapeFinderService::Request &req, world::
 
 std::vector<world::Shape> ShapeFinder::ServiceCallback(Shape::ShapeTypes shape, ColorFilter::color color) {
 
+    auto& logger = Utilities::Logger::instance();
+    logger.setLogOutput(std::make_unique<Utilities::LogToCout>());
+    logger.log(Utilities::LogLevel::Debug, "Starting ServiceCallback");
+
     std::vector<world::Shape> response;
     cv::Mat img,filteredImg, colorFiltered, ColorMask, markedImg;
     img = mySensor->getFrame();
+
+    if(iniParser.get<bool>("ImageSource", "HorizontalFlip"))
+        cv::flip(img,img,-1);
 
     auto calibration = new ArucoCalibration();
     calibration->Calibrate(img, iniParser.get<int>("Calibration","ArucoMarkerSize"),
@@ -82,20 +91,34 @@ std::vector<world::Shape> ShapeFinder::ServiceCallback(Shape::ShapeTypes shape, 
     }
 
     if (!response.empty())
+    {
+        logger.log(Utilities::LogLevel::Debug, "Converting to MM");
+
         convertPixelToMM(response, calibration);
 
-    // this window is shown for debugging
-//    std::string windowName = "Display window";
-//    namedWindow( windowName, cv::WINDOW_NORMAL);
-//    cv::resizeWindow(windowName, 500, 500);
-//    imshow( windowName, markedImg );
-//    cv::waitKey(0);
+    }
+
+    logger.log(Utilities::LogLevel::Debug, "Found a total of %d shapes", response.size());
+
+    // this section is used for debugging
+
+    for(auto shape : response)
+    {
+        geometry_msgs::Point center = shape.points;
+        logger.log(Utilities::LogLevel::Debug, "Shape id: %d on position x: %f y: %f z: %f", shape.id, center.x,center.y,center.z);
+    }
+
+    std::string windowName = "Display window";
+    namedWindow( windowName, cv::WINDOW_NORMAL);
+    cv::resizeWindow(windowName, 500, 500);
+    imshow( windowName, markedImg );
+    cv::waitKey(0);
     return response;
 }
 
 void ShapeFinder::convertPixelToMM(std::vector<world::Shape>& foundShapes, ArucoCalibration* calibration)
 {
-    for(auto shape : foundShapes)
+    for(auto& shape : foundShapes)
     {
         shape.points.x = calibration->PixelToMM(shape.points.x);
         shape.points.y = iniParser.get<int>("Calibration","DefaultY");
@@ -177,7 +200,7 @@ double ShapeFinder::angle(cv::Point pt1, cv::Point pt2, cv::Point pt0)
     return (dx1*dx2 + dy1*dy2)/sqrt((dx1*dx1 + dy1*dy1)*(dx2*dx2 + dy2*dy2) + 1e-10);
 }
 
-void ShapeFinder::setLabel(cv::Mat& im, const std::string label, std::vector<cv::Point>& contour)
+void ShapeFinder::setLabel(cv::Mat& im, const std::string& label, std::vector<cv::Point>& contour)
 {
     int fontface = cv::FONT_HERSHEY_COMPLEX;
     double scale = 0.4;

@@ -43,7 +43,12 @@ class Shape
         void translateCoordinate(cv::Point2d aOrigin)
         {
             center.x = center.x - aOrigin.x;
-            center.y = center.y - aOrigin.y;
+            center.z = center.z - aOrigin.y;
+        }
+
+        geometry_msgs::Point getCenter()
+        {
+            return center;
         }
 
 protected:

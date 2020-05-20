@@ -30,9 +30,9 @@ void ArucoCalibration::Calibrate(cv::Mat img, int markerSize, int arucoId)
     if(p != ids.end())
     {
         logger.log(Utilities::LogLevel::Debug, "Found aruco marker: %d",arucoId);
-        setMarker(corners.at(arucoId), markerSize);
+        setMarker(corners.at(std::distance(ids.begin(), p)), markerSize);
     }
-    else if (ids.size() > 0)
+    else if (!ids.empty())
     {
         logger.log(Utilities::LogLevel::Warning, "Did not found aruco marker: %d "
                    "\n Falling back to first available marker: %d",
@@ -48,6 +48,9 @@ void ArucoCalibration::Calibrate(cv::Mat img, int markerSize, int arucoId)
 
         // throw new CalibrationException("No Aruco marker found!");
     }
+
+    logger.log(Utilities::LogLevel::Debug, "pixel to MM ratio set at %f", pixelToMMRatio);
+
 }
 
 void ArucoCalibration::setMarker(std::vector<cv::Point2f> c, int markerSize)
