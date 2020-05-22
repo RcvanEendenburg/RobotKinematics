@@ -1,4 +1,5 @@
 #include <random>
+#include <cmath>
 
 namespace Kinematics
 {
@@ -78,6 +79,38 @@ Pose<dof>::getKinematicChain() const
 }
 
 template<std::size_t dof> double
+Pose<dof>::getPartialDerivativeZ(std::size_t theta) const
+{
+    std::shared_ptr<Joint> joint = kinematicChain.at(theta);
+    double sum = 0;
+
+    bool yRotationJoint = joint ? joint->canYRotate() : false;
+    while (joint)
+    {
+        if (!yRotationJoint)
+        {
+            if (joint->canYRotate())
+            {
+                joint = joint->getNext();
+                continue;
+            }
+            sum +=
+                joint->getLength()*std::cos(kinematicChain.getAngleSumZ(kinematicChain.getFirstZRotationJoint(), joint))
+                    *
+                        std::sin(kinematicChain.getAngleSumY(kinematicChain.getFirstYRotationJoint(), joint));
+        }
+        else
+        {
+            sum += (joint->canYRotate() ? 1 : joint->getLength())*
+                std::sin(kinematicChain.getAngleSumZ(kinematicChain.getFirstZRotationJoint(), joint))*
+                std::cos(kinematicChain.getAngleSumY(kinematicChain.getFirstYRotationJoint(), joint));
+        }
+        joint = joint->getNext();
+    }
+    return sum;
+}
+
+template<std::size_t dof> double
 Pose<dof>::getPartialDerivativeX(std::size_t theta) const
 {
     std::shared_ptr<Joint> joint = kinematicChain.at(theta);
@@ -93,17 +126,16 @@ Pose<dof>::getPartialDerivativeX(std::size_t theta) const
                 joint = joint->getNext();
                 continue;
             }
-            sum += joint->getLength()
-                *std::cos(kinematicChain.getAngleSumZ(kinematicChain.getFirstZRotationJoint(), joint));
+            sum +=
+                joint->getLength()*std::cos(kinematicChain.getAngleSumZ(kinematicChain.getFirstZRotationJoint(), joint))
+                    *
+                        std::cos(kinematicChain.getAngleSumY(kinematicChain.getFirstYRotationJoint(), joint));
         }
         else
         {
-            if (!joint->canYRotate())
-            {
-                joint = joint->getNext();
-                continue;
-            }
-            sum += std::cos(kinematicChain.getAngleSumY(kinematicChain.getFirstYRotationJoint(), joint));
+            sum += (joint->canYRotate() ? 1 : joint->getLength())*
+                std::sin(kinematicChain.getAngleSumZ(kinematicChain.getFirstZRotationJoint(), joint))*
+                -std::sin(kinematicChain.getAngleSumY(kinematicChain.getFirstYRotationJoint(), joint));
         }
         joint = joint->getNext();
     }
@@ -115,32 +147,9 @@ Pose<dof>::getPartialDerivativeY(std::size_t theta) const
 {
     std::shared_ptr<Joint> joint = kinematicChain.at(theta);
     double sum = 0;
-    if ((joint && !joint->canYRotate()) || !joint)
-    {
+    bool yRotationJoint = joint ? joint->canYRotate() : false;
+    if (yRotationJoint)
         return 0;
-    }
-    while (joint)
-    {
-        if (!joint->canYRotate())
-        {
-            joint = joint->getNext();
-            continue;
-        }
-        sum += -std::sin(kinematicChain.getAngleSumY(kinematicChain.getFirstYRotationJoint(), joint));
-        joint = joint->getNext();
-    }
-    return sum;
-}
-
-template<std::size_t dof> double
-Pose<dof>::getPartialDerivativeZ(std::size_t theta) const
-{
-    std::shared_ptr<Joint> joint = kinematicChain.at(theta);
-    double sum = 0;
-    if ((joint && joint->canYRotate()) || !joint)
-    {
-        return 0;
-    }
     while (joint)
     {
         if (joint->canYRotate())
@@ -179,12 +188,16 @@ Pose<dof>::calculateX(double x0) const
 
     while (joint)
     {
+        //If the joint can rotate over the y axis like the base, skip
         if (joint->canYRotate())
         {
             joint = joint->getNext();
             continue;
         }
-
+        /*This will result in l1 * sin(a1) * cos(base_angle) + l2 * sin(a1+a2) * cos(base_angle) + ...
+        In 2d kinematics, we only use the sines, but since the joints that rotate over the y-axis influence the x-axis,
+         we have to include it here.
+         */
         sum += joint->getLength()*std::sin(kinematicChain.getAngleSumZ(kinematicChain.begin(), joint))*
             std::cos(kinematicChain.getAngleSumY(kinematicChain.begin(), joint));
         joint = joint->getNext();
@@ -222,6 +235,7 @@ Pose<dof>::calculateZ(double z0) const
             joint = joint->getNext();
             continue;
         }
+        //l1 * sin(a1) * sin(base_angle) + l2 * sin(a1+a2) * sin(base_angle) + ...
         sum += joint->getLength()*std::sin(kinematicChain.getAngleSumZ(kinematicChain.begin(), joint))*
             std::sin(kinematicChain.getAngleSumY(kinematicChain.begin(), joint));
         joint = joint->getNext();

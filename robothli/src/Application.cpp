@@ -42,11 +42,7 @@ Application::moveToGoal(double x, double y, double z, double rotation, double op
     algorithm.saveAngles();
     try
     {
-        auto start = std::chrono::high_resolution_clock::now();
         algorithm.startMoving(Kinematics::PosePoint(x, y, z));
-        auto stop = std::chrono::high_resolution_clock::now();
-        auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
-        logger.log(Utilities::LogLevel::Debug, "Gradient descent took %d microseconds to calculate", duration.count());
         auto angles = algorithm.getCurrentAngles();
         communicator.move(angles[0], angles[1], angles[2], angles[3], rotation, openingDistance,
                           static_cast<unsigned short>(iniParser.get<int>("Robot", "move_time")));

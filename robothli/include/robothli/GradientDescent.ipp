@@ -1,4 +1,5 @@
 #include <utilities/Logger.h>
+#include <sstream>
 
 namespace Kinematics
 {
@@ -22,80 +23,132 @@ GradientDescent<dof>::startMoving(const Kinematics::PosePoint &goal)
     double factor = beta.begin;
     double previousMagnitude = std::numeric_limits<double>::max();
 
+    bool running = true;
     unsigned long its = 0;
 
     auto &logger = Utilities::Logger::instance();
 
     logger.log(Utilities::LogLevel::Debug, "Starting to move to point: (%f, %f, %f)", goal.x(), goal.y(), goal.z());
 
-    while (robot->distance(goal) > maximumMagnitude)
+    BetaProgress betaProgress;
+
+    const auto start = std::chrono::high_resolution_clock::now();
+    while (running)
     {
         if (its > maximumIterations)
         {
             throw UnableToMove();
         }
 
-        auto thetaOld = robot->angles();
-        auto inverseJacobianMatrix = robot->jacobianMatrix().moorePenroseInverse();
-        auto deltaE = robot->delta(goal)*factor;
-        auto deltaTheta =
+        const auto thetaOld = robot->angles();
+        const auto inverseJacobianMatrix = robot->jacobianMatrix().moorePenroseInverse();
+        const auto deltaE = robot->delta(goal)*factor;
+        const auto deltaTheta =
             inverseJacobianMatrix.transpose()*
                 Matrix<double, 3, 1>({deltaE.x(), deltaE.y(), deltaE.z()});
-        auto thetaNew = thetaOld + deltaTheta.transpose();
+        const auto thetaNew = thetaOld + deltaTheta.transpose();
 
         robot->update(thetaNew);
-        double currentMagnitude = robot->distance(goal);
-        Step step = Step::Stuck;
-        try
-        {
-            step = getStep(previousMagnitude, currentMagnitude);
-        }
-        catch (std::exception &e)
-        {
-            logger.log(Utilities::LogLevel::Error, e.what());
-        }
+        const double currentMagnitude = robot->distance(goal);
+        const Step step = getStep(previousMagnitude, currentMagnitude);
+        const auto newAngles = robot->angles();
 
         switch (step)
         {
-            case Step::Big:factor *= beta.bigFactor;
+            case Step::Big:factor = beta.bigFactor;
                 previousMagnitude = currentMagnitude;
                 break;
-            case Step::Small:factor *= beta.smallFactor;
+            case Step::Small:factor = beta.smallFactor;
                 previousMagnitude = currentMagnitude;
                 break;
-            case Step::TooFar:factor *= beta.bigFactor;
+            case Step::TooFar:factor *= beta.smallFactor;
                 robot->update(thetaOld);
                 break;
             case Step::Stuck:factor = beta.begin;
                 robot->reset();
                 break;
-            default:throw std::runtime_error("Step not handled");
+            case Step::Done:running = false;
+                break;
+            default:break;
         }
+        betaProgress.addStep(step);
         ++its;
     }
+    const auto stop = std::chrono::high_resolution_clock::now();
+    const auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
 
-    auto endEffector = robot->position();
-    logger.log(Utilities::LogLevel::Debug, "Current position of the robot is (%f, %f, %f)",
-               endEffector.x(), endEffector.y(), endEffector.z());
+    betaProgress.print();
+    const auto endEffector = robot->position();
+    logger.log(Utilities::LogLevel::Debug, "Current position of the robot is (%f, %f, %f)! Distance to the goal is %f",
+               endEffector.x(), endEffector.y(), endEffector.z(), robot->distance(goal));
+    logger.log(Utilities::LogLevel::Debug,
+               "It took %d milliseconds to calculate the angles of the robot arm.",
+               duration.count());
 
 }
 
 template<std::size_t dof>
-typename GradientDescent<dof>::Step
+Step
 GradientDescent<dof>::getStep(double previousMagnitude, double currentMagnitude) const
 {
-    if (previousMagnitude > currentMagnitude && currentMagnitude > maximumMagnitude)
-        return Step::Big;
-    else if (previousMagnitude > currentMagnitude && currentMagnitude < maximumMagnitude)
-        return Step::Small;
-    else if (previousMagnitude - currentMagnitude > maximumMagnitude)
-        return Step::TooFar;
-    else if (currentMagnitude > beta.smallFactor)
-        return Step::Stuck;
-    auto errorStr =
-        "Gradient descent couldn't calculate beta step -> previous magnitude: " + std::to_string(previousMagnitude) +
-            " current magnitude: " + std::to_string(currentMagnitude);
-    throw std::runtime_error(errorStr);
+    static Movement movement = Movement::Initial;
+    static double lowestMagnitudeWhenIncreasing = std::numeric_limits<double>::max();
+    static double lowestMagnitudeWhenDecreasing = std::numeric_limits<double>::max();
+
+    static int numberOfIneffectiveOvershots = 0;
+
+    Step step = Step::None;
+    if (currentMagnitude < previousMagnitude)
+    {
+        //Making zig-zag movements
+        if (movement==Movement::Decreasing)
+            step = Step::Small;
+
+        //Approaching goal from one side
+        if (movement==Movement::Increasing || movement==Movement::Initial)
+            step = Step::Big;
+
+        movement = Movement::Increasing;
+        numberOfIneffectiveOvershots = 0;
+    }
+    else
+    {
+        if (movement==Movement::Increasing)
+        {
+            step = Step::TooFar;
+            if (lowestMagnitudeWhenIncreasing > previousMagnitude)
+            {
+                lowestMagnitudeWhenIncreasing = previousMagnitude;
+                numberOfIneffectiveOvershots = 0;
+            }
+            else
+                numberOfIneffectiveOvershots++;
+        }
+
+        else if (movement==Movement::Decreasing)
+        {
+            //Overshot to the other side and not making zig-zag movements
+            step = Step::TooFar;
+            if (lowestMagnitudeWhenDecreasing > previousMagnitude)
+            {
+                lowestMagnitudeWhenDecreasing = previousMagnitude;
+                numberOfIneffectiveOvershots = 0;
+            }
+            else
+                numberOfIneffectiveOvershots++;
+        }
+        movement = Movement::Decreasing;
+    }
+
+    if (numberOfIneffectiveOvershots==10)
+    {
+        if (currentMagnitude < maximumMagnitude)
+            step = Step::Done;
+        else
+            step = Step::Stuck;
+        numberOfIneffectiveOvershots = 0;
+    }
+    return step;
 }
 
 template<std::size_t dof>
@@ -120,6 +173,5 @@ void GradientDescent<dof>::saveAngles()
 {
     previousAngles = robot->angles();
 }
-
 
 }

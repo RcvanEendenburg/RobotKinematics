@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
 #include <robothli/Point.h>
+#include <cmath>
 
 TEST(PointSuite, lessThanOperator2D)
 {
