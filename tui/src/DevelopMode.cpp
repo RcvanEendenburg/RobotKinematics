@@ -17,13 +17,13 @@ void DevelopMode::goToPosition(const std::string& positionStr)
     auto trimRightBracketPos = str.find_last_not_of(')');
     str = str.substr(0, trimRightBracketPos != std::string::npos ? trimRightBracketPos + 1 : str.size() - 1);
     std::string token;
-    std::vector<unsigned int> coordinates;
+    std::vector<double> coordinates;
     while(true)
     {
         std::size_t pos = str.find(',');
         token = str.substr(0, pos);
         str.erase(0, pos + 1);
-        coordinates.push_back(static_cast<unsigned int>(std::stoi(token)));
+        coordinates.push_back(std::stod(token));
         if(pos == std::string::npos) break;
     }
 
