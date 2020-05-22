@@ -57,19 +57,45 @@ Pose<dof>::setAngles(Pose<dof>::Angles angles)
 
 template <std::size_t dof> void Pose<dof>::keepVertical()
 {
-    double sum                   = 45;
-    std::shared_ptr<Joint> joint = kinematicChain.end()->getPrevious();
+    double preferredAngleSum = 180;
+    double angleSum = 0;
+    std::shared_ptr<Joint> joint = kinematicChain.begin();
     while(joint)
     {
         if(joint->canYRotate())
         {
+            joint = joint->getNext();
+            continue;
+        }
+        angleSum += joint->getAngle();
+        joint = joint->getNext();
+    }
+    double excessAngle = std::abs(angleSum - preferredAngleSum);
+    joint = kinematicChain.end();
+    while (joint)
+    {
+        if (joint->canYRotate())
+        {
             joint = joint->getPrevious();
             continue;
         }
-        sum -= joint->getAngle();
+        excessAngle += joint->getAngle();
+        if (excessAngle > joint->getUpperBound())
+        {
+            excessAngle -= joint->getUpperBound();
+            joint->setAngle(joint->getUpperBound());
+        }
+        else if (excessAngle < joint->getLowerBound())
+        {
+            throw std::runtime_error("Excess angle is lower than lower bound!");
+        }
+        else
+        {
+            joint->setAngle(excessAngle);
+            break;
+        }
         joint = joint->getPrevious();
     }
-    kinematicChain.end()->setAngle(sum);
 }
 
 template<std::size_t dof> const KinematicChain &
