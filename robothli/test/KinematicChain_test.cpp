@@ -3,9 +3,9 @@
 
 TEST(KinematicChainSuite, initializationList)
 {
-    auto j1 = std::make_shared<Kinematics::Joint>(0.2, 50, 10, 100, true, true);
-    auto j2 = std::make_shared<Kinematics::Joint>(0.2, 50, 10, 100, true, true);
-    auto j3 = std::make_shared<Kinematics::Joint>(0.2, 50, 10, 100, true, true);
+    auto j1 = std::make_shared<Kinematics::Joint>(0.2, 50, 0, 10, 100, true, true);
+    auto j2 = std::make_shared<Kinematics::Joint>(0.2, 50, 0, 10, 100, true, true);
+    auto j3 = std::make_shared<Kinematics::Joint>(0.2, 50, 0, 10, 100, true, true);
 
     Kinematics::KinematicChain chain({j1, j2, j3});
 
@@ -23,9 +23,9 @@ TEST(KinematicChainSuite, initializationList)
 
 TEST(KinematicChainSuite, setJointStructureManually)
 {
-    auto j1 = std::make_shared<Kinematics::Joint>(0.2, 50, 10, 100, true, true);
-    auto j2 = std::make_shared<Kinematics::Joint>(0.2, 50, 10, 100, true, true);
-    auto j3 = std::make_shared<Kinematics::Joint>(0.2, 50, 10, 100, true, true);
+    auto j1 = std::make_shared<Kinematics::Joint>(0.2, 50, 0, 10, 100, true, true);
+    auto j2 = std::make_shared<Kinematics::Joint>(0.2, 50, 0, 10, 100, true, true);
+    auto j3 = std::make_shared<Kinematics::Joint>(0.2, 50, 0, 10, 100, true, true);
 
     j1->setNext(j2);
     j2->setNext(j3);
@@ -46,9 +46,9 @@ TEST(KinematicChainSuite, setJointStructureManually)
 
 TEST(KinematicChainSuite, setJointStructureManuallyDefaultConstructor)
 {
-    auto j1 = std::make_shared<Kinematics::Joint>(0.2, 50, 10, 100, true, true);
-    auto j2 = std::make_shared<Kinematics::Joint>(0.2, 50, 10, 100, true, true);
-    auto j3 = std::make_shared<Kinematics::Joint>(0.2, 50, 10, 100, true, true);
+    auto j1 = std::make_shared<Kinematics::Joint>(0.2, 50, 0, 10, 100, true, true);
+    auto j2 = std::make_shared<Kinematics::Joint>(0.2, 50, 0, 10, 100, true, true);
+    auto j3 = std::make_shared<Kinematics::Joint>(0.2, 50, 0, 10, 100, true, true);
 
     j1->setNext(j2);
     j2->setNext(j3);
@@ -73,9 +73,9 @@ TEST(KinematicChainSuite, retrieveJointByIndex)
     Kinematics::KinematicChain chain;
     ASSERT_THROW(chain.at(0), std::runtime_error);
 
-    auto j1 = std::make_shared<Kinematics::Joint>(0.2, 50, 10, 100, true, true);
-    auto j2 = std::make_shared<Kinematics::Joint>(0.2, 50, 10, 100, true, true);
-    auto j3 = std::make_shared<Kinematics::Joint>(0.2, 50, 10, 100, true, true);
+    auto j1 = std::make_shared<Kinematics::Joint>(0.2, 50, 0, 10, 100, true, true);
+    auto j2 = std::make_shared<Kinematics::Joint>(0.2, 50, 0, 10, 100, true, true);
+    auto j3 = std::make_shared<Kinematics::Joint>(0.2, 50, 0, 10, 100, true, true);
 
     j1->setNext(j2);
     j2->setNext(j3);
@@ -105,10 +105,10 @@ TEST(KinematicChainSuite, getAngleSumZ)
     double a1 = 20;
     double a2 = 50;
     double a3 = 70;
-    auto j1 = std::make_shared<Kinematics::Joint>(0.2, a1, 10, 100, false, true);
-    auto j2 = std::make_shared<Kinematics::Joint>(0.2, a2, 10, 100, false, true);
-    auto j3 = std::make_shared<Kinematics::Joint>(0.2, a3, 10, 100, false, true);
-    auto j4 = std::make_shared<Kinematics::Joint>(0.2, 20, 10, 100, true, true);
+    auto j1 = std::make_shared<Kinematics::Joint>(0.2, a1, 0, 10, 100, false, true);
+    auto j2 = std::make_shared<Kinematics::Joint>(0.2, a2, 0, 10, 100, false, true);
+    auto j3 = std::make_shared<Kinematics::Joint>(0.2, a3, 0, 10, 100, false, true);
+    auto j4 = std::make_shared<Kinematics::Joint>(0.2, 20, 0, 10, 100, true, true);
 
     Kinematics::KinematicChain chain({j1, j2, j3});
 
@@ -142,10 +142,10 @@ TEST(KinematicChainSuite, getAngleSumY)
     double a1 = 20;
     double a2 = 50;
     double a3 = 70;
-    auto j1 = std::make_shared<Kinematics::Joint>(0.2, a1, 10, 100, true, true);
-    auto j2 = std::make_shared<Kinematics::Joint>(0.2, a2, 10, 100, true, true);
-    auto j3 = std::make_shared<Kinematics::Joint>(0.2, a3, 10, 100, true, true);
-    auto j4 = std::make_shared<Kinematics::Joint>(0.2, 20, 10, 100, false, true);
+    auto j1 = std::make_shared<Kinematics::Joint>(0.2, a1, 0, 10, 100, true, true);
+    auto j2 = std::make_shared<Kinematics::Joint>(0.2, a2, 0, 10, 100, true, true);
+    auto j3 = std::make_shared<Kinematics::Joint>(0.2, a3, 0, 10, 100, true, true);
+    auto j4 = std::make_shared<Kinematics::Joint>(0.2, 20, 0, 10, 100, false, true);
 
     Kinematics::KinematicChain chain({j1, j2, j3});
 
@@ -179,9 +179,9 @@ TEST(KinematicChainSuite, getStaticLength)
     double l1 = 0.5;
     double l2 = 2.2;
     double l3 = 1.6;
-    auto j1 = std::make_shared<Kinematics::Joint>(l1, 20, 10, 100, false, true);
-    auto j2 = std::make_shared<Kinematics::Joint>(l2, 30, 10, 100, true, true);
-    auto j3 = std::make_shared<Kinematics::Joint>(l3, 40, 10, 100, true, true);
+    auto j1 = std::make_shared<Kinematics::Joint>(l1, 20, 0, 10, 100, false, true);
+    auto j2 = std::make_shared<Kinematics::Joint>(l2, 30, 0, 10, 100, true, true);
+    auto j3 = std::make_shared<Kinematics::Joint>(l3, 40, 0, 10, 100, true, true);
 
     Kinematics::KinematicChain chain({j1, j2, j3});
 
@@ -190,9 +190,9 @@ TEST(KinematicChainSuite, getStaticLength)
 
 TEST(KinematicChainSuite, getNextZRotationJoint)
 {
-    auto j1 = std::make_shared<Kinematics::Joint>(1.3, 20, 10, 100, false, true);
-    auto j2 = std::make_shared<Kinematics::Joint>(2.3, 30, 10, 100, true, true);
-    auto j3 = std::make_shared<Kinematics::Joint>(1, 40, 10, 100, false, true);
+    auto j1 = std::make_shared<Kinematics::Joint>(1.3, 20, 0, 10, 100, false, true);
+    auto j2 = std::make_shared<Kinematics::Joint>(2.3, 30, 0, 10, 100, true, true);
+    auto j3 = std::make_shared<Kinematics::Joint>(1, 40, 0, 10, 100, false, true);
 
     Kinematics::KinematicChain chain({j1, j2, j3});
 
@@ -204,9 +204,9 @@ TEST(KinematicChainSuite, getNextZRotationJoint)
 
 TEST(KinematicChainSuite, getNextYRotationJoint)
 {
-    auto j1 = std::make_shared<Kinematics::Joint>(1.3, 20, 10, 100, true, true);
-    auto j2 = std::make_shared<Kinematics::Joint>(2.3, 30, 10, 100, false, true);
-    auto j3 = std::make_shared<Kinematics::Joint>(1, 40, 10, 100, true, true);
+    auto j1 = std::make_shared<Kinematics::Joint>(1.3, 20, 0, 10, 100, true, true);
+    auto j2 = std::make_shared<Kinematics::Joint>(2.3, 30, 0, 10, 100, false, true);
+    auto j3 = std::make_shared<Kinematics::Joint>(1, 40, 0, 10, 100, true, true);
 
     Kinematics::KinematicChain chain({j1, j2, j3});
 
@@ -218,9 +218,9 @@ TEST(KinematicChainSuite, getNextYRotationJoint)
 
 TEST(KinematicChainSuite, getFirstZRotationJoint)
 {
-    auto j1 = std::make_shared<Kinematics::Joint>(1.3, 20, 10, 100, true, true);
-    auto j2 = std::make_shared<Kinematics::Joint>(2.3, 30, 10, 100, false, true);
-    auto j3 = std::make_shared<Kinematics::Joint>(1, 40, 10, 100, false, true);
+    auto j1 = std::make_shared<Kinematics::Joint>(1.3, 20, 0, 10, 100, true, true);
+    auto j2 = std::make_shared<Kinematics::Joint>(2.3, 30, 0, 10, 100, false, true);
+    auto j3 = std::make_shared<Kinematics::Joint>(1, 40, 0, 10, 100, false, true);
 
     Kinematics::KinematicChain chain({j1, j2, j3});
 
@@ -229,9 +229,9 @@ TEST(KinematicChainSuite, getFirstZRotationJoint)
 
 TEST(KinematicChainSuite, getFirstYRotationJoint)
 {
-    auto j1 = std::make_shared<Kinematics::Joint>(1.3, 20, 10, 100, false, true);
-    auto j2 = std::make_shared<Kinematics::Joint>(2.3, 30, 10, 100, true, true);
-    auto j3 = std::make_shared<Kinematics::Joint>(1, 40, 10, 100, false, true);
+    auto j1 = std::make_shared<Kinematics::Joint>(1.3, 20, 0, 10, 100, false, true);
+    auto j2 = std::make_shared<Kinematics::Joint>(2.3, 30, 0, 10, 100, true, true);
+    auto j3 = std::make_shared<Kinematics::Joint>(1, 40, 0, 10, 100, false, true);
 
     Kinematics::KinematicChain chain({j1, j2, j3});
 
@@ -240,10 +240,10 @@ TEST(KinematicChainSuite, getFirstYRotationJoint)
 
 TEST(KinematicChainSuite, testBadSet)
 {
-    auto j1 = std::make_shared<Kinematics::Joint>(0.2, 19, 10, 100, true, true);
-    auto j2 = std::make_shared<Kinematics::Joint>(0.2, 10, 10, 100, true, true);
-    auto j3 = std::make_shared<Kinematics::Joint>(0.2, 10, 10, 100, true, true);
-    auto j4 = std::make_shared<Kinematics::Joint>(0.2, 20, 10, 100, false, true);
+    auto j1 = std::make_shared<Kinematics::Joint>(0.2, 19, 0, 10, 100, true, true);
+    auto j2 = std::make_shared<Kinematics::Joint>(0.2, 10, 0, 10, 100, true, true);
+    auto j3 = std::make_shared<Kinematics::Joint>(0.2, 10, 0, 10, 100, true, true);
+    auto j4 = std::make_shared<Kinematics::Joint>(0.2, 20, 0, 10, 100, false, true);
 
     Kinematics::KinematicChain chain;
 

@@ -33,8 +33,8 @@ TEST(JointSuite, testAngleBounds)
 
 TEST(JointSuite, testNextAndPrevious)
 {
-    auto j1 = std::make_shared<Kinematics::Joint>(0.2, 50, 10, 100, true, true);
-    auto j2 = std::make_shared<Kinematics::Joint>(0.2, 50, 10, 100, true, true);
+    auto j1 = std::make_shared<Kinematics::Joint>(0.2, 50, 0, 10, 100, true, true);
+    auto j2 = std::make_shared<Kinematics::Joint>(0.2, 50, 0, 10, 100, true, true);
     j1->setNext(j2);
 
     ASSERT_EQ(j1, j2->getPrevious());

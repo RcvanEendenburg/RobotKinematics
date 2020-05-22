@@ -235,20 +235,6 @@ public:
     inverse() const;
 
     /**
-     * @see https://en.wikipedia.org/wiki/Singular_value_decomposition
-     *
-     *  @return std::tuple< U, S, V> where:
-     *		- the matrix U is a matrix[M][N]
-     *		- the matrix S (the diagonal matrix of singular values) as a matrix[N][N]
-     *		- the matrix V (NOT the transpose of V!!!) is a matrix[N][N]
-     *
-     *
-     *	Adapted from http://svn.lirec.eu/libs/magicsquares/src/SVD.cpp, see implementation
-     */
-    std::tuple<Matrix<T, M, N>, Matrix<T, N, N>, Matrix<T, N, N>>
-    svd() const;
-
-    /**
      * @see https://en.wikipedia.org/wiki/Moore–Penrose_inverse
      */
     Matrix<T, M, N>
