@@ -77,7 +77,8 @@ protected:
         All,
         Wood,
         Develop,
-        Interactive
+        Single,
+        Sequence
     };
 
     ///@{

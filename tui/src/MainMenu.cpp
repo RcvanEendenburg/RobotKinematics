@@ -4,13 +4,15 @@
 
 #include <tui/MainMenu.h>
 #include <tui/DevelopMode.h>
-#include <tui/InteractiveMode.h>
+#include <tui/SinglePositionMode.h>
+#include <tui/SequenceMode.h>
 
 MainMenu::MainMenu(Utilities::IniParser& anIniParser, Utilities::Logger& aLogger, Communication::Communicator& communicator) :
 Mode(communicator), iniParser(anIniParser), logger(aLogger)
 {
     addSingleOperation(keywordToString(Keyword::Develop), [this](){startDevelopMode();});
-    addSingleOperation(keywordToString(Keyword::Interactive), [this](){startInteractiveMode();});
+    addSingleOperation(keywordToString(Keyword::Single), [this](){startSinglePositionMode();});
+    addSingleOperation(keywordToString(Keyword::Sequence), [this](){startSequenceMode();});
 }
 
 void MainMenu::startDevelopMode()
@@ -19,9 +21,15 @@ void MainMenu::startDevelopMode()
     currentMode->start();
 }
 
-void MainMenu::startInteractiveMode()
+void MainMenu::startSinglePositionMode()
 {
-    currentMode = std::move(std::make_unique<InteractiveMode>(communicator));
+    currentMode = std::move(std::make_unique<SinglePositionMode>(communicator));
+    currentMode->start();
+}
+
+void MainMenu::startSequenceMode()
+{
+    currentMode = std::move(std::make_unique<SequenceMode>(communicator));
     currentMode->start();
 }
 

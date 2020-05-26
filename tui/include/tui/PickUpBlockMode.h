@@ -2,20 +2,23 @@
 // Created by derk on 15-5-20.
 //
 
-#ifndef INTERACTIVEMODE_H
-#define INTERACTIVEMODE_H
+#ifndef PICKUPBLOCKMODE_H
+#define PICKUPBLOCKMODE_H
 
 #include <tui/Mode.h>
 
-class InteractiveMode : public Mode
+class PickUpBlockMode : public Mode
 {
 public:
-    InteractiveMode(Communication::Communicator& communicator);
-    ~InteractiveMode() override = default;
+    PickUpBlockMode(Communication::Communicator& communicator);
+    ~PickUpBlockMode() override = default;
     virtual void start() override;
 
     enum WorldShape {SQUARE, RECTANGLE, CIRCLE=3};
     enum WorldColor {ALL, YELLOW, RED, GREEN, BLUE, BLACK, WHITE, WOOD};
+
+protected:
+    virtual void handleShape(std::unique_ptr<tui::Shape>) = 0;
 
 private:
     WorldShape shapeKeywordToWorldInterface(Keyword keyword);
@@ -23,8 +26,8 @@ private:
     void handleFindRectangle(const std::string& color);
     void handleFindSquare(const std::string& color);
     void handleFindCircle(const std::string& color);
-    void createShapeChoiceMenu(const std::vector<tui::Shape>& shapes);
+    std::unique_ptr<tui::Shape> retrieveShape(const std::vector<tui::Shape>& shapes);
 };
 
 
-#endif //INTERACTIVEMODE_H
+#endif //PICKUPBLOCKMODE_H
