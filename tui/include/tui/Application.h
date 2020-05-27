@@ -14,9 +14,16 @@
 class Application
 {
 public:
+    /**
+     * Sets up the application.
+     * @param configFile The config file of the TUI.
+     */
     Application(int argc, char **argv, const std::string &configFile);
     ~Application() = default;
 
+    /**
+     * Initiates the application
+     */
     void run();
 
 private:

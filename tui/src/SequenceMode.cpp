@@ -5,7 +5,7 @@
 #include <tui/SequenceMode.h>
 
 SequenceMode::SequenceMode(Communication::Communicator &communicator, double aGripperOpeningHeight) :
-PickUpBlockMode(communicator), gripperOpeningHeight(aGripperOpeningHeight)
+FindShapeMode(communicator), gripperOpeningHeight(aGripperOpeningHeight)
 {
 
 }

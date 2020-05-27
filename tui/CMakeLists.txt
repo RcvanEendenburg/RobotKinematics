@@ -36,6 +36,6 @@ include_directories(
         ${utilities_INCLUDE_DIRS}
 )
 
-add_executable(${PROJECT_NAME} src/main.cpp src/Application.cpp src/DevelopMode.cpp src/Mode.cpp src/Communicator.cpp src/PickUpBlockMode.cpp src/MainMenu.cpp src/SinglePositionMode.cpp src/SequenceMode.cpp src/ChooseShapeMode.cpp)
+add_executable(${PROJECT_NAME} src/main.cpp src/Application.cpp src/DevelopMode.cpp src/Mode.cpp src/Communicator.cpp src/FindShapeMode.cpp src/MainMenu.cpp src/SinglePositionMode.cpp src/SequenceMode.cpp src/ChooseShapeMode.cpp)
 target_link_libraries(${PROJECT_NAME}  ${catkin_LIBRARIES} ${utilities_LIBRARIES} pthread)
 add_dependencies(${PROJECT_NAME} ${PROJECT_NAME}_generate_messages_cpp)
