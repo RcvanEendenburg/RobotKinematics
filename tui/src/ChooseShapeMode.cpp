@@ -34,7 +34,7 @@ void ChooseShapeMode::start()
         ss << i << " -> center: (" << shapes[i].points.x << ", " << shapes[i].points.y << ", " <<
         shapes[i].points.z << "), rotation: " << shapes[i].rotation << std::endl;
     }
-    ss << "exit -> go back to the interactive mode" << std::endl;
+    ss << "exit -> go back to the previous mode" << std::endl;
     setWelcomeMessage(ss.str());
     setExitMessage("Exiting choose shape menu...");
     Mode::start();

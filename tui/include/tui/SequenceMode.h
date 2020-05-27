@@ -10,10 +10,11 @@
 class SequenceMode : public PickUpBlockMode
 {
 public:
-    SequenceMode(Communication::Communicator& communicator);
+    SequenceMode(Communication::Communicator& communicator, double aGripperOpeningHeight);
     ~SequenceMode() override = default;
 private:
     void handleShape(std::unique_ptr<tui::Shape> shape) override;
+    double gripperOpeningHeight;
 };
 
 

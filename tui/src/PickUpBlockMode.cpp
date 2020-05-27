@@ -132,6 +132,6 @@ void PickUpBlockMode::start()
     ss << "In addition to this, it is also possible to search for all colors with $shape " <<
     keywordToString(Keyword::All) << std::endl;
     setWelcomeMessage(ss.str());
-    setExitMessage("Exiting interactive mode...");
+    setExitMessage("Exiting current mode...");
     Mode::start();
 }

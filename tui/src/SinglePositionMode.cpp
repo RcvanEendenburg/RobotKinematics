@@ -6,7 +6,6 @@
 
 SinglePositionMode::SinglePositionMode(Communication::Communicator &communicator) : PickUpBlockMode(communicator)
 {
-
 }
 
 void SinglePositionMode::handleShape(std::unique_ptr<tui::Shape> shape)

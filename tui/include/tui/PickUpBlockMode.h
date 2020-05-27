@@ -19,6 +19,7 @@ public:
 
 protected:
     virtual void handleShape(std::unique_ptr<tui::Shape>) = 0;
+    std::unique_ptr<tui::Shape> retrieveShape(const std::vector<tui::Shape>& shapes);
 
 private:
     WorldShape shapeKeywordToWorldInterface(Keyword keyword);
@@ -26,7 +27,6 @@ private:
     void handleFindRectangle(const std::string& color);
     void handleFindSquare(const std::string& color);
     void handleFindCircle(const std::string& color);
-    std::unique_ptr<tui::Shape> retrieveShape(const std::vector<tui::Shape>& shapes);
 };
 
 
