@@ -18,7 +18,8 @@ public:
     virtual void start() override;
 
 private:
-    void startInteractiveMode();
+    void startSinglePositionMode();
+    void startSequenceMode();
     void startDevelopMode();
 
     Utilities::IniParser& iniParser;
