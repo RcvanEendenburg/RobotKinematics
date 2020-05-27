@@ -10,21 +10,34 @@
 #include <utilities/Logger.h>
 #include <tui/Communicator.h>
 
+/**
+ * The main menu mode is used to have an overview about the different sub modes available and to select a sub mode.
+ */
 class MainMenu : public Mode
 {
 public:
-    MainMenu(Utilities::IniParser& anIniParser, Utilities::Logger& aLogger, Communication::Communicator& communicator);
+    /**
+     * Constructs the main menu.
+     * @param anIniParser A reference to the ini parser.
+     * @param communicator A reference to the communicator.
+     */
+    MainMenu(Utilities::IniParser& anIniParser, Communication::Communicator& communicator);
     ~MainMenu() override = default;
-    virtual void start() override;
+
+    /**
+     * @see Mode::start
+     */
+    void start() override;
 
 private:
+    ///@{
+    /** Starts the different modes. **/
     void startSinglePositionMode();
     void startSequenceMode();
     void startDevelopMode();
+    ///@}
 
     Utilities::IniParser& iniParser;
-    Utilities::Logger &logger;
-    std::unique_ptr<Mode> currentMode;
 };
 
 

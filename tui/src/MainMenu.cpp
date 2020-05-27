@@ -7,8 +7,8 @@
 #include <tui/SinglePositionMode.h>
 #include <tui/SequenceMode.h>
 
-MainMenu::MainMenu(Utilities::IniParser& anIniParser, Utilities::Logger& aLogger, Communication::Communicator& communicator) :
-Mode(communicator), iniParser(anIniParser), logger(aLogger)
+MainMenu::MainMenu(Utilities::IniParser& anIniParser, Communication::Communicator& communicator) :
+Mode(communicator), iniParser(anIniParser)
 {
     addSingleOperation(keywordToString(Keyword::Develop), [this](){startDevelopMode();});
     addSingleOperation(keywordToString(Keyword::Single), [this](){startSinglePositionMode();});
@@ -17,20 +17,20 @@ Mode(communicator), iniParser(anIniParser), logger(aLogger)
 
 void MainMenu::startDevelopMode()
 {
-    currentMode = std::move(std::make_unique<DevelopMode>(communicator));
-    currentMode->start();
+    auto developMode = std::move(std::make_unique<DevelopMode>(communicator));
+    developMode->start();
 }
 
 void MainMenu::startSinglePositionMode()
 {
-    currentMode = std::move(std::make_unique<SinglePositionMode>(communicator));
-    currentMode->start();
+    auto singlePositionMode = std::move(std::make_unique<SinglePositionMode>(communicator));
+    singlePositionMode->start();
 }
 
 void MainMenu::startSequenceMode()
 {
-    currentMode = std::move(std::make_unique<SequenceMode>(communicator, iniParser.get<double>("TUI","gripper_opening_height")));
-    currentMode->start();
+    auto sequenceMode = std::move(std::make_unique<SequenceMode>(communicator, iniParser.get<double>("TUI","gripper_opening_height")));
+    sequenceMode->start();
 }
 
 void MainMenu::start()

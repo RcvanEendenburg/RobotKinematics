@@ -16,6 +16,6 @@ Application::Application(int argc, char **argv, const std::string &configFile) :
 
 void Application::run()
 {
-    MainMenu menu(iniParser, logger, communicator);
+    MainMenu menu(iniParser, communicator);
     menu.start();
 }

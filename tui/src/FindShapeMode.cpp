@@ -2,17 +2,17 @@
 // Created by derk on 27-4-20.
 //
 
-#include <tui/PickUpBlockMode.h>
+#include <tui/FindShapeMode.h>
 #include <tui/ChooseShapeMode.h>
 
-PickUpBlockMode::PickUpBlockMode(Communication::Communicator& communicator) : Mode(communicator)
+FindShapeMode::FindShapeMode(Communication::Communicator& communicator) : Mode(communicator)
 {
     addOperationWithArgument(keywordToString(Keyword::Rectangle), [this](const std::string& arg){handleFindRectangle(arg);});
     addOperationWithArgument(keywordToString(Keyword::Square), [this](const std::string& arg){handleFindSquare(arg);});
     addOperationWithArgument(keywordToString(Keyword::Circle), [this](const std::string& arg){handleFindCircle(arg);});
 }
 
-void PickUpBlockMode::handleFindRectangle(const std::string& color)
+void FindShapeMode::handleFindRectangle(const std::string& color)
 {
     try
     {
@@ -32,7 +32,7 @@ void PickUpBlockMode::handleFindRectangle(const std::string& color)
     }
 }
 
-void PickUpBlockMode::handleFindSquare(const std::string& color)
+void FindShapeMode::handleFindSquare(const std::string& color)
 {
     try
     {
@@ -52,7 +52,7 @@ void PickUpBlockMode::handleFindSquare(const std::string& color)
     }
 }
 
-PickUpBlockMode::WorldShape PickUpBlockMode::shapeKeywordToWorldInterface(Keyword keyword)
+FindShapeMode::WorldShape FindShapeMode::shapeKeywordToWorldInterface(Keyword keyword)
 {
     switch(keyword)
     {
@@ -67,7 +67,7 @@ PickUpBlockMode::WorldShape PickUpBlockMode::shapeKeywordToWorldInterface(Keywor
     }
 }
 
-PickUpBlockMode::WorldColor PickUpBlockMode::colorKeywordToWorldInterface(Keyword keyword)
+FindShapeMode::WorldColor FindShapeMode::colorKeywordToWorldInterface(Keyword keyword)
 {
     switch(keyword)
     {
@@ -92,14 +92,14 @@ PickUpBlockMode::WorldColor PickUpBlockMode::colorKeywordToWorldInterface(Keywor
     }
 }
 
-std::unique_ptr<tui::Shape> PickUpBlockMode::retrieveShape(const std::vector<tui::Shape>& shapes)
+std::unique_ptr<tui::Shape> FindShapeMode::retrieveShape(const std::vector<tui::Shape>& shapes)
 {
     ChooseShapeMode chooseShapeMode(communicator, shapes);
     chooseShapeMode.start();
     return std::move(chooseShapeMode.retrieveShape());
 }
 
-void PickUpBlockMode::handleFindCircle(const std::string& color)
+void FindShapeMode::handleFindCircle(const std::string& color)
 {
     try
     {
@@ -119,7 +119,7 @@ void PickUpBlockMode::handleFindCircle(const std::string& color)
     }
 }
 
-void PickUpBlockMode::start()
+void FindShapeMode::start()
 {
     std::stringstream ss;
     ss << "Use $shape $color to pick up a block." << std::endl;

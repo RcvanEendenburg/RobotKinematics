@@ -4,7 +4,7 @@
 
 #include <tui/SinglePositionMode.h>
 
-SinglePositionMode::SinglePositionMode(Communication::Communicator &communicator) : PickUpBlockMode(communicator)
+SinglePositionMode::SinglePositionMode(Communication::Communicator &communicator) : FindShapeMode(communicator)
 {
 }
 
