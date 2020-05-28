@@ -126,6 +126,7 @@ void ShapeFinder::convertPixelToMM(std::vector<world::Shape>& foundShapes, Aruco
         shape.points.x = calibration->PixelToMM(shape.points.x);
         shape.points.y = iniParser.get<int>("Calibration","DefaultY");
         shape.points.z = calibration->PixelToMM(shape.points.z);
+        shape.width = calibration->PixelToMM(static_cast<float>(shape.width));
     }
 }
 

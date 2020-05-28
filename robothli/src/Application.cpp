@@ -44,7 +44,9 @@ Application::moveToGoal(double x, double y, double z, double rotation, double op
     {
         algorithm.startMoving(Kinematics::PosePoint(x, y, z));
         auto angles = algorithm.getCurrentAngles();
-        communicator.move(angles[0], angles[1], angles[2], angles[3], rotation, openingDistance,
+        //Rotation is based on x-axis, assumption: base + wrist_rotate = rotation, since base and rotation are known,
+        //determine wrist rotate. It is important that the gripper is pointed down for this!
+        communicator.move(angles[0], angles[1], angles[2], angles[3], rotation - angles[0], openingDistance,
                           static_cast<unsigned short>(iniParser.get<int>("Robot", "move_time")));
     }
     catch (Kinematics::UnableToMove& e)

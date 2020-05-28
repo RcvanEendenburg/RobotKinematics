@@ -18,7 +18,6 @@ Communicator::Communicator(const std::string &highLevelDriver, Application &app)
 void
 Communicator::goToPosition(double x, double y, double z, double rotation, double openingDistance)
 {
-    application.logger.log(Utilities::LogLevel::Debug, "Sending goal to the high level driver...");
     tui::PickUpObjectGoal goal;
     goal.point.x = x;
     goal.point.y = y;
@@ -30,9 +29,7 @@ Communicator::goToPosition(double x, double y, double z, double rotation, double
 
     bool finished_before_timeout = actionClient.waitForResult(ros::Duration(30.0));
 
-    if (finished_before_timeout)
-        application.logger.log(Utilities::LogLevel::Debug, "Successfully sent the goal to the high level driver!");
-    else
+    if (!finished_before_timeout)
         application.logger.log(Utilities::LogLevel::Error, "Oops action server timed out...");
 }
 

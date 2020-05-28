@@ -184,6 +184,10 @@ if [[ ${START_ROS_MASTER} -eq 1 ]]; then
     sleep 2
 fi
 
+#if [[ ${SIM_MODE} -eq 1 ]]; then
+#    cat ${SERIAL_PORT_A} &
+#fi
+
 start_ros_node ${AL5D_PACKAGE_NAME} ${AL5D_NODE_NAME} ${AL5D_CONFIG_FILE_NAME_OUT} 0
 start_ros_node ${ROBOT_HLI_PACKAGE_NAME} ${ROBOT_HLI_NODE_NAME} ${ROBOT_HLI_CONFIG_FILE_NAME_OUT} 0
 start_ros_node ${WORLD_PACKAGE_NAME} ${WORLD_NODE_NAME} ${WORLD_CONFIG_FILE_NAME_OUT} 0

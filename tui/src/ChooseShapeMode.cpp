@@ -32,7 +32,7 @@ void ChooseShapeMode::start()
     std::stringstream ss;
     for (unsigned int i = 0; i < shapes.size(); ++i) {
         ss << i << " -> center: (" << shapes[i].points.x << ", " << shapes[i].points.y << ", " <<
-        shapes[i].points.z << "), rotation: " << shapes[i].rotation << std::endl;
+        shapes[i].points.z << "), width: " <<  shapes[i].width << ", rotation: " << shapes[i].rotation << std::endl;
     }
     ss << "exit -> go back to the previous mode" << std::endl;
     setWelcomeMessage(ss.str());
