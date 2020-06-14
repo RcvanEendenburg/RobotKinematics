@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
 
 #Ros related variables
-ROS_WS=~/workspace
+ROS_WS=/workspace
 LOG_PIPE=rk_log_output
 
-#If 1, ros master will start
-START_ROS_MASTER=1
-
-#Log mode (not for TUI logging)
+#Log mode
 #0 = zero logging (log pipe will be written to /dev/null)
 #1 = log to file (log pipe will be written to log.txt
 #2 = log all (pipe must be emptied with cat)
@@ -17,7 +14,6 @@ LOG_MODE=2
 #0 = disabled
 #1 = enabled
 SIM_MODE=1
-AL5D_SERIAL_PORT=/dev/ttyUSB0
 
 #Only if log mode is set to 1
 LOG_FILE=rk_log.txt
@@ -40,12 +36,6 @@ ROBOT_HLI_CONFIG_FILE_NAME_OUT=config_generated.ini
 ROBOT_HLI_DRIVER_SUBSTITUTE_STR=LOW_LEVEL_DRIVER
 ROBOT_HLI_NODE_NAME_SUBSTITUTE_STR=NODE_NAME
 ROBOT_HLI_PACKAGE_NAME=robothli
-
-#TUI
-TUI_PACKAGE_NAME=tui
-TUI_NODE_NAME=tui
-TUI_CONFIG_FILE_NAME_IN=config.ini
-TUI_CONFIG_FILE_NAME_OUT=config_generated.ini
 
 #World
 WORLD_PACKAGE_NAME=world
@@ -86,6 +76,7 @@ cleanup() {
 #$3 is the package
 #$4 is the config out file
 replace_config_value() {
+    echo "Replacing value... $1, $2, $3, $4"
     sed -i "s/$1/$2/g" "${ROS_WS}/src/$3/${CONFIG_FOLDER_NAME}/$4"
 }
 
@@ -125,32 +116,23 @@ cd ${ROS_WS}
 echo "Source ROS..."
 source devel/setup.bash
 
-if [[ ${SIM_MODE} -eq 1 ]]; then
-    echo "Opening virtual serial ports..."
-    ( socat -d -d pty,raw,echo=0 pty,raw,echo=0 2>&1 | grep --line-buffered -Eo "/dev/pts/\w+" > /tmp/${TMP_SERIAL_FILE_NAME} ) &
-    sleep 1
-    echo "Serial ports opened! Written information to /tmp/${TMP_SERIAL_FILE_NAME}."
+echo "Opening virtual serial ports..."
+( socat -d -d pty,raw,echo=0 pty,raw,echo=0 2>&1 | grep --line-buffered -Eo "/dev/pts/\w+" > /tmp/${TMP_SERIAL_FILE_NAME} ) &
+sleep 1
+echo "Serial ports opened! Written information to /tmp/${TMP_SERIAL_FILE_NAME}."
 
-    SERIAL_PORT_A=$(head -n 1 /tmp/${TMP_SERIAL_FILE_NAME})
-    SERIAL_PORT_B=$(tail -n 1 /tmp/${TMP_SERIAL_FILE_NAME})
+SERIAL_PORT_A=$(head -n 1 /tmp/${TMP_SERIAL_FILE_NAME})
+SERIAL_PORT_B=$(tail -n 1 /tmp/${TMP_SERIAL_FILE_NAME})
 
-    SERIAL_PORT_A_SED_STR=${SERIAL_PORT_A////\\\/}
-    SERIAL_PORT_B_SED_STR=${SERIAL_PORT_B////\\\/}
+SERIAL_PORT_A_SED_STR=${SERIAL_PORT_A////\\\/}
+SERIAL_PORT_B_SED_STR=${SERIAL_PORT_B////\\\/}
 
-    echo "Serial ports ${SERIAL_PORT_A} and ${SERIAL_PORT_B} are opened."
-else
-    AL5D_SERIAL_PORT_SED_STR=${AL5D_SERIAL_PORT////\\\/}
-fi
+echo "Serial ports ${SERIAL_PORT_A} and ${SERIAL_PORT_B} are opened."
 
 #Setting al5d parameters
 prepare_generated_ini_file ${AL5D_PACKAGE_NAME} ${AL5D_CONFIG_FILE_NAME_IN} ${AL5D_CONFIG_FILE_NAME_OUT}
 replace_config_value ${AL5D_NODE_NAME_SUBSTITUTE_STR} ${AL5D_NODE_NAME} ${AL5D_PACKAGE_NAME} ${AL5D_CONFIG_FILE_NAME_OUT}
-
-if [[ ${SIM_MODE} -eq 1 ]]; then
-    replace_config_value ${AL5D_SERIAL_PORT_SUBSTITUTE_STR} ${SERIAL_PORT_B_SED_STR} ${AL5D_PACKAGE_NAME} ${AL5D_CONFIG_FILE_NAME_OUT}
-else
-    replace_config_value ${AL5D_SERIAL_PORT_SUBSTITUTE_STR} ${AL5D_SERIAL_PORT_SED_STR} ${AL5D_PACKAGE_NAME} ${AL5D_CONFIG_FILE_NAME_OUT}
-fi
+replace_config_value ${AL5D_SERIAL_PORT_SUBSTITUTE_STR} ${SERIAL_PORT_B_SED_STR} ${AL5D_PACKAGE_NAME} ${AL5D_CONFIG_FILE_NAME_OUT}
 
 #Setting robot hli parameters
 prepare_generated_ini_file ${ROBOT_HLI_PACKAGE_NAME} ${ROBOT_HLI_CONFIG_FILE_NAME_IN} ${ROBOT_HLI_CONFIG_FILE_NAME_OUT}
@@ -163,9 +145,6 @@ WORLD_IMAGE_PATH=${WORLD_IMAGE_PATH////\\\/}
 prepare_generated_ini_file ${WORLD_PACKAGE_NAME} ${WORLD_CONFIG_FILE_NAME_IN} ${WORLD_CONFIG_FILE_NAME_OUT}
 replace_config_value ${WORLD_IMAGE_PATH_SUBSTITUTE_STR} ${WORLD_IMAGE_PATH} ${WORLD_PACKAGE_NAME} ${WORLD_CONFIG_FILE_NAME_OUT}
 replace_config_value ${WORLD_CAMERA_ENABLED_SUBSTITUTE_STR} ${WORLD_CAMERA_ENABLED} ${WORLD_PACKAGE_NAME} ${WORLD_CONFIG_FILE_NAME_OUT}
-
-#setting TUI parameters
-prepare_generated_ini_file ${TUI_PACKAGE_NAME} ${TUI_CONFIG_FILE_NAME_IN} ${TUI_CONFIG_FILE_NAME_OUT}
 
 echo "Creating log pipe..."
 mkfifo /tmp/${LOG_PIPE}
@@ -183,15 +162,12 @@ else
     exit 1
 fi
 
-if [[ ${START_ROS_MASTER} -eq 1 ]]; then
-    roscore &
-    sleep 2
-fi
+rosrun ${SERIAL_FORWARDER_PACKAGE_NAME} ${SERIAL_FORWARDER_NODE_NAME} ${SERIAL_PORT_A} &
 
 start_ros_node ${AL5D_PACKAGE_NAME} ${AL5D_NODE_NAME} ${AL5D_CONFIG_FILE_NAME_OUT} 0
 start_ros_node ${ROBOT_HLI_PACKAGE_NAME} ${ROBOT_HLI_NODE_NAME} ${ROBOT_HLI_CONFIG_FILE_NAME_OUT} 0
 start_ros_node ${WORLD_PACKAGE_NAME} ${WORLD_NODE_NAME} ${WORLD_CONFIG_FILE_NAME_OUT} 0
 
-echo "Running ${TUI_NODE_NAME}..."
-echo "config ${ROS_WS}/src/${TUI_PACKAGE_NAME}/${CONFIG_FOLDER_NAME}/${TUI_CONFIG_FILE_NAME_OUT}..."
-rosrun ${TUI_PACKAGE_NAME} ${TUI_NODE_NAME} ${ROS_WS}/src/${TUI_PACKAGE_NAME}/${CONFIG_FOLDER_NAME}/${TUI_CONFIG_FILE_NAME_OUT}
+if [[ ${LOG_MODE} -eq 2 ]]; then
+    cat /tmp/${LOG_PIPE}
+fi
