@@ -1,5 +1,0 @@
-<launch>
-    <node name="al5d" pkg="al5d" type="al5d" output="screen" args="/home/derk/workspace/src/al5d/config/config_generated.ini" launch-prefix="urxvt -e"/>
-    <node name="tui" pkg="tui" type="tui" output="screen" launch-prefix="urxvt -e"/>
-    <node name="robothli" pkg="robothli" type="robothli" output="screen" args="/home/derk/workspace/src/robothli/config/config_generated.ini" launch-prefix="urxvt -e"/>
-</launch>
