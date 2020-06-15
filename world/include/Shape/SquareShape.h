@@ -8,8 +8,8 @@
 class SquareShape : public Shape
 {
 public:
-    SquareShape(int32_t id, ShapeTypes shape, geometry_msgs::Point center, float rotation):
-    Shape(id,shape,center,rotation)
+    SquareShape(int32_t id, ShapeTypes shape, geometry_msgs::Point center, double width, float rotation):
+    Shape(id,shape,center, width, rotation)
     {
 
     };
@@ -31,7 +31,7 @@ private:
             auto center = geometry_msgs::Point();
             center.x = cv.x;
             center.z = cv.y;
-            return std::make_shared<SquareShape>(0,ShapeTypes::SQUARE,center,rotated.angle);
+            return std::make_shared<SquareShape>(0,ShapeTypes::SQUARE,center,rotated.size.width, rotated.angle);
         }
 
         return nullptr;

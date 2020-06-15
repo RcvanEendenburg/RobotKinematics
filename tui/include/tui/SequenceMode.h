@@ -29,7 +29,7 @@
 class SequenceMode : public FindShapeMode
 {
 public:
-    SequenceMode(Communication::Communicator& communicator, double aGripperOpeningHeight);
+    SequenceMode(Communication::Communicator& communicator, double aGripperMaxOpenDistance, double aGripperOpeningHeight);
     ~SequenceMode() override = default;
 private:
     /**
@@ -37,6 +37,7 @@ private:
       */
     void handleShape(std::unique_ptr<tui::Shape> shape) override;
 
+    double gripperMaxOpenDistance;
     double gripperOpeningHeight;
 };
 
