@@ -8,8 +8,8 @@
 class CircleShape : public Shape
 {
 public:
-    CircleShape(int32_t id, ShapeTypes shape, geometry_msgs::Point center, float rotation):
-    Shape(id,shape,center,rotation)
+    CircleShape(int32_t id, ShapeTypes shape, geometry_msgs::Point center, double width, float rotation):
+    Shape(id,shape,center, width, rotation)
     {
 
     };
@@ -25,7 +25,7 @@ private:
             auto center = geometry_msgs::Point();
             center.x = cv.x;
             center.z = cv.y;
-            return std::make_shared<CircleShape>(0,ShapeTypes::CIRCLE,center,0);
+            return std::make_shared<CircleShape>(0,ShapeTypes::CIRCLE,center,r.width, 0);
         }
 
         return nullptr;

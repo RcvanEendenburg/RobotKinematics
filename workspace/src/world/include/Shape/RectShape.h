@@ -8,8 +8,8 @@
 class RectShape : public Shape
 {
 public:
-    RectShape(int32_t id, ShapeTypes shape, geometry_msgs::Point center, float rotation):
-    Shape(id,shape,center,rotation)
+    RectShape(int32_t id, ShapeTypes shape, geometry_msgs::Point center, double width, float rotation):
+    Shape(id,shape,center,width, rotation)
     {
 
     };
@@ -31,7 +31,8 @@ private:
             auto center = geometry_msgs::Point();
             center.x = cv.x;
             center.z = cv.y;
-            return std::make_shared<RectShape>(0,ShapeTypes::RECTANGLE,center,rotated.angle);
+            return std::make_shared<RectShape>(0,ShapeTypes::RECTANGLE,center,
+                rotated.size.width < rotated.size.height ? rotated.size.width : rotated.size.height, rotated.angle);
         }
 
         return nullptr;

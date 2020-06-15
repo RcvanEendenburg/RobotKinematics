@@ -18,14 +18,15 @@ class Shape
     public:
     enum ShapeTypes{SQUARE, RECTANGLE, UNDEFINED, CIRCLE};
 
-    Shape(int32_t id, ShapeTypes shape ,geometry_msgs::Point center, float rotation) :
-        id(id), shape(shape), center(center), rotation(rotation) {}
+    Shape(int32_t id, ShapeTypes shape ,geometry_msgs::Point center, double width, float rotation) :
+        id(id), shape(shape), center(center), width(width), rotation(rotation) {}
 
 
     world::Shape toShapeMessage() {
         world::Shape shapeMessage;
         shapeMessage.shape = shape;
         shapeMessage.points = center;
+        shapeMessage.width = width;
         shapeMessage.rotation = rotation;
         return shapeMessage;
     }
@@ -64,6 +65,7 @@ private:
     int32_t id;
     ShapeTypes shape;
     geometry_msgs::Point center;
+    double width;
     float rotation;
 };
 

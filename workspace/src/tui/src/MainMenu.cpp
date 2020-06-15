@@ -29,7 +29,8 @@ void MainMenu::startSinglePositionMode()
 
 void MainMenu::startSequenceMode()
 {
-    auto sequenceMode = std::move(std::make_unique<SequenceMode>(communicator, iniParser.get<double>("TUI","gripper_opening_height")));
+    auto sequenceMode = std::move(std::make_unique<SequenceMode>(communicator, iniParser.get<double>("TUI", "gripper_max_open_distance"),
+        iniParser.get<double>("TUI","gripper_opening_height")));
     sequenceMode->start();
 }
 
