@@ -1,0 +1,38 @@
+version: '3.2'
+services:
+  ros-master:
+    image: gramaziokohler/ros-base:19.11
+    container_name: ros-master
+    ports:
+      - "11311:11311"
+    command:
+      - roscore
+
+  al5d_simulation:
+    image: robot-kinematics:0.5
+    container_name: al5d_simulation
+    environment:
+      - ROS_MASTER_URI=http://ros-master:11311
+      - DISPLAY=:0
+    depends_on:
+      - ros-master
+    command:
+      - roslaunch 
+      - --wait
+      - al5d_simulation 
+      - al5d_simulation.launch
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /dev/dri:/dev/dri
+      - /dev/snd:/dev/snd
+
+  rk_application:
+    image: robot-kinematics:0.5
+    container_name: rk_application
+    environment:
+      - ROS_MASTER_URI=http://ros-master:11311
+    depends_on:
+      - ros-master
+    tty: true
+    command:
+      - /run_rk.sh
