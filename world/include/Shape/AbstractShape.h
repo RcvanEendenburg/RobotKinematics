@@ -46,8 +46,6 @@ class Shape
     {
         // Here we change to the robots Coordinate system. Using the aruco marker position as a reference to the robot.
         double xCopy = center.x;
-        double zCopy = center.z;
-
 
         double newZ = xCopy- aOrigin.x;
 
