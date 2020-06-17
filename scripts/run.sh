@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #Ros related variables
-ROS_WS=~/workspace
+ROS_WS=~/G/RobotKinematics
 LOG_PIPE=rk_log_output
 
 #If 1, ros master will start
@@ -16,7 +16,7 @@ LOG_MODE=2
 #Sim mode (if disabled the hardware AL5D serial port will be read)
 #0 = disabled
 #1 = enabled
-SIM_MODE=1
+SIM_MODE=0
 AL5D_SERIAL_PORT=/dev/ttyUSB0
 
 #Only if log mode is set to 1
@@ -27,7 +27,7 @@ CONFIG_FOLDER_NAME=config
 
 #Al5d controller
 AL5D_NODE_NAME=al5d
-AL5D_CONFIG_FILE_NAME_IN=config_sim.ini
+AL5D_CONFIG_FILE_NAME_IN=config.ini
 AL5D_CONFIG_FILE_NAME_OUT=config_generated.ini
 AL5D_SERIAL_PORT_SUBSTITUTE_STR=SERIAL_PORT_SIM
 AL5D_NODE_NAME_SUBSTITUTE_STR=NODE_NAME
@@ -35,7 +35,7 @@ AL5D_PACKAGE_NAME=al5d
 
 #Robot high level interface
 ROBOT_HLI_NODE_NAME=robothli
-ROBOT_HLI_CONFIG_FILE_NAME_IN=config_sim.ini
+ROBOT_HLI_CONFIG_FILE_NAME_IN=config.ini
 ROBOT_HLI_CONFIG_FILE_NAME_OUT=config_generated.ini
 ROBOT_HLI_DRIVER_SUBSTITUTE_STR=LOW_LEVEL_DRIVER
 ROBOT_HLI_NODE_NAME_SUBSTITUTE_STR=NODE_NAME
@@ -50,12 +50,12 @@ TUI_CONFIG_FILE_NAME_OUT=config_generated.ini
 #World
 WORLD_PACKAGE_NAME=world
 WORLD_NODE_NAME=world_node
-WORLD_CONFIG_FILE_NAME_IN=config_sim.ini
+WORLD_CONFIG_FILE_NAME_IN=config.ini
 WORLD_CONFIG_FILE_NAME_OUT=config_generated.ini
 WORLD_IMAGE_PATH_SUBSTITUTE_STR=IMAGE_PATH
 WORLD_IMAGE_PATH=TestImage/Blocks01.jpg
 WORLD_CAMERA_ENABLED_SUBSTITUTE_STR=CAMERA_ENABLED
-WORLD_CAMERA_ENABLED=0
+WORLD_CAMERA_ENABLED=1
 
 #Serial forwarder
 SERIAL_FORWARDER_PACKAGE_NAME=serial_forwarder

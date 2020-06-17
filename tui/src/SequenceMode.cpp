@@ -13,10 +13,10 @@ FindShapeMode(communicator), gripperMaxOpenDistance(aGripperMaxOpenDistance), gr
 void SequenceMode::handleShape(std::unique_ptr<tui::Shape> shape)
 {
     logger.log(Utilities::LogLevel::Debug, "Going to a point above the block...");
-    communicator.goToPosition(shape->points.x, shape->points.y - gripperOpeningHeight, shape->points.z, shape->rotation, 0);
+    communicator.goToPosition(shape->points.x, shape->points.y + gripperOpeningHeight, shape->points.z, shape->rotation, 0);
 
     logger.log(Utilities::LogLevel::Debug, "Opening gripper...");
-    communicator.goToPosition(shape->points.x, shape->points.y - gripperOpeningHeight, shape->points.z, shape->rotation,
+    communicator.goToPosition(shape->points.x, shape->points.y + gripperOpeningHeight, shape->points.z, shape->rotation,
                               gripperMaxOpenDistance);
 
     logger.log(Utilities::LogLevel::Debug, "Going down to the block position...");
@@ -40,7 +40,7 @@ void SequenceMode::handleShape(std::unique_ptr<tui::Shape> shape)
                                   chosenShape->rotation, gripperMaxOpenDistance);
 
         logger.log(Utilities::LogLevel::Debug, "Going to a point above the block...");
-        communicator.goToPosition(chosenShape->points.x, chosenShape->points.y - gripperOpeningHeight, chosenShape->points.z,
+        communicator.goToPosition(chosenShape->points.x, chosenShape->points.y + gripperOpeningHeight, chosenShape->points.z,
                                   chosenShape->rotation, gripperMaxOpenDistance);
     }
     else

@@ -14,7 +14,7 @@ Communicator::Communicator(const std::string &node_name, const std::string &low_
     application.logger.log(Utilities::LogLevel::Debug, "Starting high level driver action server...");
     action_server.start();
     application.logger.log(Utilities::LogLevel::Debug, "Waiting for the low level driver to start...");
-    action_client.waitForServer();
+    //action_client.waitForServer();
     application.logger.log(Utilities::LogLevel::Debug, "Ready!");
 }
 
@@ -22,6 +22,8 @@ void
 Communicator::execute(const robothli::PickUpObjectGoalConstPtr &goal)
 {
     auto point = goal->point;
+    application.logger.log(Utilities::LogLevel::Debug, "Goal received X: %f Y: %f Z: %f",point.x,point.y,point.z);
+
     application.moveToGoal(point.x, point.y, point.z, goal->rotation, goal->opening_distance);
     action_server.setSucceeded();
 }
