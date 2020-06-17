@@ -23,7 +23,6 @@ int main(int argc, char **argv)
     if(argc > 1) {
         ros::init(argc, argv, "WorldService");
 
-        //ShapeFinder shapeFinder(std::move(std::make_unique<StaticImage>("/home/rene/G/RobotKinematics/src/world/TestImage/Blocks01.jpg")));
         Utilities::IniParser parser = Utilities::IniParser(argv[1]);
         parser.parse();
 
