@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "${workspaceFolder}/devel/include/**",
+                "/opt/ros/${ROS_DISTRO}/include/**",
+                "/usr/include/**",
+                "${workspaceFolder}/src/utilities/include",
+                "${workspaceFolder}/src/al5d/include",
+                "${workspaceFolder}/src/tui/include",
+                "${workspaceFolder}/src/robothli/include",
+                "${workspaceFolder}/src/world/include",
+                "${workspaceFolder}/src/serial_forwarder/include",
+                "${workspaceFolder}/src/cup/include",
+                "${workspaceFolder}/src/al5d_simulation/include"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14"
+        }
+    ],
+    "version": 4
+}
