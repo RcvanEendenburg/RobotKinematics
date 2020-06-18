@@ -21,8 +21,8 @@ void FindShapeMode::handleFindRectangle(const std::string& color)
         const WorldShape worldShape = shapeKeywordToWorldInterface(Keyword::Square);
         const WorldColor worldColor = colorKeywordToWorldInterface(colorKeyword);
         auto shapes = communicator.findShapes(worldShape, worldColor);
-        /*if(shapes.size() > 1) */chosenShape = std::move(retrieveShape(shapes));
-//        if(shapes.size() == 1) chosenShape = std::make_unique<tui::Shape>(shapes[0]);
+        if(shapes.size() > 1) */chosenShape = std::move(retrieveShape(shapes));
+        if(shapes.size() == 1) chosenShape = std::make_unique<tui::Shape>(shapes[0]);
         if(chosenShape) handleShape(std::move(chosenShape));
         else logger.log(Utilities::LogLevel::Warning, "No shapes found!");
     }
