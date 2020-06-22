@@ -29,6 +29,8 @@ private:
      * @param positionStr The string should be in (x,y,z) format.
      */
     void goToPosition(const std::string& positionStr);
+
+    void setPark();
 };
 
 #endif //TUI_INCLUDE_TUI_DEVELOPMODE_H
