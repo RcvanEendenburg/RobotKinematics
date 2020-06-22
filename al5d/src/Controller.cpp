@@ -187,8 +187,17 @@ Controller::setGripperSpeed(unsigned short speed)
 }
 
 void
+Controller::setGlobalTime(unsigned short time)
+{
+    logger.log(Utilities::LogLevel::Debug, "Setting global time to %d", time);
+    global_time = time;
+}
+
+void
 Controller::move(unsigned short time)
 {
+    if(time < global_time)
+        time = global_time;
     auto command = SSC32UCommandBuilder<6>::createCommand(joints, time);
     auto logStr = "SSC32U command: " + command;
     logger.log(Utilities::LogLevel::Debug, logStr.c_str());

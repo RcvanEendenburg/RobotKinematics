@@ -41,12 +41,7 @@ void ArucoCalibration::Calibrate(cv::Mat img, int markerSize, int arucoId, int A
     }
     else
     {
-        markerLocation = cv::Point2d(20,30);
-        pixelToMMRatio = 1.2;
-        logger.log(Utilities::LogLevel::Error, " No markers found!!");
-        logger.log(Utilities::LogLevel::Error, " Continue with debug values");
-
-        // throw new CalibrationException("No Aruco marker found!");
+        throw new CalibrationException("No Aruco marker found!");
     }
 
     logger.log(Utilities::LogLevel::Debug, "pixel to MM ratio set at %f", pixelToMMRatio);
