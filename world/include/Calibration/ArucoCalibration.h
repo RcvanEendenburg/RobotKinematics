@@ -29,7 +29,7 @@ public:
     }
 
 private:
-    void setMarker(std::vector<cv::Point2f> c, int markerSize, int ArucoDistanceToBase);
+    void setMarker(std::vector<cv::Point2f> c, int markerSize, int ArucoDistanceToBase, int DistanceToCenter = 0);
 
     float pixelToMMRatio;
     bool isCalibrated = false;

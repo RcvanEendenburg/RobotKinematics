@@ -16,8 +16,8 @@
 	ColorRange Blue(78, 92, 18, 133, 253, 250);
 	ColorRange Black_Low(0, 0, 0, 180, 255, 50);
 	ColorRange Black_High(0, 205, 0, 180, 255, 58);
-	ColorRange White_low(0, 0, 156, 180, 61, 255);
-	ColorRange White_high(0, 0, 142, 180, 29, 255);
+	ColorRange White_low(123, 0, 156, 116, 28, 255);
+	ColorRange White_high(123, 0, 142, 180, 29, 255);
 	ColorRange Wood(13, 60, 50, 30, 250, 255);
 
 	void ColorFilter::filterOnColor(cv::Mat& input, cv::Mat& output, cv::Mat& mask_Output, ColorFilter::color aColor)

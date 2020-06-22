@@ -4,8 +4,8 @@
 
 #include "ColorCalibration.h"
 
-int main() {
+int main(int argc, char **argv) {
     ColorCalibration colourCalibration;
-    return colourCalibration.slideColourHSV();
+    return colourCalibration.slideColourHSV(2);
 }
 

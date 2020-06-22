@@ -37,29 +37,32 @@ void ArucoCalibration::Calibrate(cv::Mat img, int markerSize, int arucoId, int A
         logger.log(Utilities::LogLevel::Warning, "Did not found aruco marker: %d "
                    "\n Falling back to first available marker: %d",
                    arucoId, ids.at(0));
-        setMarker(corners.at(0), markerSize, ArucoDistanceToBase);
+
+        //TODO: remove the magic
+        switch(ids.at(0))
+        {
+            case 1:
+                setMarker(corners.at(0), markerSize, ArucoDistanceToBase, 60);
+            case 3:
+                setMarker(corners.at(0), markerSize, ArucoDistanceToBase, -60);
+        }
     }
     else
     {
-        markerLocation = cv::Point2d(20,30);
-        pixelToMMRatio = 1.2;
-        logger.log(Utilities::LogLevel::Error, " No markers found!!");
-        logger.log(Utilities::LogLevel::Error, " Continue with debug values");
-
-        // throw new CalibrationException("No Aruco marker found!");
+        throw CalibrationException("No Aruco marker found!");
     }
 
     logger.log(Utilities::LogLevel::Debug, "pixel to MM ratio set at %f", pixelToMMRatio);
 
 }
 
-void ArucoCalibration::setMarker(std::vector<cv::Point2f> c, int markerSize, int ArucoDistanceToBase)
+void ArucoCalibration::setMarker(std::vector<cv::Point2f> c, int markerSize, int ArucoDistanceToBase, int DistanceToCenter)
 {
     float centX = (c.at(0).x + c.at(2).x) /2;
     float centY = (c.at(0).y + c.at(2).y) /2;
     double length = cv::norm(c.at(0) - c.at(1));
 
-    markerLocation = cv::Point2d(centX, centY - ArucoDistanceToBase);
+    markerLocation = cv::Point2d(centX + DistanceToCenter, centY - ArucoDistanceToBase);
     pixelToMMRatio = markerSize / length;
 
     isCalibrated = true;

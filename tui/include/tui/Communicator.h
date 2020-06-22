@@ -36,7 +36,7 @@ public:
      * @param rotation The rotation of the shape.
      * @param openingDistance How much should the gripper open?
      */
-    void goToPosition(double x, double y, double z, double rotation = 0, double openingDistance = 0);
+    bool goToPosition(double x, double y, double z, double rotation = 0, double openingDistance = 0);
 
     /**
      * Retrieves the shapes from the world service based on it's shape type and color.

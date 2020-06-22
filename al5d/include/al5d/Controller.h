@@ -74,12 +74,16 @@ public:
     void
     setGripperSpeed(unsigned short speed);
 
+    void
+    setGlobalTime(unsigned short time);
+
     void move(unsigned short time);
 
 private:
     Utilities::Logger &logger;
     std::array<Joint, 6> joints;
     SerialCommunicator serialCom;
+    unsigned short global_time;
 };
 
 #endif //CONTROLLER_H

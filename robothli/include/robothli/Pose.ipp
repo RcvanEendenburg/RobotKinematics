@@ -52,7 +52,7 @@ Pose<dof>::setAngles(Pose<dof>::Angles angles)
             joint = joint->getNext();
         }
     }
-//    keepVertical();
+    keepVertical();
 }
 
 template <std::size_t dof> void Pose<dof>::keepVertical()
