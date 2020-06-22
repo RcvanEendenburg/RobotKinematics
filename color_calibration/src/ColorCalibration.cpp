@@ -3,7 +3,7 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/highgui.hpp>
-int ColorCalibration::slideColourHSV(){
+int ColorCalibration::slideColourHSV(int camid){
     //create windows
     cv::namedWindow(sliderWindowHSV,cv::WINDOW_NORMAL);
     cv::namedWindow(colourWindowHSV,cv::WINDOW_AUTOSIZE);
@@ -11,7 +11,7 @@ int ColorCalibration::slideColourHSV(){
     createBars();
 
     //open cam
-    cv::VideoCapture cap(0);
+    cv::VideoCapture cap(camid);
 
     if (!cap.isOpened()) {
         return -1;

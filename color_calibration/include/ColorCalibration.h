@@ -12,7 +12,7 @@
 class ColorCalibration
 {
 public:
-    int slideColourHSV();
+    int slideColourHSV(int camId);
 
 private:
     void createBars();
