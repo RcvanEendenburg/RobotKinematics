@@ -44,8 +44,18 @@ class Shape
 
     void translateCoordinate(cv::Point2d aOrigin)
     {
-        center.x = center.x - aOrigin.x;
-        center.z = center.z - aOrigin.y;
+        // Here we change to the robots Coordinate system. Using the aruco marker position as a reference to the robot.
+        double xCopy = center.x;
+
+        double newZ = xCopy- aOrigin.x;
+
+        if (newZ < 0)
+            newZ = std::abs(newZ);
+        else if(newZ > 0)
+            newZ = newZ * -1;
+
+        center.x = center.z - aOrigin.y;
+        center.z = newZ;
     }
 
     geometry_msgs::Point getCenter()

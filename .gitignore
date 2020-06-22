@@ -109,6 +109,7 @@ qtcreator-*
 /planning/cfg
 /planning/docs
 /planning/src
+*/config/config_generated.ini
 
 
 # Emacs

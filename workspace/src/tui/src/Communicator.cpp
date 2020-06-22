@@ -18,12 +18,16 @@ Communicator::Communicator(const std::string &highLevelDriver, Application &app)
 void
 Communicator::goToPosition(double x, double y, double z, double rotation, double openingDistance)
 {
+    application.logger.log(Utilities::LogLevel::Debug, "Sending goal to the high level driver...");
+
     tui::PickUpObjectGoal goal;
     goal.point.x = x;
     goal.point.y = y;
     goal.point.z = z;
     goal.rotation = rotation;
     goal.opening_distance = openingDistance;
+
+  //  application.logger.log(Utilities::LogLevel::Debug, "Goal send X: %f Y: %f Z: %f",goal.point.x,goal.point.y,goal.point.z);
 
     actionClient.sendGoal(goal);
 

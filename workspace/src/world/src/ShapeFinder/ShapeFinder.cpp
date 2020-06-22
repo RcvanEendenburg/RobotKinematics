@@ -111,11 +111,11 @@ std::vector<world::Shape> ShapeFinder::ServiceCallback(Shape::ShapeTypes shape, 
         logger.log(Utilities::LogLevel::Debug, "Shape id: %d on position x: %f y: %f z: %f", item.id, center.x,center.y,center.z);
     }
 
-//    std::string windowName = "Display window";
-//    namedWindow( windowName, cv::WINDOW_NORMAL);
-//    cv::resizeWindow(windowName, 500, 500);
-//    imshow( windowName, markedImg );
-//    cv::waitKey(0);
+    std::string windowName = "Display window";
+    namedWindow( windowName, cv::WINDOW_NORMAL);
+    cv::resizeWindow(windowName, 500, 500);
+    imshow( windowName, markedImg );
+    cv::waitKey(0);
     return response;
 }
 
