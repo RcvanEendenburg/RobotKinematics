@@ -31,6 +31,7 @@ public:
 
     void
     update(Kinematics::Matrix<double, 1, T> angles);
+    void setVertical();
     void
     reset();
 protected:

@@ -51,7 +51,7 @@ public:
     void
     randomizeAngles();
 
-    void keepVertical();
+    void setVertical();
 
     /**
      * @brief Get the jacobian matrix.

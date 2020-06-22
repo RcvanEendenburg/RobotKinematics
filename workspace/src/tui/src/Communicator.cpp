@@ -15,7 +15,7 @@ Communicator::Communicator(const std::string &highLevelDriver, Application &app)
     actionClient.waitForServer();
 }
 
-void
+bool
 Communicator::goToPosition(double x, double y, double z, double rotation, double openingDistance)
 {
     application.logger.log(Utilities::LogLevel::Debug, "Sending goal to the high level driver...");
@@ -35,6 +35,8 @@ Communicator::goToPosition(double x, double y, double z, double rotation, double
 
     if (!finished_before_timeout)
         application.logger.log(Utilities::LogLevel::Error, "Oops action server timed out...");
+
+    return finished_before_timeout;
 }
 
 std::vector<tui::Shape> Communicator::findShapes(unsigned int shape, unsigned int color)

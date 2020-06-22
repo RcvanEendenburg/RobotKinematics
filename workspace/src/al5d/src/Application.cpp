@@ -52,6 +52,8 @@ Application::Application(int argc, char **argv, const std::string &configFile) :
     controller.setWristSpeed(static_cast<unsigned short>(iniParser.get<int>("Joints", "wrist_speed")));
     controller.setWristRotateSpeed(static_cast<unsigned short>(iniParser.get<int>("Joints", "wrist_rotate_speed")));
     controller.setGripperSpeed(static_cast<unsigned short>(iniParser.get<int>("Joints", "gripper_speed")));
+
+    controller.setGlobalTime(static_cast<unsigned short>(iniParser.get<int>("AL5D", "global_time")));
 }
 
 void

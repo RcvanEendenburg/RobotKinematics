@@ -74,6 +74,16 @@ GradientDescent<dof>::startMoving(const Kinematics::PosePoint &goal)
         betaProgress.addStep(step);
         ++its;
     }
+    
+    try
+    {
+        robot->setVertical();
+    }
+    catch(const std::exception& e)
+    {
+        throw UnableToMove();
+    }
+
     const auto stop = std::chrono::high_resolution_clock::now();
     const auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
 

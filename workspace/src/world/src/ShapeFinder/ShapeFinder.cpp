@@ -2,6 +2,7 @@
 
 #include <utilities/Logger.h>
 #include <utilities/LogToCout.h>
+#include <Calibration/CalibrationException.h>
 #include "ShapeFinder/ShapeFinder.h"
 #include "Shape/SquareShape.h"
 #include "Shape/CircleShape.h"
@@ -42,9 +43,17 @@ std::vector<world::Shape> ShapeFinder::ServiceCallback(Shape::ShapeTypes shape, 
         cv::flip(img,img,-1);
 
     auto calibration = new ArucoCalibration();
-    calibration->Calibrate(img, iniParser.get<int>("Calibration","ArucoMarkerSize"),
-        iniParser.get<int>("Calibration","ArucoId"),
-                           iniParser.get<int>("Calibration","ArucoDistanceToBaseZ"));
+    try
+    {
+        calibration->Calibrate(img, iniParser.get<int>("Calibration","ArucoMarkerSize"),
+                               iniParser.get<int>("Calibration","ArucoId"),
+                               iniParser.get<int>("Calibration","ArucoDistanceToBaseZ"));
+    }
+    catch (std::exception &e)
+    {
+        logger.log(Utilities::LogLevel::Error, e.what());
+        return response;
+    }
 
     filteredImg = filterImage(img);
     filteredImg.copyTo(markedImg);
