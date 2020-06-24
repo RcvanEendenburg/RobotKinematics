@@ -64,6 +64,5 @@ void ArucoCalibration::setMarker(std::vector<cv::Point2f> c, int markerSize, int
 
     markerLocation = cv::Point2d(centX + DistanceToCenter, centY - ArucoDistanceToBase);
     pixelToMMRatio = markerSize / length;
-
     isCalibrated = true;
 }

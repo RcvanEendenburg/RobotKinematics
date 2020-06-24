@@ -44,6 +44,14 @@ class Shape
 
     void translateCoordinate(cv::Point2d aOrigin)
     {
+
+
+        int X = aOrigin.x - center.x;
+        int Y = aOrigin.y - center.y;
+
+        int angleInRadian = atan2((double)Y,(double)X);
+        rotation = angleInRadian * 180 / M_PI;
+
         // Here we change to the robots Coordinate system. Using the aruco marker position as a reference to the robot.
         double xCopy = center.x;
 

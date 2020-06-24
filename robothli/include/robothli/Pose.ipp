@@ -52,10 +52,9 @@ Pose<dof>::setAngles(Pose<dof>::Angles angles)
             joint = joint->getNext();
         }
     }
-    keepVertical();
 }
 
-template <std::size_t dof> void Pose<dof>::keepVertical()
+template <std::size_t dof> void Pose<dof>::setVertical()
 {
     double preferredAngleSum = 180;
     double angleSum = 0;

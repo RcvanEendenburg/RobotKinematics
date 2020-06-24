@@ -54,6 +54,14 @@ RobotModel<T>::update(Kinematics::Matrix<double, 1, T> angles)
 
 template<unsigned char T>
 void
+RobotModel<T>::setVertical()
+{
+    pose.setVertical();
+    endEffector = pose.calculatePoint(start);
+}
+
+template<unsigned char T>
+void
 RobotModel<T>::reset()
 {
     pose.randomizeAngles();

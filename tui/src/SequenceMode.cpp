@@ -30,7 +30,12 @@ void SequenceMode::handleShape(std::unique_ptr<tui::Shape> shape)
     std::this_thread::sleep_for(sleep_time);
 
     logger.log(Utilities::LogLevel::Debug, "Closing gripper...");
-    if(!communicator.goToPosition(shape->points.x, shape->points.y, shape->points.z, shape->rotation, shape->width))
+    if(!communicator.goToPosition(shape->points.x, shape->points.y, shape->points.z, shape->rotation, 10))
+        return;
+    std::this_thread::sleep_for(sleep_time);
+
+    logger.log(Utilities::LogLevel::Debug, "Lifting block...");
+    if(!communicator.goToPosition(shape->points.x, shape->points.y + gripperOpeningHeight, shape->points.z, shape->rotation, 10))
         return;
     std::this_thread::sleep_for(sleep_time);
 

@@ -13,7 +13,7 @@
 		cv::Mat getFrame() override
 		{
 			cv::Mat output;
-			cv::VideoCapture cap(2);
+			cv::VideoCapture cap(0);
 
 			for (int x = 0; x < 30; ++x) {//collect 30 frames because the webcam has to initialize
 				cap >> output;

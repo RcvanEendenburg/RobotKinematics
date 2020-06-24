@@ -6,6 +6,6 @@
 
 int main(int argc, char **argv) {
     ColorCalibration colourCalibration;
-    return colourCalibration.slideColourHSV(2);
+    return colourCalibration.slideColourHSV(0);
 }
 
